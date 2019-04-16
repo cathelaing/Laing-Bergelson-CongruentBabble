@@ -1,0 +1,350 @@
+---
+title: "Supplementary Analyses"
+author: "Catherine Laing"
+date: "8 March 2019"
+output: html_document
+---
+
+## Supplementary data
+
+### Part 1: reanalyse variables with matching stimuli removed
+
+# Input prompt
+
+```{r Input prompt stats - reanalysis}
+
+source("ProductionData_nostimmatch_randsubj.R")
+source("Data_scrambling_nostimmatch_randsubj.R")
+library(effsize)
+
+1916-1772 # Total CPs in original data - total CPs in data with matches removed = 144
+
+144/1916 #.08 of all CPs from original analysis
+
+```
+
+```{r Re-run analysis with these data removed}
+
+ProdData_nostimmatch %>% ungroup() %>% summarise(totalprompt = sum(nPrompt)) # 839
+
+#shapiro.test(ProdData_nostimmatch$Prod.Prompt.match.PC) # normal
+
+#t.test(Prod.Prompt.match.PC ~ VMSgroup, ProdData_nostimmatch, conf.int=T) # p=.07
+
+wilcox.test(subset(ProdData_nostimmatch, VMSgroup == "withVMS")$Prod.Prompt.match.PC, 
+            subset(ProdData_nostimmatch, VMSgroup == "noVMS")$Prod.Prompt.match.PC, conf.int = T) # Significant, p<.001
+
+cliff.delta(d = subset(ProdData_nostimmatch, VMSgroup == "withVMS")$Prod.Prompt.match.PC, 
+            f = subset(ProdData_nostimmatch, VMSgroup == "noVMS")$Prod.Prompt.match.PC) # .34, medium
+
+prompt.real <- ProdData_nostimmatch %>%
+  select(subj, month, VMSgroup, Prod.Prompt.match.PC) %>%
+  ungroup() %>%
+  rename(PC = Prod.Prompt.match.PC) %>%
+  mutate(Type = 'real')
+
+prompt.scramble <- data.scrambled_nostimmatch %>%
+  ungroup() %>%
+  select(subj, month, VMSgroup, Prod.Prompt.match.PC) %>%
+  rename(PC = Prod.Prompt.match.PC) %>%
+  mutate(Type = 'scrambled')
+
+scramble.comparison.prompt <- rbind(prompt.real, prompt.scramble)
+
+wilcox.test(subset(prompt.real, VMSgroup == "withVMS")$PC, 
+            subset(prompt.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # Significant, p<.001
+
+cliff.delta(d = subset(prompt.real, VMSgroup == "withVMS")$PC, 
+            f = subset(prompt.scramble, VMSgroup == "withVMS")$PC) # .91 large
+
+wilcox.test(subset(prompt.real, VMSgroup == "noVMS")$PC, 
+            subset(prompt.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # Significant, p<.05
+
+cliff.delta(d = subset(prompt.real, VMSgroup == "noVMS")$PC, 
+            f = subset(prompt.scramble, VMSgroup == "noVMS")$PC) # .40 medium
+```
+
+```{r comparing inREP vs outREP consonants - prompt nostimmatch}
+
+#shapiro.test(subset(match.data.Prompt, VMSgroup=="withVMS")$PC) # normal 
+
+# t.test(subset(match.data.Prompt.spread, VMSgroup=="withVMS")$inREP,
+# subset(match.data.Prompt.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.001
+
+wilcox.test(subset(match.data.Prompt.spread, VMSgroup=="withVMS")$inREP,
+subset(match.data.Prompt.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.01 EstDiff=.31
+
+wilcoxonPairedR(x = subset(match.data.Prompt, VMSgroup=="withVMS")$PC, 
+                g = subset(match.data.Prompt, VMSgroup=="withVMS")$Type) # r = .61
+
+```
+
+
+
+# Attended object
+
+```{r Att Obj stats - reanalysis}
+
+ProdData_nostimmatch %>% ungroup() %>% summarise(totalobj = sum(nObj)) # 963
+
+#shapiro.test(ProdData_nostimmatch$Prod.Obj.match.PC) # not normal
+
+wilcox.test(subset(ProdData_nostimmatch, VMSgroup == "withVMS")$Prod.Obj.match.PC, 
+            subset(ProdData_nostimmatch, VMSgroup == "noVMS")$Prod.Obj.match.PC, conf.int = T) # p<.01
+
+cliff.delta(d = subset(ProdData_nostimmatch, VMSgroup == "withVMS")$Prod.Obj.match.PC, 
+            f = subset(ProdData_nostimmatch, VMSgroup == "noVMS")$Prod.Obj.match.PC) # .47 medium
+
+object.real <- ProdData_nostimmatch %>%
+  select(subj, month, VMSgroup, Prod.Obj.match.PC) %>%
+  ungroup() %>%
+  rename(PC = Prod.Obj.match.PC) %>%
+  mutate(Type = 'real')
+
+object.scramble <- data.scrambled_nostimmatch %>%
+  ungroup() %>%
+  select(subj, month, VMSgroup, Prod.Obj.match.PC) %>%
+  rename(PC = Prod.Obj.match.PC) %>%
+  mutate(Type = 'scrambled')
+
+scramble.comparison.object <- rbind(object.real, object.scramble)
+
+wilcox.test(subset(object.real, VMSgroup == "withVMS")$PC, 
+            subset(object.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # Significant, p<.001
+
+cliff.delta(d = subset(object.real, VMSgroup == "withVMS")$PC, 
+            f = subset(object.scramble, VMSgroup == "withVMS")$PC) # .60 large
+
+wilcox.test(subset(object.real, VMSgroup == "noVMS")$PC, 
+            subset(object.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # Significant, p<.05
+
+cliff.delta(d = subset(object.real, VMSgroup == "noVMS")$PC, 
+            f = subset(object.scramble, VMSgroup == "noVMS")$PC) # -.13 negligible
+
+```
+
+```{r  comparing inREP vs outREP consonants - object nostimmatch}
+
+#shapiro.test(subset(match.data.Object, VMSgroup=="withVMS")$PC) # not normal
+
+wilcox.test(subset(match.data.Object.spread, VMSgroup=="withVMS")$inREP, 
+            subset(match.data.Object.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.01
+
+wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == "withVMS")$PC,
+                g = subset(match.data.Object, VMSgroup == "withVMS")$Type) # r = .38
+
+```
+
+
+## Part 2: Reanalyse variables after removing objects and prompts with matching onset consonants
+
+# Input Prompts
+
+```{r Testing for C1 match}
+
+# How many CPs match C1 of both prompt and object?
+
+CPdata %>% 
+  mutate(match = str_detect(C1Obj, fixed(C1Prompt)),  # Is there a consonantal match: T/F
+         match = ifelse(C1Obj == "none" & C1Prompt == "n", F, match),      
+         # ^ none matches n in above line, so make sure these are included here
+         match = ifelse(C1Prompt == "none" & C1Obj == "n", F, match)) %>% # and vice versa
+  filter(match == TRUE & C1Obj != "none") %>% tally() # 223    # exclude all matches of 'none'
+
+223/1916 # 12% of original dataset
+
+source("ProductionData_noC1match_randsubj.R")
+source("Data_scrambling_noC1match_randsubj.R")
+
+1916-1693 # 223   # check that numbers are correct in new CP data 
+
+```
+
+```{r Testing with noC1 match - Prompt}
+
+ProdData_noC1match %>% ungroup() %>% summarise(totalprompt = sum(nPrompt)) # 753
+
+#shapiro.test(ProdData_noC1match$Prod.Prompt.match.PC) # normal
+
+# t.test(Prod.Prompt.match.PC ~ VMSgroup, ProdData_noC1match, conf.int=T) # ns
+
+wilcox.test(subset(ProdData_noC1match, VMSgroup == "withVMS")$Prod.Prompt.match.PC, 
+            subset(ProdData_noC1match, VMSgroup == "noVMS")$Prod.Prompt.match.PC, conf.int = T) # ns
+
+cliff.delta(d = subset(ProdData_noC1match, VMSgroup == "withVMS")$Prod.Prompt.match.PC, 
+            f = subset(ProdData_noC1match, VMSgroup == "noVMS")$Prod.Prompt.match.PC) # .26 small
+
+prompt.real <- ProdData_noC1match %>%
+  select(subj, month, VMSgroup, Prod.Prompt.match.PC) %>%
+  ungroup() %>%
+  rename(PC = Prod.Prompt.match.PC) %>%
+  mutate(Type = 'real')
+
+prompt.scramble <- data.scrambled_noC1match %>%
+  ungroup() %>%
+  select(subj, month, VMSgroup, Prod.Prompt.match.PC) %>%
+  rename(PC = Prod.Prompt.match.PC) %>%
+  mutate(Type = 'scrambled')
+
+scramble.comparison.prompt <- rbind(prompt.real, prompt.scramble)
+
+wilcox.test(subset(prompt.real, VMSgroup == "withVMS")$PC, 
+            subset(prompt.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # Significant, p<.001
+
+cliff.delta(d = subset(prompt.real, VMSgroup == "withVMS")$PC, 
+            f = subset(prompt.scramble, VMSgroup == "withVMS")$PC) # Significant, p<.001
+
+wilcox.test(subset(prompt.real, VMSgroup == "noVMS")$PC, 
+            subset(prompt.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # Significant, p<.05
+
+cliff.delta(d = subset(prompt.real, VMSgroup == "noVMS")$PC, 
+            f = subset(prompt.scramble, VMSgroup == "noVMS")$PC) # Significant, p<.05
+
+```
+
+```{r comparing inREP vs outREP consonants - Prompt noC1match}
+
+#shapiro.test(match.data.Prompt$PC) # not normal
+
+wilcox.test(subset(match.data.Prompt.spread, VMSgroup=="withVMS")$inREP, 
+            subset(match.data.Prompt.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.01
+
+wilcoxonPairedR(x = subset(match.data.Prompt, VMSgroup == "withVMS")$PC,
+                g = subset(match.data.Prompt, VMSgroup == "withVMS")$Type) # r = .61
+```
+
+# Attended Object
+
+```{r r Testing with noC1 match - Object}
+
+ProdData_noC1match %>% ungroup() %>% summarise(totalobj = sum(nObj)) # 877
+
+#shapiro.test(ProdData_noC1match$Prod.Obj.match.PC) # not normal
+
+wilcox.test(subset(ProdData_noC1match, VMSgroup == "withVMS")$Prod.Obj.match.PC, 
+            subset(ProdData_noC1match, VMSgroup == "noVMS")$Prod.Obj.match.PC, conf.int = T) # p<.01
+
+cliff.delta(d = subset(ProdData_noC1match, VMSgroup == "withVMS")$Prod.Obj.match.PC, 
+            f = subset(ProdData_noC1match, VMSgroup == "noVMS")$Prod.Obj.match.PC) # .48 large
+
+object.real <- ProdData_noC1match %>%
+  select(subj, month, VMSgroup, Prod.Obj.match.PC) %>%
+  ungroup() %>%
+  rename(PC = Prod.Obj.match.PC) %>%
+  mutate(Type = 'real')
+
+object.scramble <- data.scrambled_noC1match %>%
+  ungroup() %>%
+  select(subj, month, VMSgroup, Prod.Obj.match.PC) %>%
+  rename(PC = Prod.Obj.match.PC) %>%
+  mutate(Type = 'scrambled')
+
+scramble.comparison.object <- rbind(object.real, object.scramble)
+
+wilcox.test(subset(object.real, VMSgroup == "withVMS")$PC, 
+            subset(object.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # Significant, p<.001
+
+cliff.delta(d = subset(object.real, VMSgroup == "withVMS")$PC, 
+            f = subset(object.scramble, VMSgroup == "withVMS")$PC) # .60 large
+
+wilcox.test(subset(object.real, VMSgroup == "noVMS")$PC, 
+            subset(object.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # ns
+
+cliff.delta(d = subset(object.real, VMSgroup == "noVMS")$PC, 
+            f = subset(object.scramble, VMSgroup == "noVMS")$PC) # -.11 negligible
+```
+
+```{r comparing inREP vs outREP consonants - Object noC1match}
+
+#shapiro.test(subset(match.data.Object, VMSgroup=="withVMS")$PC) # not normal
+
+wilcox.test(subset(match.data.Object.spread, VMSgroup=="withVMS")$inREP, 
+            subset(match.data.Object.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p=.07
+
+wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == "withVMS")$PC,
+                g = subset(match.data.Object, VMSgroup == "withVMS")$Type) # r = .61
+
+```
+
+
+## Part 3: Reanlalyse caregiver input with a subset of data that only includes nouns, onomtopoeia and routine words in CPdata$cgprompt
+
+```{r Source data}
+
+source("Data_scrambling_Nounsonly_randsubj.R")
+
+```
+
+```{r Overview}
+
+# 752 CPs with noun/onomatopoeia as prompts
+
+CPdata_nouns %>% group_by(wordclass) %>% tally()  #32 onomatopoeia, 39 greetings/routine words
+                              # (cf Laing et al 2015 who show that onomatopoiea are particularly salient in caregier input)
+
+```
+
+```{r Re-run analysis}
+
+#shapiro.test(ProdData_nouns$Prod.Prompt.match.PC) # normal
+
+#t.test(Prod.Prompt.match.PC ~ VMSgroup, ProdData_nouns) # p=.11
+
+wilcox.test(subset(ProdData_nouns, VMSgroup == "withVMS")$Prod.Prompt.match.PC, 
+            subset(ProdData_nouns, VMSgroup == "noVMS")$Prod.Prompt.match.PC, conf.int = T) # p=.17
+
+cliff.delta(d = subset(ProdData_nouns, VMSgroup == "withVMS")$Prod.Prompt.match.PC, 
+            f = subset(ProdData_nouns, VMSgroup == "noVMS")$Prod.Prompt.match.PC) # p=.24 small
+
+
+prompt.real <- ProdData_nouns %>%
+  select(subj, month, VMSgroup, Prod.Prompt.match.PC) %>%
+  ungroup() %>%
+  rename(PC = Prod.Prompt.match.PC) %>%
+  mutate(Type = 'real')
+
+prompt.scramble <- data.scrambled %>%
+  ungroup() %>%
+  select(subj, month, VMSgroup, Prod.Prompt.match.PC) %>%
+  rename(PC = Prod.Prompt.match.PC) %>%
+  mutate(Type = 'scrambled')
+
+scramble.comparison.prompt <- rbind(prompt.real, prompt.scramble)
+
+#shapiro.test(scramble.comparison.prompt$PC) # not normal
+
+wilcox.test(subset(prompt.real, VMSgroup == "withVMS")$PC, 
+            subset(prompt.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # Significant, p<.001
+
+cliff.delta(d = subset(prompt.real, VMSgroup == "withVMS")$PC, 
+            f = subset(prompt.scramble, VMSgroup == "withVMS")$PC) # .90 large
+
+wilcox.test(subset(prompt.real, VMSgroup == "noVMS")$PC, 
+            subset(prompt.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # Significant, p<.05
+
+cliff.delta(d = subset(prompt.real, VMSgroup == "noVMS")$PC, 
+            f = subset(prompt.scramble, VMSgroup == "noVMS")$PC) # .41 medium
+```
+
+```{r comparing inREP vs outREP consonants - nouns only}
+
+#shapiro.test(subset(match.data.Prompt, VMSgroup=="withVMS")$PC) # normal 
+
+# t.test(subset(match.data.Prompt_nouns.spread, VMSgroup=="withVMS")$inREP,
+# subset(match.data.Prompt_nouns.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.01
+
+wilcox.test(subset(match.data.Prompt_nouns.spread, VMSgroup=="withVMS")$inREP, 
+            subset(match.data.Prompt_nouns.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.01
+
+wilcoxonPairedR(x = subset(match.data.Prompt_nouns, VMSgroup == "withVMS")$PC,
+                g = subset(match.data.Prompt_nouns, VMSgroup == "withVMS")$Type) # r = .58
+
+```
+
+
+
+
+
+
+
+

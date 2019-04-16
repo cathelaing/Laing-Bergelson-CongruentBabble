@@ -1,0 +1,1917 @@
+subj,month,sex,MOTedu,VMS,ctype,object,cgprompt,cgresponse,C1Obj,C1Prompt,Prod.Obj.Cong,Prod.Prompt.Cong,VMS.Obj.Cong,VMS.Prompt.Cong,VMS.Prod.Cong,VMSgroup,wordclass
+794,11,F,Masters Degree,p b,p b,[none],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],bop,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+794,11,F,Masters Degree,p b,p b,[none],bop,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+794,11,F,Masters Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,slide,slide,Repetition,s,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,k g,cup,camera,None,k,k,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,t d,cup,camera,None,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,p b,cup,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,k g,cup,[none],None,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,slide,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[none],teeter totter,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,O
+794,11,F,Masters Degree,p b,p b,dog,bye,None,d,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,G
+794,11,F,Masters Degree,p b,p b,dog,bye,Unavailable,d,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,G
+794,11,F,Masters Degree,p b,p b,dog,bye,None,d,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,G
+794,11,F,Masters Degree,p b,k g,[none],bye,None,none,b,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,G
+794,11,F,Masters Degree,p b,p b,[unclear],bye,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,G
+794,11,F,Masters Degree,p b,p b,[unclear],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[unclear],shoe,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[unclear],shoe,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[unclear],shoe,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[unclear],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[unclear],spider,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[unclear],spider,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[unclear],spider,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[out of view],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],[none],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],shoe,Unavailable,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,t d,[out of view],[none],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[unclear],shoe,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,t d,[unclear],shoe,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,t d,[unclear],shoe,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,k g,[none],come,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+794,11,F,Masters Degree,p b,t d,[unclear],come,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,V
+794,11,F,Masters Degree,p b,t d,[none],side,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[none],sandbox,Reformulation,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,m,[none],sandbox,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[none],sandbox,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,t d,sandbox,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,sandbox,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,sandbox,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,sandbox,pack+it,None,s,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+794,11,F,Masters Degree,p b,p b,sandbox,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,chair,[none],None,t,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,chair,[none],None,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,chair,[none],None,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[unclear],cherry,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,p b,sandbox,cherry,None,s,t,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[none],[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[out of view],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[out of view],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[out of view],[unavailable],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],[unavailable],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],[unavailable],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],[unavailable],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],[unavailable],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[unclear],side,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,t d,[out of view],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,dog,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],biscuit,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[none],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[none],shoe,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,t d,[none],shoe,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[none],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[none],chair,None,none,t,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,p b,[none],chair,None,none,t,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,t d,[unclear],down,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,D
+794,11,F,Masters Degree,p b,t d,[unclear],down,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,D
+794,11,F,Masters Degree,p b,p b,bin?,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,t d,[unclear],no,None,none,n,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,G
+794,11,F,Masters Degree,p b,t d,[unclear],no,None,none,n,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,G
+794,11,F,Masters Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[out of view],brick-sis,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+794,11,F,Masters Degree,p b,t d,table,[none],None,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+794,11,F,Masters Degree,p b,p b,[unclear],baby,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+294,10,M,Masters Degree,p b k g,n,[none],no,Repetition,none,n,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,G
+294,10,M,Masters Degree,p b k g,k g,spoon,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,k g,spoon,hungry,None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,A
+294,10,M,Masters Degree,p b k g,k g,[none],kiss,Reformulation,none,k,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+294,10,M,Masters Degree,p b k g,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,m,[none],no,None,none,n,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,G
+294,10,M,Masters Degree,p b k g,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,n,[none],no,Question,none,n,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,G
+294,10,M,Masters Degree,p b k g,n,[unclear],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,n,[unclear],crying,Unavailable,none,k,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,V
+294,10,M,Masters Degree,p b k g,n,mother,monkey,None,m,m,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+294,10,M,Masters Degree,p b k g,n,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,n,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,m,apple,more,Agreement,p,m,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,A
+294,10,M,Masters Degree,p b k g,m,apple,more,Repetition,p,m,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,A
+294,10,M,Masters Degree,p b k g,m,apple,more,Repetition,p,m,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,A
+294,10,M,Masters Degree,p b k g,p b,[none],brum,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+294,10,M,Masters Degree,p b k g,k g,[none],ground,None,none,g,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+294,10,M,Masters Degree,p b k g,p b,[none],brum,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+294,10,M,Masters Degree,p b k g,p b,[none],brum,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+294,10,M,Masters Degree,p b k g,k g,[none],machine,Repetition,none,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+294,10,M,Masters Degree,p b k g,m,cracker,cracker,None,k,k,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+294,10,M,Masters Degree,p b k g,m,cracker,[none],None,k,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,m,[out of view],apple,None,none,p,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+294,10,M,Masters Degree,p b k g,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,m,[out of view],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,p b,[unclear],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,n,[out of view],know,None,none,n,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+294,10,M,Masters Degree,p b k g,m,[none],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+294,10,M,Masters Degree,p b k g,p b,tree,tree,Question,t,t,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+294,10,M,Masters Degree,p b k g,p b,tree,house,Question,t,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+126,10,M,Bachelors Degree,k g,n,[unclear],now,None,none,n,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,P
+126,10,M,Bachelors Degree,k g,n,[none],mammoth,None,none,m,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,k g,dinosaur,dinosaur,None,d,d,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,tower,tower,None,t,t,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,tower,None,t,t,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,tower,None,t,t,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,owl,Response,t,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,ng,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,m,block,breakfast,None,b,b,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,m,bottle,[unclear],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,k g,bottle,avocado,Response,b,k,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+126,10,M,Bachelors Degree,k g,n,[unclear],nice,None,none,n,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+126,10,M,Bachelors Degree,k g,k g,[unclear],rainforest,None,none,f,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,[none],page,None,none,p,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,[none],page,None,none,p,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,page,Repetition,t,p,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,page,Question,b,p,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,better,Question,t,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+126,10,M,Bachelors Degree,k g,p b,block,block,Agreement,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,block,Agreement,t,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,block,Agreement,t,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,block,None,t,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,block,None,t,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,tower,cow,None,t,k,TRUE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,dog,None,t,d,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,dog,tower,None,d,t,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,bottle,dog,None,b,d,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,bottle,dog,Repetition,b,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,tower,dog,None,t,d,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,dog,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,k g,dog,[none],None,d,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,dog,do,None,d,d,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,V
+126,10,M,Bachelors Degree,k g,p b,tower,do,None,t,d,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,V
+126,10,M,Bachelors Degree,k g,m,bottle,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,t d,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,t d,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,t d,block,d,None,b,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,d,None,b,d,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,dog,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,apple,None,b,p,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,big,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+126,10,M,Bachelors Degree,k g,m,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,k g,block,eight,Reformulation,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+126,10,M,Bachelors Degree,k g,k g,block,eight,None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,eight,Reformulation,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,m,[unclear],eight,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,three,None,b,s,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,back,Unavailable,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,back,Unavailable,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,[unavailable],Unavailable,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,n,block,[unavailable],Unavailable,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[unavailable],Unavailable,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,m,block,[unavailable],Unavailable,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,m,block,[unavailable],Unavailable,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,m,[unclear],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,n,[none],hungry,Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+126,10,M,Bachelors Degree,k g,k g,grapes,[none],None,g,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,m,grapes,grapes,None,g,g,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,grapes,song,None,g,s,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,grapes,do,None,g,d,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,V
+126,10,M,Bachelors Degree,k g,p b,grapes,[unclear],Unavailable,g,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,t d,[unclear],pxx [name],None,none,p,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,[unclear],pxx [name],None,none,p,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,[none],jxx [name],Repetition,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,m,[unclear],ball,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,m,[unclear],ball,Question,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,k g,block,parking+lot,None,b,p,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+126,10,M,Bachelors Degree,k g,m,[unclear],parking+lot,None,none,p,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,k g,block,parking+lot,None,b,p,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,block,parking+lot,None,b,p,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,basket,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,m,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,n,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,t d,[unclear],toy,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,t d,block,toy,None,b,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,[unclear],baby,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,baby,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,[none],mess,None,none,m,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,m,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,k g,block,good,None,b,g,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,A
+126,10,M,Bachelors Degree,k g,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,bunny,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+126,10,M,Bachelors Degree,k g,p b,block,baby,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,p b,block,baby,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+126,10,M,Bachelors Degree,k g,m,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+255,10,M,Some college,x,t d,computer game,button,None,k,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+255,10,M,Some college,x,k g,phone,gobble,Reformulation,f,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+255,10,M,Some college,x,k g,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,t d,[toy],towels,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+255,10,M,Some college,x,k g,[none],baby,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+255,10,M,Some college,x,k g,[toy],clean,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+255,10,M,Some college,x,p b,[none],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,p b,[none],break,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+255,10,M,Some college,x,t d,food,more,Reformulation,f,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+255,10,M,Some college,x,m,[unclear],yummy,None,none,m,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+255,10,M,Some college,x,n,[unclear],more,Agreement,none,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+255,10,M,Some college,x,k g,phone,[none],None,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,p b,phone,[none],None,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,ng,[none],good,None,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+255,10,M,Some college,x,p b,[none],bye,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,G
+255,10,M,Some college,x,k g,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+255,10,M,Some college,x,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,s,cup,slant,None,k,s,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+465,10,F,Masters Degree,x,p b,glasses,[none],Repetition,g,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,t d,glasses,[none],Repetition,g,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,k g,glasses,[none],Repetition,g,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,t d,glasses,mummy,Question,g,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+465,10,F,Masters Degree,x,t d,glasses,mummy,Reformulation,g,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+465,10,F,Masters Degree,x,t d,glasses,mummy,None,g,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+465,10,F,Masters Degree,x,k g,glasses,[none],None,g,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,k g,glasses,[none],None,g,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,m,mother,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,p b,drum,boom,None,d,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+465,10,F,Masters Degree,x,n,[unclear],thing,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+465,10,F,Masters Degree,x,t d,flower,[imitation],Reformulation,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+465,10,F,Masters Degree,x,t d,flower,big,Reformulation,f,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+357,11,M,Masters Degree,x,p b,star,mummy,Reformulation,s,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+357,11,M,Masters Degree,x,t d,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+357,11,M,Masters Degree,x,n,[unclear],potato,None,none,p,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+521,10,F,Masters Degree,t d n,t d,[unclear],hat,None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,paper,[none],Repetition,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,drum,[none],Agreement,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,drum,[none],None,d,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,paper,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,paper,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,[none],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,button,[none],Reformulation,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,k g,ring,ring,Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,p b,paper,boo,Repetition,p,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,toes,[none],Reformulation,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,toes,toes,Agreement,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,p b,toes,[none],None,t,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,toes,toes,None,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,[none],up,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,D
+521,10,F,Masters Degree,t d n,t d,toes,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,box,[none],Reformulation,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,toes,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,box,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,k g,box,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,grandma,[none],Repetition,g,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,box,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,[none],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,box,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,no,Response,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,G
+521,10,F,Masters Degree,t d n,n,nose,[none],Agreement,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,[none],None,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,[none],Reformulation,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,nose,Reformulation,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,nose,nose,Repetition,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,nose,nose,None,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,nose,[none],Reformulation,n,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,[none],Repetition,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,nose,None,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,nose,nose,None,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,nose,nose,Reformulation,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,nose,nose,None,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,nose,nose,None,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,k g,book,book,Repetition,b,b,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,book,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,[none],Repetition,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,button,[none],Reformulation,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,button,button,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,book,book,None,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,book,book,None,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,nose,[none],None,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,book,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,[none],None,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,button,button,Reformulation,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,p b,button,button,Reformulation,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,p b,button,button,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,[none],belly,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,k g,button,button,None,b,b,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,t d,dad,[none],Repetition,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,dad,[none],Repetition,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,dad,[imitation],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,k g,grandpa,[none],None,g,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,toes,toes,Reformulation,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,k g,cat,[none],Reformulation,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,dad,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,dad,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,dad,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,cat,nice,None,k,n,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,A
+521,10,F,Masters Degree,t d n,k g,cat,[none],Agreement,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,k g,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,p b,cat,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,k g,cat,[none],None,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,[unclear],now,None,none,n,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,P
+521,10,F,Masters Degree,t d n,t d,dad,[none],Question,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,pillow,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,[unclear],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,[unclear],munchkin,None,none,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,grandma,munchkin,Reformulation,g,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,n,nose,[none],Reformulation,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,nose,Reformulation,n,n,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+521,10,F,Masters Degree,t d n,k g,knee,nose,Reformulation,n,n,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+521,10,F,Masters Degree,t d n,p b,pillow,[none],Agreement,p,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+521,10,F,Masters Degree,t d n,t d,knee,[none],Reformulation,n,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,nose,[none],Reformulation,n,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+521,10,F,Masters Degree,t d n,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+274,10,M,Bachelors Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+274,10,M,Bachelors Degree,x,p b,car,toot toot,None,k,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,O
+274,10,M,Bachelors Degree,x,m,basket,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+274,10,M,Bachelors Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+274,10,M,Bachelors Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+274,10,M,Bachelors Degree,x,p b,[unclear],[none],Question,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+274,10,M,Bachelors Degree,x,n,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+274,10,M,Bachelors Degree,x,p b,book,boy,Question,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+274,10,M,Bachelors Degree,x,p b,mother,mummy,None,m,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,k g,ball,good,None,b,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+828,10,F,Doctorate,x,t d,giraffe,giraffe,None,t,t,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,p b,[toy],head,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,p b,[none],giraffe,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,[toy],shake,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,V
+828,10,F,Doctorate,x,n,tower,no,None,t,n,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,G
+828,10,F,Doctorate,x,n,tower,no,None,t,n,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,G
+828,10,F,Doctorate,x,k g,tower,no,None,t,n,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,G
+828,10,F,Doctorate,x,p b,[unclear],box,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,p b,[unclear],box,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,[unclear],box,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,n,[unclear],tower,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,[unclear],careful,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+828,10,F,Doctorate,x,n,[unclear],careful,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+828,10,F,Doctorate,x,p b,[unclear],careful,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+828,10,F,Doctorate,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,k g,[unclear],tower,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,p b,[unclear],tower,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,[unclear],bottom,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,[unclear],gorilla,None,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,block,g,None,b,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,block,g,None,b,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,[none],big,Question,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+828,10,F,Doctorate,x,p b,piano,vulture,None,p,t,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,piano,vulture,None,p,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,[unclear],toy,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,[unclear],toy,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,egg,kick,None,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,V
+828,10,F,Doctorate,x,k g,ice cream cone,cone,None,k,k,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,piano,thunderstorm,None,p,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,p b,ball,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,p b,ball,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,p b,ball,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,t d,ball,ball,None,b,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,ball,ball,None,b,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,ball,feet,None,b,f,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,ball,got it,None,b,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+828,10,F,Doctorate,x,m,ball,got it,None,b,g,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,V
+828,10,F,Doctorate,x,k g,dragon,ga (dragon's roar),Repetition,d,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+828,10,F,Doctorate,x,p b,dragon,dragon,None,d,d,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,lion,[none],None,l,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,k g,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,k g,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+828,10,F,Doctorate,x,k g,ball,good,None,b,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+828,10,F,Doctorate,x,k g,ball,crab,None,b,k,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,ball,crab,None,b,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,ball,crab,None,b,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,ball,girl,None,b,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,p b,ball,ball,Question,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,[unclear],bag,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,p b,[none],bag,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,lion,bag,Reformulation,l,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,n,[unclear],tissue,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,n,[unclear],baby,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,[none],tired,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+828,10,F,Doctorate,x,p b,[none],block,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,n,[none],sxx [name],Repetition,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,k g,[unclear],straw,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,ball,ball,None,b,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,[none],ball,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,ball,ball,None,b,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+828,10,F,Doctorate,x,t d,block,[none],Question,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+309,10,M,Masters Degree,x,t d,sippy+cup,good,Reformulation,s,g,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+309,10,M,Masters Degree,x,t d,sippy+cup,[imitation],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+309,10,M,Masters Degree,x,k g,ring,cheeks,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+309,10,M,Masters Degree,x,t d,ring,hands,Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+309,10,M,Masters Degree,x,t d,puffs,puffs,None,p,p,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+309,10,M,Masters Degree,x,t d,[none],puffs,Reformulation,none,p,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+309,10,M,Masters Degree,x,t d,puffs,more,None,p,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+309,10,M,Masters Degree,x,t d,puffs,more,None,p,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+309,10,M,Masters Degree,x,n,puffs,good,Repetition,p,g,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+309,10,M,Masters Degree,x,ng,puffs,[none],Question,p,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+309,10,M,Masters Degree,x,t d,puffs,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+309,10,M,Masters Degree,x,p b,[none],tapping,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,V
+309,10,M,Masters Degree,x,t d,[none],tapping,Repetition,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+309,10,M,Masters Degree,x,p b,[unclear],hands,Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+309,10,M,Masters Degree,x,t d,cat,kitty,Reformulation,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+309,10,M,Masters Degree,x,t d,cat,kitty,None,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+309,10,M,Masters Degree,x,s,cat,kitty,None,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+309,10,M,Masters Degree,x,p b,[toy],balloon,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+749,10,M,Assoc Degree,x,k g,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+749,10,M,Assoc Degree,x,k g,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+749,10,M,Assoc Degree,x,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+749,10,M,Assoc Degree,x,k g,book,dog,Question,b,d,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+749,10,M,Assoc Degree,x,k g,book,dog,Reformulation,b,d,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+749,10,M,Assoc Degree,x,k g,book,dog,Question,b,d,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+749,10,M,Assoc Degree,x,p b,fan,fan,None,f,f,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+749,10,M,Assoc Degree,x,k g,[none],tired,Reformulation,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+749,10,M,Assoc Degree,x,n,[toy],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+749,10,M,Assoc Degree,x,t d,phone,[none],None,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,p b,spoon,[none],Repetition,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,m,spoon,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],Question,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,shoe,[none],Agreement,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,m,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,bag,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],bxx [name],None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,k g,[unclear],cheese,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+623,10,M,Doctorate,x,t d,[unclear],cheese,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+623,10,M,Doctorate,x,k g,[unclear],green+beans,Agreement,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+623,10,M,Doctorate,x,k g,[unclear],green+beans,None,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+623,10,M,Doctorate,x,p b,green+beans,[none],None,g,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,p b,[unclear],buddy,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+623,10,M,Doctorate,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,camera,kiss,None,k,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,V
+279,11,F,Bachelors Degree,t d,t d,[none],cake,None,none,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,[none],cake,None,none,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,mother,baby,None,m,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,mother,baby,None,m,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,whisk,[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,straw,[none],Response,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,straw,[none],Response,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,straw,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,straw,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,straw,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,n,star,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,star,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,lxx [name],oil,None,l,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,whisk,table,Question,none,t,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,whisk,table,Question,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,k g,whisk,cake,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],barf,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+279,11,F,Bachelors Degree,t d,n,[none],kid,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,mother,kid,None,m,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],kid,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[none],silly,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,A
+279,11,F,Bachelors Degree,t d,t d,whisk,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,p b,straw,cake,None,s,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],block,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],straw,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,k g,[none],couch,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,p b,[none],egg,Response,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,mother,hands,Response,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],play,None,none,p,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,table,table,None,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,table,table,None,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,table,table,None,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,block,godzilla,None,b,g,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,[none],no,Reformulation,none,n,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,G
+279,11,F,Bachelors Degree,t d,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,n,[unclear],boogies,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[unclear],boogies,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,camera,boogies,Response,k,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,camera,[none],Response,k,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,n,camera,no,None,k,n,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,G
+279,11,F,Bachelors Degree,t d,t d,camera,banana,None,k,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,banana,plastic,None,b,p,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],plastic,None,none,p,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,p b,lxx [name],lxx [name],None,l,l,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],b,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,[none],[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,camera,do,None,k,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+279,11,F,Bachelors Degree,t d,t d,[none],do,Reformulation,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+279,11,F,Bachelors Degree,t d,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[unclear],down,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,D
+279,11,F,Bachelors Degree,t d,p b,[none],down,None,none,d,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,D
+279,11,F,Bachelors Degree,t d,p b,[none],down,Response,none,d,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,D
+279,11,F,Bachelors Degree,t d,p b,[none],q,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,[none],hi,Agreement,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,G
+279,11,F,Bachelors Degree,t d,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[none],drool,Response,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],big,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+279,11,F,Bachelors Degree,t d,t d,[unclear],slide,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[unclear],slide,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,box,block,None,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,baby,[none],Question,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,p b,baby,baby,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,[none],did+it,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+279,11,F,Bachelors Degree,t d,l,[none],minutes,Agreement,none,m,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,l,teapot,hiya,None,t,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,G
+279,11,F,Bachelors Degree,t d,p b,teapot,hiya,None,t,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,G
+279,11,F,Bachelors Degree,t d,p b,teapot,careful,None,t,k,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,A
+279,11,F,Bachelors Degree,t d,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,p b,[none],block,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[none],block,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,recorder,recorder,None,k,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,recorder,recorder,None,k,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,recorder,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,lxx [name],good,None,l,g,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,A
+279,11,F,Bachelors Degree,t d,t d,headband,sister,None,p,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,f v,headband,gentle,None,p,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+279,11,F,Bachelors Degree,t d,n,table,careful,None,t,k,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,A
+279,11,F,Bachelors Degree,t d,n,[unclear],careful,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+279,11,F,Bachelors Degree,t d,n,[unclear],fxx [name],None,none,f,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,[unclear],fxx [name],None,none,f,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,[unclear],do,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+279,11,F,Bachelors Degree,t d,p b,table,sissy,None,t,s,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+279,11,F,Bachelors Degree,t d,p b,[none],egg,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,cable,fxx [name],None,k,f,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,t d,cable,remote,None,k,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+279,11,F,Bachelors Degree,t d,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,p b,[unclear],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,k g,[unclear],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[unclear],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],train,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[none],block,None,none,b,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,camera,camera,None,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,camera,camera,Agreement,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,camera,too,Repetition,k,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,P
+626,10,M,Bachelors Degree,p b,p b,[none],boom,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+626,10,M,Bachelors Degree,p b,t d,puzzle,[none],None,p,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,puzzle,tail,None,p,t,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,puzzle,tail,None,p,t,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,puzzle,top,None,p,t,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,D
+626,10,M,Bachelors Degree,p b,t d,[toy],destruction piece,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,k g,[toy],corner+piece,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,k g,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],around,Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,P
+626,10,M,Bachelors Degree,p b,t d,[none],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],giraffe,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[toy],giraffe,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[toy],giraffe,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,buzz lightyear,buzz lightyear,None,b,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,buzz lightyear,buzz lightyear,None,b,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,buzz lightyear,buzz lightyear,None,b,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,buzz lightyear,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,buzz lightyear,did+it,Reformulation,b,d,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,k g,giraffe,[unclear],None,t,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,k g,giraffe,[none],None,t,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],did+it,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[unclear],did+it,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[none],did+it,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[none],did+it,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[none],good,None,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+626,10,M,Bachelors Degree,p b,t d,[none],good,Agreement,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+626,10,M,Bachelors Degree,p b,t d,[none],good,None,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+626,10,M,Bachelors Degree,p b,t d,[none],did+it,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[none],did+it,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[none],did+it,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[none],abi kadabi,None,none,p,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[unclear],triangle,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,k g,[unclear],triangle,None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,puzzle,peekaboo,None,p,p,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,G
+626,10,M,Bachelors Degree,p b,t d,puzzle,boo,None,p,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,puzzle,boo,None,p,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,p b,[unclear],boo,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,fridge,fridge,None,f,f,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,fridge,fridge,None,f,f,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[unclear],baby,None,none,b,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,p b,[unclear],potty,None,none,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+626,10,M,Bachelors Degree,p b,p b,[unclear],break,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,k g,[none],[none],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[toy],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,k g,[toy],grandma,None,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+626,10,M,Bachelors Degree,p b,p b,[toy],purse,None,none,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+626,10,M,Bachelors Degree,p b,p b,[none],bag,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+626,10,M,Bachelors Degree,p b,t d,[unclear],did+it,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+626,10,M,Bachelors Degree,p b,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,p b,[none],binky,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+626,10,M,Bachelors Degree,p b,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+626,10,M,Bachelors Degree,p b,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+664,10,M,Masters Degree,x,t d,neptune,neptune,Reformulation,n,n,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+664,10,M,Masters Degree,x,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+664,10,M,Masters Degree,x,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+664,10,M,Masters Degree,x,p b,[none],brum,Repetition,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+664,10,M,Masters Degree,x,p b,neptune,[none],Reformulation,n,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+664,10,M,Masters Degree,x,p b,neptune,[none],None,n,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+664,10,M,Masters Degree,x,t d,[none],turn,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+664,10,M,Masters Degree,x,t d,[none],turn,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+664,10,M,Masters Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+664,10,M,Masters Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+664,10,M,Masters Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+664,10,M,Masters Degree,x,t d,[toy],dad,Reformulation,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+664,10,M,Masters Degree,x,n,[none],nap,Response,none,n,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+664,10,M,Masters Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+664,10,M,Masters Degree,x,p b,phone,book,Agreement,f,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+664,10,M,Masters Degree,x,p b,phone,book,None,f,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+664,10,M,Masters Degree,x,n,camera,camera,None,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+129,11,F,Masters Degree,p b,t d,hat,blueberries,None,none,b,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+129,11,F,Masters Degree,p b,t d,brother,distract her,None,b,d,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,V
+129,11,F,Masters Degree,p b,t d,brother,distract her,None,b,d,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,V
+129,11,F,Masters Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+129,11,F,Masters Degree,p b,t d,[none],dxx [name],None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+129,11,F,Masters Degree,p b,k g,banana,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+129,11,F,Masters Degree,p b,p b,hat,mummy,None,none,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+129,11,F,Masters Degree,p b,t d,[unclear],diaper,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+129,11,F,Masters Degree,p b,p b,[unclear],ducttape,None,none,d,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+129,11,F,Masters Degree,p b,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+129,11,F,Masters Degree,p b,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+129,11,F,Masters Degree,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+129,11,F,Masters Degree,p b,k g,[unclear],vacuum,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+129,11,F,Masters Degree,p b,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+129,11,F,Masters Degree,p b,p b,ball,brother,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+129,11,F,Masters Degree,p b,k g,[unclear],dates,None,none,d,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+129,11,F,Masters Degree,p b,k g,box,[none],Agreement,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+129,11,F,Masters Degree,p b,m,box,drum,None,b,d,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,N
+129,11,F,Masters Degree,p b,n,[unclear],dxx [name],None,none,d,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+129,11,F,Masters Degree,p b,p b,[unclear],god,None,none,g,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+129,11,F,Masters Degree,p b,p b,block,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+129,11,F,Masters Degree,p b,p b,block,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+129,11,F,Masters Degree,p b,p b,block,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+129,11,F,Masters Degree,p b,m,block,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,p b,door,[none],None,d,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,n,[none],milk,Unavailable,none,m,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+860,10,M,Assoc Degree,p b k g,n,box,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,m,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,p b,bottle,big,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,A
+860,10,M,Assoc Degree,p b k g,p b,[none],big,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,A
+860,10,M,Assoc Degree,p b k g,p b,bottle,big,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,A
+860,10,M,Assoc Degree,p b k g,m,mother,food,None,m,f,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+860,10,M,Assoc Degree,p b k g,p b,bottle,bottle,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,p b,bottle,bottle,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,p b,bottle,bottle,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,p b,[none],minutes,None,none,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,m,mother,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,t d,[unclear],difficult,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+860,10,M,Assoc Degree,p b k g,m,mother,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,k g,mother,flowers,None,m,f,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,p b,[none],ball,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,k g,helicopter,green,None,k,g,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,A
+860,10,M,Assoc Degree,p b k g,p b,bag,ball,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,p b,[none],ball,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,k g,fireplace,box,None,f,b,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,k g,fireplace,box,None,f,b,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,p b,[none],boy,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,p b,train,boy,None,t,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+860,10,M,Assoc Degree,p b k g,t d,dad,[none],Repetition,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,t d,mother,dad,None,m,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+860,10,M,Assoc Degree,p b k g,n,[unclear],no,None,none,n,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,G
+860,10,M,Assoc Degree,p b k g,n,[unclear],no,None,none,n,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,G
+860,10,M,Assoc Degree,p b k g,p b,stroller,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,m,mother,bxx [name],None,m,b,TRUE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+860,10,M,Assoc Degree,p b k g,m,mother,bxx [name],None,m,b,TRUE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+860,10,M,Assoc Degree,p b k g,m,mother,[none],Response,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,k g,car,[none],None,k,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+860,10,M,Assoc Degree,p b k g,p b,[none],bxx [name],None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,k g,[unclear],grandma,None,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,moo,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,m,moo,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,p b,[unclear],pacifier,None,none,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],pacifier,None,none,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,t d,[none],door,Repetition,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,mother,mummy,None,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,mother,mummy,None,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,mother,mummy,Repetition,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,mother,nipple,Agreement,m,n,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],bottle,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,block,block,None,b,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,block,block,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,block,block,Reformulation,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,block,block,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,block,block,Reformulation,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,block,block,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,block,book,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,block,book,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],book,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],book,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],book,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[toy],bear,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[toy],bear,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[toy],bear,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[toy],bear,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,t d,[unclear],[imitation],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,p b,block,block,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,bear,back,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,bear,back,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,puzzle,back,None,p,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,mother,[none],Repetition,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,t d,mother,[none],Response,m,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,t d,[unclear],camera,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,t d,book,closet,None,b,k,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,baby,Repetition,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,[imitation],Repetition,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,t d,book,closet,None,b,k,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,ball,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,ball,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,ball,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,bear,table,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,bear,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,bear,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,chair,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,chair,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,chair,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,chair,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,book,chair,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,puzzle,puzzle,None,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,t d,puzzle,puzzle,None,p,p,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,puzzle,puzzle,None,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,t d,puzzle,puzzle,None,p,p,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,puzzle,teeth,None,p,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,t d,puzzle,teeth,Repetition,p,t,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,t d,puzzle,teeth,Repetition,p,t,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,puzzle,teeth,Repetition,p,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,puzzle,[imitation],None,p,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,p b,puzzle,puzzle,Agreement,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,music maker,picked,None,m,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+378,10,F,Bachelors Degree,p b,p b,music maker,baabaa black sheep,Repetition,m,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[none],baabaa black sheep,Reformulation,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[none],baabaa black sheep,Response,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[none],baabaa black sheep,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,t d,puzzle,dad,None,p,d,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,k g,mother,clip,None,m,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+378,10,F,Bachelors Degree,p b,p b,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,m,keys,keys,None,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,keys,[none],Repetition,k,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,k g,cat,cat,None,k,k,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,camera,moo,Agreement,k,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,O
+378,10,F,Bachelors Degree,p b,m,food,moo,Repetition,f,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,O
+378,10,F,Bachelors Degree,p b,m,food,mummy,None,f,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,m,mother,mess,None,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,m,[unclear],mush,None,none,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,[none],mush,Agreement,none,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],[unclear],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,k g,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,m,[none],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,m,[unclear],cup,Agreement,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+378,10,F,Bachelors Degree,p b,p b,[unclear],cup,None,none,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+378,10,F,Bachelors Degree,p b,m,[none],more,Repetition,none,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+378,10,F,Bachelors Degree,p b,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,m,mother,[none],Repetition,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,p b,[none],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,n,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+378,10,F,Bachelors Degree,p b,k g,[none],go,Repetition,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+109,10,F,Assoc Degree,p b,t d,[none],kiss,Repetition,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,V
+109,10,F,Assoc Degree,p b,t d,[none],kiss,Repetition,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,V
+109,10,F,Assoc Degree,p b,t d,[none],kiss,Repetition,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,V
+109,10,F,Assoc Degree,p b,k g,[none],kiss,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+109,10,F,Assoc Degree,p b,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+109,10,F,Assoc Degree,p b,t d,dog,[imitation],Reformulation,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+109,10,F,Assoc Degree,p b,t d,dog,dog,Repetition,d,d,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+109,10,F,Assoc Degree,p b,m,mother,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+109,10,F,Assoc Degree,p b,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+109,10,F,Assoc Degree,p b,t d,[toy],couch,Repetition,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+109,10,F,Assoc Degree,p b,t d,[unclear],train,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+109,10,F,Assoc Degree,p b,t d,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+109,10,F,Assoc Degree,p b,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+109,10,F,Assoc Degree,p b,p b,bowl,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+109,10,F,Assoc Degree,p b,k g,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+109,10,F,Assoc Degree,p b,t d,ball,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,mother,[none],Reformulation,m,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,dog,[none],Reformulation,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,dog,dog,Reformulation,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,piano,me,Reformulation,p,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,p b,piano,keys,None,p,k,TRUE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,piano,keys,None,p,k,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,s,camera,moustache,None,k,m,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,p b,mother,[none],Repetition,m,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,mother,[media],None,m,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,m,mother,[none],Reformulation,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,m,mother,mummy,None,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,k g,camera,no,None,k,n,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,G
+342,10,M,Masters Degree,t d k g,t d,[toy],no,None,none,n,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,G
+342,10,M,Masters Degree,t d k g,k g,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,m,[unclear],microphone,Response,none,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,p b,[unclear],banana,Agreement,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,m,[unclear],banana,Reformulation,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,bug,[none],Reformulation,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,bug,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,bug,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,[unclear],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,[unclear],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,[unclear],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,[unclear],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,radio,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,radio,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,m,radio,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,radio,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,radio,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,[toy],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,[toy],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,radio,[imitation],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,radio,[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,radio,[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,radio,[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,radio,[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,battery,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,battery,[none],Repetition,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,battery,pull the string,None,b,p,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+342,10,M,Masters Degree,t d k g,p b,battery,pull the string,None,b,p,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+342,10,M,Masters Degree,t d k g,p b,button,[none],Agreement,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],bill,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,n,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,dog,[none],Reformulation,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,dog,[none],None,d,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,camera,[none],None,k,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,bullet,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,bullet,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,bullet,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,bullet,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,bullet,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,bullet,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,bullet,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[imitation],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,paper,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[media],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,rock,rock,Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,p b,rock,[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,rock,[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,rock,table,None,none,t,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,table,Question,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,table,Reformulation,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,table,None,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,n,rock,table,None,none,t,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,n,rock,table,None,none,t,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,[none],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,[unclear],Response,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,[none],Question,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,m,rock,[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,rock,rock,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,rock,rock,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,n,rock,rock,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,n,rock,bill,Response,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,[unclear],[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,[unclear],bill,None,none,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,[unclear],bill,None,none,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,[unclear],bill,Agreement,none,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,[unclear],teeth,None,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,[unclear],teeth,None,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,[unclear],teeth,None,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,n,[unclear],[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,rock,day,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,day,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,day,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+342,10,M,Masters Degree,t d k g,t d,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,s,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,s,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,f v,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,rock,[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,p b,[unclear],stuff,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,p b,[unclear],stuff,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,p b,[unclear],stuff,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,m,[out of view],mummy,None,none,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+342,10,M,Masters Degree,t d k g,p b,[out of view],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,s,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,k g,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+342,10,M,Masters Degree,t d k g,t d,[unclear],[imitation],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,turtle,[none],Reformulation,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,p b,ball,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,k g,ball,[none],Agreement,b,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,m,[unclear],toy,Agreement,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,k g,[unclear],elephant,Reformulation,none,f,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,t d,[unclear],elephant,None,none,f,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,f v,[unclear],elephant,Agreement,none,f,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,k g,block,dog,Question,b,d,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,k g,book,book,None,b,b,FALSE,FALSE,TRUE,TRUE,TRUE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,k g,bottle,[none],Agreement,b,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,p b,bottle,back,Reformulation,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,k g,drink,[none],None,d,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,k g,drink,[none],None,d,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,p b,bottle,[none],Agreement,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,p b,bottle,[none],Repetition,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,block,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,k g,turtle,turtle,Reformulation,t,t,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,t d,turtle,turtle,None,t,t,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,p b,[none],potty,None,none,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,n,mother,[none],Repetition,m,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,n,mother,mummy,None,m,m,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,t d,[none],diaper,Reformulation,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,t d,[none],daiper,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,k g,[none],come,None,none,k,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+268,11,F,Bachelors Degree,p b k g,k g,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,k g,[none],keep going,None,none,k,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+268,11,F,Bachelors Degree,p b k g,t d,[none],stinky,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+268,11,F,Bachelors Degree,p b k g,t d,[none],stinky,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+268,11,F,Bachelors Degree,p b k g,p b,[none],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,brush,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,p b,block,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,ng,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,k g,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,dad,[none],Repetition,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,k g,[unclear],dad,None,none,d,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,k g,turtle,[none],None,t,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,k g,[none],gxx [name],None,none,g,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+268,11,F,Bachelors Degree,p b k g,ng,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,m,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,dad,[none],Reformulation,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,dad,[imitation],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,n,dad,[none],None,d,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,n,dad,[none],None,d,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+268,11,F,Bachelors Degree,p b k g,t d,dad,dress,None,d,d,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+172,10,M,Assoc Degree,x,p b,[none],boom,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+172,10,M,Assoc Degree,x,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,k g,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,k g,bottle,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,t d,lion,[none],None,l,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,t d,lion,[none],None,l,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,t d,lion,tickle,None,l,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+172,10,M,Assoc Degree,x,t d,dad,too,Repetition,d,t,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,P
+172,10,M,Assoc Degree,x,t d,dad,[imitation],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,p b,lion,[none],Repetition,l,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,p b,helicopter,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,k g,helicopter,[none],None,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,k g,dad,[none],None,d,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,p b,helicopter,[imitation],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,k g,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+172,10,M,Assoc Degree,x,p b,tube,close,Unavailable,t,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,P
+172,10,M,Assoc Degree,x,p b,bottle,bottle,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+189,11,M,Bachelors Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+189,11,M,Bachelors Degree,x,p b,food,[none],None,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+189,11,M,Bachelors Degree,x,n,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+189,11,M,Bachelors Degree,x,n,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+189,11,M,Bachelors Degree,x,p b,block,two,None,b,t,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+189,11,M,Bachelors Degree,x,n,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+189,11,M,Bachelors Degree,x,n,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+189,11,M,Bachelors Degree,x,n,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+189,11,M,Bachelors Degree,x,k g,grandma,[none],None,g,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,p b,baba (cushion,[imitation],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,t d,block,tower,Reformulation,b,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+986,10,F,Assoc Degree,x,t d,block,[none],Repetition,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,m,mother,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,m,mother,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,p b,[unclear],monster,None,none,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+986,10,F,Assoc Degree,x,p b,brother,brother,Repetition,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+986,10,F,Assoc Degree,x,p b,ball,brother,Repetition,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+986,10,F,Assoc Degree,x,p b,[none],ball,Repetition,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+986,10,F,Assoc Degree,x,k g,[toy],good,Repetition,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+986,10,F,Assoc Degree,x,p b,[toy],[imitation],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,t d,[toy],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,p b,brother,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+986,10,F,Assoc Degree,x,t d,block,crash,Reformulation,b,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,O
+986,10,F,Assoc Degree,x,m,mother,yummy,None,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+986,10,F,Assoc Degree,x,m,block,mummy,None,b,m,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+986,10,F,Assoc Degree,x,p b,brother,nana,None,b,n,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+986,10,F,Assoc Degree,x,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+861,11,M,Doctorate,t d,t d,dog,dxx [name],None,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,dog,dxx [name],None,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,dog,mummy,None,d,m,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,k g,cow,grazes on grass,Question,k,g,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+861,11,M,Doctorate,t d,k g,camera,moo,Question,k,m,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,O
+861,11,M,Doctorate,t d,k g,spoon,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,spoon,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,hat,[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,hat,[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,hat,[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,ball,[none],Repetition,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,duck,[media],Reformulation,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,duck,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,duck,[none],Agreement,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,duck,[none],Reformulation,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,ball,[none],Agreement,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],spider,Reformulation,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,p b,[unclear],purpose,Question,none,p,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+861,11,M,Doctorate,t d,t d,dog,[unclear],Reformulation,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,p b,dominoes,hug,Question,d,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,N
+861,11,M,Doctorate,t d,t d,ball,no,None,b,n,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,G
+861,11,M,Doctorate,t d,t d,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,ball,[none],NA,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,box,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,box,[none],Question,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,box,this,None,b,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,P
+861,11,M,Doctorate,t d,t d,[unclear],[none],Question,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mat,dog,Reformulation,m,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,mat,dog,Reformulation,m,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,dog,[none],Agreement,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],guess,None,none,g,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,V
+861,11,M,Doctorate,t d,t d,drawer,mummy,Repetition,d,m,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,drawer,mummy,Repetition,d,m,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,drawer,mummy,Reformulation,d,m,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,p b,[unclear],[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,jars,[none],Agreement,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,jars,[none],Agreement,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,jars,[none],Question,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,jars,glass jars,Reformulation,t,g,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,jars,glass jars,Reformulation,t,g,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,jars,break,None,t,b,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,V
+861,11,M,Doctorate,t d,t d,jars,break,None,t,b,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,V
+861,11,M,Doctorate,t d,t d,mother,[none],Agreement,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mother,[none],Agreement,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],hug,Response,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,[unclear],hug,Response,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,[unclear],no,Question,none,n,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,G
+861,11,M,Doctorate,t d,t d,[unclear],no,Response,none,n,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,G
+861,11,M,Doctorate,t d,p b,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],[none],Question,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,light,[none],Reformulation,l,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,n,[unclear],light,Agreement,none,l,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+861,11,M,Doctorate,t d,t d,pan,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,pan,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,pan,[none],Reformulation,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,pan,[none],Reformulation,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,pan,[none],Repetition,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,pan,[unclear],None,p,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mother,[none],Repetition,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,cup,food,Response,k,f,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,cup,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,dog,no,None,d,n,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,G
+861,11,M,Doctorate,t d,t d,mother,dog,None,m,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,mother,dog,None,m,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,mother,dog,None,m,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,mother,dog,Reformulation,m,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,mother,dog,Reformulation,m,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,chair,turn,Agreement,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,V
+861,11,M,Doctorate,t d,t d,[unclear],sneaky,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,A
+861,11,M,Doctorate,t d,t d,chair,sneaky,Reformulation,t,s,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,A
+861,11,M,Doctorate,t d,t d,chair,chair,Reformulation,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,chair,chair,Reformulation,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,chair,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,cap,cup,Agreement,k,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,cap,cup,Response,k,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,mother,tired,Agreement,m,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,A
+861,11,M,Doctorate,t d,t d,mother,tired,Repetition,m,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,A
+861,11,M,Doctorate,t d,t d,dog,dai,Reformulation,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,[unclear],[unclear],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],[unclear],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,[unclear],place,Response,none,p,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,[unclear],place,Response,none,p,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+861,11,M,Doctorate,t d,t d,[unclear],[none],Question,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mother,[none],Response,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,mother,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+861,11,M,Doctorate,t d,t d,blender,here,None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,D
+625,10,F,Masters Degree,x,k g,[unclear],thank you,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,G
+625,10,F,Masters Degree,x,k g,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+625,10,F,Masters Degree,x,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+625,10,F,Masters Degree,x,p b,phone,babe,None,f,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+625,10,F,Masters Degree,x,p b,phone,phone,None,f,p,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+625,10,F,Masters Degree,x,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+625,10,F,Masters Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+625,10,F,Masters Degree,x,t d,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+625,10,F,Masters Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,dad,Question,t,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,k g,toothpaste,me,None,t,m,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,mummy,Response,t,m,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,k g,toothpaste,get+it,Question,t,g,FALSE,TRUE,TRUE,TRUE,TRUE,withVMS,V
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,toothpaste,None,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,duck,Reformulation,t,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,dxx [name],Response,t,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,[none],dxx [name],None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,got,None,t,g,TRUE,FALSE,TRUE,TRUE,TRUE,withVMS,V
+926,11,F,Bachelors Degree,t d k g,t d,box,green,Response,b,g,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,A
+926,11,F,Bachelors Degree,t d k g,k g,box,go,None,b,g,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,toothpaste,None,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,toothpaste,None,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],brush,None,none,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,brush,None,t,b,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,brush,Reformulation,t,b,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,brush,None,t,b,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,dad,None,t,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],dad,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,p b,book,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,k g,book,book,Reformulation,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,book,book,None,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,book,d,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[toy],dad,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[toy],d,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,[toy],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,p b,[none],b,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,book,tree,None,b,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,book,tree,Agreement,b,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,p b,book,tree,Agreement,b,t,TRUE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,book,packet,Response,b,p,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,book,drowsy,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,A
+926,11,F,Bachelors Degree,t d k g,t d,book,bed,None,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,book,bed,Reformulation,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,k g,book,bed,None,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,book,teeth,Agreement,b,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,book,dreams,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,dad,[none],Repetition,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,p b,badge,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dad,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dad,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dad,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,dxx [name],None,t,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,toothpaste,brush,None,t,b,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,doll,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,bogie,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,doll,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,doll,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,bogie,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,doll,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,bogie,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,bogie,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,p b,bogie,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,doll,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,bogie,[none],Question,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,p b,bug,buggy,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,bug,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,bug,[none],Question,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,box,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dog,[none],Question,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,cup,[none],None,k,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,k g,dog,[none],None,d,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],[none],Question,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,k g,block,block,Question,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,k g,block,block,Reformulation,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,dad,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,dad,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,dad,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,dad,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,dad,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,box,[none],Response,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,block,dad,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,tower,None,b,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,tower,None,b,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,tower,None,b,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,block,tower,None,b,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,tower,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,tower,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,dad,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,[unclear],dog,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,k g,car,[none],None,k,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,k g,blanket,blanket,None,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,p b,blanket,blanket,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+926,11,F,Bachelors Degree,t d k g,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,shoe,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+926,11,F,Bachelors Degree,t d k g,t d,block,block,None,b,b,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+944,10,M,Masters Degree,x,m,[unclear],kxx [name],Agreement,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+944,10,M,Masters Degree,x,p b,[toy],handle,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+944,10,M,Masters Degree,x,m,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+944,10,M,Masters Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+944,10,M,Masters Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+944,10,M,Masters Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+515,10,F,Masters Degree,p b k g,k g,cat,course,None,k,k,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,G
+515,10,F,Masters Degree,p b k g,k g,goat,goat,None,g,g,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,p b,goat,book,None,g,b,FALSE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,k g,cat,[none],None,k,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,k g,cat,[none],None,k,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,k g,[unclear],blanket,None,none,b,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,k g,piano,dance,None,p,d,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,k g,piano,bxx [name],None,p,b,FALSE,FALSE,TRUE,TRUE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,k g,piano,bxx [name],None,p,b,FALSE,FALSE,TRUE,TRUE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,k g,piano,treats,None,p,t,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,k g,piano,go,None,p,g,FALSE,TRUE,TRUE,TRUE,TRUE,withVMS,V
+515,10,F,Masters Degree,p b k g,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,s,piano,[none],None,p,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,n,gordon,oscar,None,g,k,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,gordon,[imitation],Agreement,g,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,gordon,gross,Reformulation,g,g,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,A
+515,10,F,Masters Degree,p b k g,t d,gordon,guys,None,g,g,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,p b,[unclear],guys,None,none,g,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,ng,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,[unclear],dog,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,k g,piano,guy,None,p,g,FALSE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,[unclear],bert,Reformulation,none,b,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,dad,bert,Reformulation,d,b,TRUE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,[unclear],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,[unclear],heard,Response,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,V
+515,10,F,Masters Degree,p b k g,t d,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,[none],go,None,none,g,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,V
+515,10,F,Masters Degree,p b k g,t d,[none],go,None,none,g,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,V
+515,10,F,Masters Degree,p b k g,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,ball,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,dad,toy,None,d,t,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,ball,toy,None,b,t,FALSE,TRUE,TRUE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,[toy],toy,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,[unclear],txx [name],None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,[unclear],txx [name],None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,[unclear],txx [name],None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,[unclear],txx [name],None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,dad,ball,None,d,b,TRUE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,chair,sister,None,t,s,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,dad,sister,None,d,s,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+515,10,F,Masters Degree,p b k g,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,t d,dad,[none],Reformulation,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+515,10,F,Masters Degree,p b k g,p b,ball,apology,None,b,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+515,10,F,Masters Degree,p b k g,p b,[unclear],broke,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+515,10,F,Masters Degree,p b k g,t d,[toy],do,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+375,11,F,Masters Degree,p b,k g,[none],kitty,Reformulation,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+375,11,F,Masters Degree,p b,k g,[none],kitty,Reformulation,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+375,11,F,Masters Degree,p b,k g,[none],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+375,11,F,Masters Degree,p b,k g,[none],kitty,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+375,11,F,Masters Degree,p b,k g,cat,kitty,None,k,k,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+375,11,F,Masters Degree,p b,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+375,11,F,Masters Degree,p b,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+375,11,F,Masters Degree,p b,k g,blanket,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+375,11,F,Masters Degree,p b,k g,[unclear],sock,Repetition,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+375,11,F,Masters Degree,p b,k g,cat,kitty,None,k,k,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+375,11,F,Masters Degree,p b,t d,teddy,barney,None,t,b,TRUE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+375,11,F,Masters Degree,p b,p b,[unclear],barney,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[unclear],cute,Agreement,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+738,11,M,Masters Degree,t d,n,[unclear],head,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,t d,[unclear],turtle,None,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,t d,[none],turtle,None,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+738,11,M,Masters Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+738,11,M,Masters Degree,t d,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+738,11,M,Masters Degree,t d,t d,[toy],music,None,none,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[unclear],snack,None,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[unclear],snack,Reformulation,none,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,t d,[none],duck,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,t d,[none],duck,Repetition,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,p b,[none],bubba,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,p b,[none],bubba,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,p b,[none],bubba,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[none],pumpkin,None,none,p,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,t d,[none],pumpkin,None,none,p,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,t d,mother,truck,None,m,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[none],cute,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+738,11,M,Masters Degree,t d,t d,[none],the end,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,p b,mother,mummy,None,m,m,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[none],fish,None,none,f,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[none],kado,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,p b,[unclear],better,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+738,11,M,Masters Degree,t d,t d,[unclear],snack,None,none,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+738,11,M,Masters Degree,t d,m,mother,spoon,Response,m,s,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,p b,ball,couch,None,b,k,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[unclear],couch,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,p b,ball,ball,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[none],ghost,Reformulation,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[unclear],ghost,None,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[unclear],ghost,Reformulation,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,[unclear],couch,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+738,11,M,Masters Degree,t d,k g,book,close,None,b,k,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,P
+738,11,M,Masters Degree,t d,p b,book,big,Question,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+575,10,M,Assoc Degree,t d,t d,block,do,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+575,10,M,Assoc Degree,t d,t d,grandma,good,None,g,g,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,A
+575,10,M,Assoc Degree,t d,n,grandma,good,Repetition,g,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+575,10,M,Assoc Degree,t d,t d,block,here,None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,D
+575,10,M,Assoc Degree,t d,t d,yogurt,[none],Repetition,k,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+575,10,M,Assoc Degree,t d,m,cup,napkin,None,k,n,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+575,10,M,Assoc Degree,t d,t d,hammer,[none],None,m,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+575,10,M,Assoc Degree,t d,t d,[none],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+575,10,M,Assoc Degree,t d,n,cup,[imitation],Repetition,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+575,10,M,Assoc Degree,t d,t d,yogurt,yogurt,None,k,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+575,10,M,Assoc Degree,t d,t d,box,do,None,b,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+575,10,M,Assoc Degree,t d,n,box,do,None,b,d,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,V
+575,10,M,Assoc Degree,t d,s,box,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+575,10,M,Assoc Degree,t d,t d,[unclear],grandma,None,none,g,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+575,10,M,Assoc Degree,t d,t d,[unclear],grandma,None,none,g,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+575,10,M,Assoc Degree,t d,p b,[unclear],back,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+575,10,M,Assoc Degree,t d,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+575,10,M,Assoc Degree,t d,t d,block,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+575,10,M,Assoc Degree,t d,t d,[none],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+575,10,M,Assoc Degree,t d,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+639,11,F,Some college,x,k g,book,shake,None,b,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,V
+639,11,F,Some college,x,t d,book,dance,Agreement,b,d,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+639,11,F,Some college,x,t d,book,run,None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,V
+639,11,F,Some college,x,k g,[none],cookie,None,none,k,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+639,11,F,Some college,x,t d,[unclear],pillow,Repetition,none,p,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+639,11,F,Some college,x,k g,camera,beso (spanish),Agreement,k,b,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,V
+639,11,F,Some college,x,k g,phone,[none],Response,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+639,11,F,Some college,x,k g,phone,[none],None,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+639,11,F,Some college,x,s,phone,hi,Agreement,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,G
+639,11,F,Some college,x,k g,phone,bye,Agreement,f,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,G
+639,11,F,Some college,x,t d,phone,[unclear],Agreement,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,k g,dog,better,None,d,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+168,11,F,Masters Degree,x,m,mother,mustard+chicken,None,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,n,mother,mustard+chicken,None,m,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,k g,bottle,touch,None,b,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,V
+168,11,F,Masters Degree,x,t d,bottle,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,[unclear],two,Repetition,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,t d,[unclear],two,Repetition,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,t d,[unclear],two,Repetition,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,t d,[unclear],[imitation],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,[unclear],[imitation],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,[unclear],balloon,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,t d,sister,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,dog,[unavailable],Unavailable,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,[unclear],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,p b,[none],[unavailable],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,sticker+book,[none],Response,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,sticker+book,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,sticker+book,[none],Question,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,sticker+book,sxx [name],Response,s,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,t d,book,tired,None,b,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+168,11,F,Masters Degree,x,t d,sticker+book,tired,None,s,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+168,11,F,Masters Degree,x,t d,sticker+book,txx [name],None,s,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,t d,sticker+book,txx [name],None,s,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,t d,sticker+book,do,None,s,d,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+168,11,F,Masters Degree,x,t d,sticker+book,[none],None,s,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,[nanny],tickle,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+168,11,F,Masters Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,teddy,people,None,t,p,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,t d,teddy,[none],None,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+168,11,F,Masters Degree,x,k g,[unclear],roar,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,O
+168,11,F,Masters Degree,x,t d,teddy,teddy,Reformulation,t,t,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+168,11,F,Masters Degree,x,t d,teddy,sorry,None,t,s,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,G
+168,11,F,Masters Degree,x,t d,teddy,sorry,None,t,s,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,G
+737,10,M,Bachelors Degree,p b t d n,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,[none],dog,None,none,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+737,10,M,Bachelors Degree,p b t d n,n,food,mess,Reformulation,f,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+737,10,M,Bachelors Degree,p b t d n,m,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,ng,food,[none],Response,f,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,[unclear],done,None,none,d,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,V
+737,10,M,Bachelors Degree,p b t d n,m,mother,[none],Repetition,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,p b,ball,ball,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+737,10,M,Bachelors Degree,p b t d n,p b,ball,ball,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+737,10,M,Bachelors Degree,p b t d n,m,food,more,None,f,m,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+737,10,M,Bachelors Degree,p b t d n,n,watermelon,[none],Reformulation,w,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,k g,paper,[none],None,p,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,[none],done,Repetition,none,d,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,V
+737,10,M,Bachelors Degree,p b t d n,n,watermelon,more,Agreement,w,m,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,A
+737,10,M,Bachelors Degree,p b t d n,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,watermelon,[none],None,w,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,m,melon,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,m,mother,[none],Agreement,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,p b,[none],number,Agreement,none,n,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,N
+737,10,M,Bachelors Degree,p b t d n,n,paper,[none],None,p,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,m,mother,[none],None,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,p b,paper,[none],None,p,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,[unclear],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,paper,[none],None,p,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,n,bottle,[none],Reformulation,b,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,p b,bracelet,bracelet,Agreement,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,dog,[none],Repetition,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,bracelet,[none],Reformulation,b,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,plate,gone,Repetition,p,g,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,V
+737,10,M,Bachelors Degree,p b t d n,t d,plate,gone,Repetition,p,g,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,V
+737,10,M,Bachelors Degree,p b t d n,t d,plate,gone,Repetition,p,g,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,V
+737,10,M,Bachelors Degree,p b t d n,p b,plate,[none],None,p,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,p b,plate,[none],Repetition,p,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,t d,[unclear],cribby,Agreement,none,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+737,10,M,Bachelors Degree,p b t d n,s,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+737,10,M,Bachelors Degree,p b t d n,s,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,baby,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,baby,goopy,None,b,g,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,A
+518,11,F,Doctorate,p b,p b,baby,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+518,11,F,Doctorate,p b,k g,[none],dress,None,none,d,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,p b,baby,pretty,Agreement,b,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,A
+518,11,F,Doctorate,p b,t d,[unclear],dope,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,A
+518,11,F,Doctorate,p b,t d,doll,kid,None,d,k,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,p b,baby,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,baby,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,baby,[none],Reformulation,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,hat,doughnuts,Agreement,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,p b,[none],book,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+518,11,F,Doctorate,p b,p b,[none],book,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+518,11,F,Doctorate,p b,p b,[none],book,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+518,11,F,Doctorate,p b,t d,[unclear],day,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,k g,[unclear],[unclear],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,[none],bye,Reformulation,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,G
+518,11,F,Doctorate,p b,p b,grandma,[none],None,g,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,grandma,[none],None,g,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,[unclear],bank,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+518,11,F,Doctorate,p b,t d,truck,[none],None,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,truck,[none],None,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,k g,grandma,dad,None,g,d,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,p b,dad,bubbles,None,d,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+518,11,F,Doctorate,p b,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,[unclear],brum,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+518,11,F,Doctorate,p b,t d,dad,truck,Response,d,t,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,[unclear],door,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,dad,door,None,d,d,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,dinosaur,brum,Agreement,d,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+518,11,F,Doctorate,p b,t d,[unclear],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,p b,bottle,portobello mushroom,Response,b,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+518,11,F,Doctorate,p b,p b,bottle,brum,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,O
+518,11,F,Doctorate,p b,p b,bottle,truck,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+518,11,F,Doctorate,p b,p b,bottle,brum,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,O
+518,11,F,Doctorate,p b,t d,truck,digger,None,t,d,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,truck,truck,None,t,t,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,truck,hammer,None,t,m,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,[unclear],[none],Agreement,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+518,11,F,Doctorate,p b,t d,[none],dog,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,[none],dog,Question,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,[unclear],dog,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,[unclear],bubbles,None,none,b,FALSE,FALSE,FALSE,TRUE,FALSE,withVMS,N
+518,11,F,Doctorate,p b,t d,[unclear],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+151,10,F,Some college,x,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+151,10,F,Some college,x,p b,[toy],babe,None,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+151,10,F,Some college,x,p b,magnet,magnet,None,m,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+151,10,F,Some college,x,p b,[none],burp,Reformulation,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+151,10,F,Some college,x,p b,[none],burp,Response,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,V
+151,10,F,Some college,x,m,mother,mouth,Reformulation,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+151,10,F,Some college,x,m,mother,mummy,Response,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+151,10,F,Some college,x,t d,mother,before,None,m,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,P
+151,10,F,Some college,x,p b,mother,before,None,m,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,P
+151,10,F,Some college,x,p b,block,[none],Repetition,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+151,10,F,Some college,x,p b,links toy,[none],None,l,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+151,10,F,Some college,x,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+151,10,F,Some college,x,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+151,10,F,Some college,x,p b,block,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+151,10,F,Some college,x,p b,[none],pxx [name],None,none,p,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+151,10,F,Some college,x,t d,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+151,10,F,Some college,x,p b,[none],boop,Repetition,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+151,10,F,Some college,x,p b,[none],boop,Repetition,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,O
+151,10,F,Some college,x,p b,[none],goose,None,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+151,10,F,Some college,x,t d,[none],bless you,None,none,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,G
+893,11,M,Masters Degree,p b m,t d,camera,camera,None,k,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,camera,zoo-babies,None,k,t,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,camera,[none],Agreement,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,k g,sister,supergirl,Repetition,s,s,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,p b,book,tummy,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,p b,book,tickle,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,V
+893,11,M,Masters Degree,p b m,p b,book,tickle,None,b,t,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,V
+893,11,M,Masters Degree,p b m,k g,car,tummy,None,k,t,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,p b,car,tummy,None,k,t,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,m,[none],mac+and+cheese,None,none,m,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,camera,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,camera,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,camera,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,[none],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,mother,pretzel,None,m,p,TRUE,FALSE,TRUE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,m,mother,pretzel,None,m,p,TRUE,FALSE,TRUE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,m,mother,pretzel,None,m,p,TRUE,FALSE,TRUE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,m,mother,pretzel,None,m,p,TRUE,FALSE,TRUE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,m,mother,mummy,None,m,m,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,p b,pretzel,[none],None,p,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,camera,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,camera,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,[unclear],[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,mother,[none],None,m,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,[unclear],healthy,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+893,11,M,Masters Degree,p b m,m,mother,[none],Reformulation,m,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,mother,more,None,m,m,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,A
+893,11,M,Masters Degree,p b m,m,mother,[none],None,m,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,cheerios,mac+and+cheese,None,t,m,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,m,cheerios,mac+and+cheese,None,t,m,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,m,cheerios,mac+and+cheese,None,t,m,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,p b,pretzel,[none],None,p,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,camera,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,mother,around,Repetition,m,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,P
+893,11,M,Masters Degree,p b m,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,mother,[none],None,m,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,[unclear],guy,None,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,[unclear],guy,None,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,[unclear],glasses,None,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,[unclear],glasses,None,none,g,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,[unclear],dinner,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,[unclear],dinner,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,[unclear],dinner,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,k g,[none],hungry,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,A
+893,11,M,Masters Degree,p b m,t d,[unclear],done,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+893,11,M,Masters Degree,p b m,t d,[unclear],done,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,withVMS,V
+893,11,M,Masters Degree,p b m,m,[unclear],mummy,None,none,m,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+893,11,M,Masters Degree,p b m,m,mother,[none],None,m,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,mother,[none],None,m,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,[unclear],[unclear],Unavailable,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,k g,grandpa,[none],None,g,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,k g,grandpa,[none],None,g,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,p b,grandpa,[none],None,g,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,p b,grandpa,[none],None,g,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,[unclear],[none],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,k g,grandpa,garage,Repetition,g,g,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,k g,grandpa,garage,None,g,g,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,t d,grandpa,[none],None,g,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,mother,[none],None,m,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,t d,b,baby,None,b,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+893,11,M,Masters Degree,p b m,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+893,11,M,Masters Degree,p b m,m,mother,mummy,Question,m,m,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+424,10,M,Masters Degree,p b,t d,tower,crash,NA,t,k,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,O
+424,10,M,Masters Degree,p b,p b,[toy],[none],NA,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+424,10,M,Masters Degree,p b,t d,[toy],crash,NA,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,O
+424,10,M,Masters Degree,p b,p b,box,box,NA,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+424,10,M,Masters Degree,p b,m,book,book,NA,b,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+424,10,M,Masters Degree,p b,p b,book,barking,NA,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,V
+424,10,M,Masters Degree,p b,p b,dad,[imitation],NA,d,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+424,10,M,Masters Degree,p b,k g,dad,[imitation],NA,d,none,FALSE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+424,10,M,Masters Degree,p b,p b,dad,[imitation],NA,d,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+424,10,M,Masters Degree,p b,p b,drum,pool,NA,d,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+424,10,M,Masters Degree,p b,p b,drum,[none],NA,d,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+424,10,M,Masters Degree,p b,p b,drum,[none],NA,d,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+424,10,M,Masters Degree,p b,p b,bxx [name],[none],NA,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+424,10,M,Masters Degree,p b,m,mother,[none],NA,m,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+424,10,M,Masters Degree,p b,p b,book,nap,NA,b,n,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,N
+424,10,M,Masters Degree,p b,p b,book,[none],NA,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+424,10,M,Masters Degree,p b,p b,[none],quack,NA,none,k,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,O
+424,10,M,Masters Degree,p b,p b,blanket,[imitation],NA,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+424,10,M,Masters Degree,p b,p b,book,[none],NA,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,duck,[none],Reformulation,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,p b,ball,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,p b,ball,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,dad,duck,Repetition,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,[imitation],Repetition,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,k g,giraffe,[none],Repetition,t,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,p b,[unclear],baby,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,dad,Repetition,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,dad,Repetition,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,dad,Repetition,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,[imitation],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,dog,dog,None,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dog,dog,None,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,p b,book,book,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,k g,book,hungry,None,b,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,A
+351,10,F,Masters Degree,p b t d k g,t d,dad,duck,None,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,duck,None,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,duck,Repetition,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,[imitation],Agreement,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,dad,[imitation],Repetition,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,dad,[imitation],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,dad,[imitation],Repetition,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,dad,[imitation],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,dog,dog,Reformulation,d,d,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+351,10,F,Masters Degree,p b t d k g,t d,dad,peekaboo,Repetition,d,p,TRUE,FALSE,TRUE,TRUE,TRUE,withVMS,G
+351,10,F,Masters Degree,p b t d k g,t d,dad,[imitation],Repetition,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+351,10,F,Masters Degree,p b t d k g,t d,dad,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+950,11,F,High School,x,p b,[toy],square,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,p b,mirror,blueberries,None,m,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,t d,block,good,None,b,g,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+950,11,F,High School,x,t d,ball,circle,None,b,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,p b,ball,football,None,b,f,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,t d,tower,football,None,t,f,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,p b,ball,ball,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,p b,ball,ball,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,k g,ball,ball,None,b,b,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,t d,ball,dad,None,b,d,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,p b,ball,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+950,11,F,High School,x,m,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+950,11,F,High School,x,p b,basket,basket,Response,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+950,11,F,High School,x,p b,butterfly,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+950,11,F,High School,x,m,lamb,[none],Response,l,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,peppa,[none],Repetition,p,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,peppa,peppa,Repetition,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,[none],peppa,Repetition,none,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,[none],peppa,Reformulation,none,p,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,peppa,peppa,Reformulation,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,peppa,peppa,Repetition,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,[none],[imitation],None,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,m,mother,mummy,Response,m,m,TRUE,TRUE,FALSE,FALSE,FALSE,withVMS,N
+563,11,F,Assoc Degree,p b t d,t d,sister,sister,None,s,s,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,bag,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,k g,bag,bag,Agreement,b,b,FALSE,FALSE,TRUE,TRUE,FALSE,withVMS,N
+563,11,F,Assoc Degree,p b t d,t d,bag,bag,None,b,b,FALSE,FALSE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,[none],bawk bawk bawk,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,O
+563,11,F,Assoc Degree,p b t d,p b,[none],baby,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,[none],baby,None,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,[none],baby,Repetition,none,b,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,[none],[imitation],Repetition,none,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,bottle,baby,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,t d,[none],touch,None,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+563,11,F,Assoc Degree,p b t d,t d,[none],touch,None,none,t,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,V
+563,11,F,Assoc Degree,p b t d,k g,hairbrush,[none],None,p,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,brush,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,dora,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,dora,[none],None,d,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,brush,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,brush,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,brush,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,brush,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,brush,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,sister,[none],Reformulation,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,brush,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,brush,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,brush,tickle,Reformulation,b,t,FALSE,TRUE,TRUE,TRUE,TRUE,withVMS,V
+563,11,F,Assoc Degree,p b t d,p b,brush,[media],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,brush,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,brush,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,hippo,tickle,None,p,t,FALSE,TRUE,TRUE,TRUE,TRUE,withVMS,V
+563,11,F,Assoc Degree,p b t d,p b,hippo,hippo,Reformulation,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,hippo,hippo,Reformulation,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,hippo,hippo,Repetition,p,p,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,sister,[imitation],None,s,none,FALSE,FALSE,FALSE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,sister,dreams,None,s,d,FALSE,TRUE,FALSE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,k g,bottle,[none],None,b,none,FALSE,FALSE,TRUE,FALSE,FALSE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,bottle,[none],None,b,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,p b,bottle,body,None,b,b,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,N
+563,11,F,Assoc Degree,p b t d,p b,window,[none],Repetition,t,none,FALSE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,window,[none],None,t,none,TRUE,FALSE,TRUE,FALSE,TRUE,withVMS,[none]
+563,11,F,Assoc Degree,p b t d,t d,train,choo+choo,None,t,t,TRUE,TRUE,TRUE,TRUE,TRUE,withVMS,O
+563,11,F,Assoc Degree,p b t d,p b,[unclear],choo+choo,Repetition,none,t,FALSE,FALSE,FALSE,TRUE,TRUE,withVMS,O
+563,11,F,Assoc Degree,p b t d,k g,camera,[none],None,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,withVMS,[none]
+288,11,M,Bachelors Degree,x,t d,[unclear],tray,None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,k g,[unclear],jxx [name],None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,k g,[none],jxx [name],None,none,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,t d,camera,jxx [name],None,k,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,k g,[none],dance,Agreement,none,d,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,p b,[unclear],baby,Repetition,none,b,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,p b,camera,song,None,k,s,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,k g,mother,camera,None,m,k,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,k g,bottle,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,t d,dog,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,k g,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,k g,dog,lxx [name],None,d,l,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,t d,giraffe,giraffe,None,t,t,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,t d,button,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,t d,button,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,k g,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+288,11,M,Bachelors Degree,x,t d,[none],jxx [name],None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,t d,[none],jxx [name],None,none,t,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,k g,[none],popcorn,None,none,p,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+288,11,M,Bachelors Degree,x,p b,[unclear],hungry,None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+288,11,M,Bachelors Degree,x,p b,[unclear],[none],Response,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,[unclear],[none],Reformulation,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,[unclear],gooey,Reformulation,none,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,A
+220,10,M,Bachelors Degree,x,t d,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,m,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[toy],cute,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+220,10,M,Bachelors Degree,x,m,[toy],cute,None,none,k,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,A
+220,10,M,Bachelors Degree,x,t d,dad,[none],None,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,n,dad,[none],Repetition,d,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,n,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,[unclear],last+one,None,none,l,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,F
+220,10,M,Bachelors Degree,x,n,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,n,pacifier,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,apple,apple,None,p,p,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,n,apple,apple,Response,p,p,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,p b,dog,nugget,Repetition,d,n,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,p b,dog,nugget,Repetition,d,n,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,t d,[unclear],no,None,none,n,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,G
+220,10,M,Bachelors Degree,x,k g,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,cage,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,cage,[none],None,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,cage,[none],None,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,cage,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,cage,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,cage,[none],None,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,cage,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,dad,[none],Repetition,d,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,n,cage,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,m,cage,[none],None,k,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,cage,music,None,k,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,k g,[unclear],music,None,none,m,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,t d,[none],daiper,None,none,d,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,p b,pacifier,[none],None,p,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[toy],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,pacifier,[none],None,p,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[none],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,pacifier,[none],Response,p,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,ball,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,pacifier,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,pacifier,[none],None,p,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,pacifier,[none],Reformulation,p,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,pacifier,go+away,Repetition,p,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,F
+220,10,M,Bachelors Degree,x,k g,pacifier,go+away,Response,p,g,FALSE,TRUE,FALSE,FALSE,FALSE,noVMS,F
+220,10,M,Bachelors Degree,x,k g,pacifier,jake,None,p,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,p b,binky,binky,Reformulation,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,p b,binky,binky,None,b,b,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,t d,jake,boy,None,t,b,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,t d,jake,boy,Repetition,t,b,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,t d,jake,jake,None,t,t,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,k g,jake,[none],None,t,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,jake,[none],None,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,binky,[none],None,b,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,p b,[unclear],[none],None,none,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,binky,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,t d,jake,[none],None,t,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,jake,jake,Agreement,t,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,n,jake,jake,None,t,t,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,t d,jake,jake,Repetition,t,t,TRUE,TRUE,FALSE,FALSE,FALSE,noVMS,N
+220,10,M,Bachelors Degree,x,t d,button,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,binky,[none],None,b,none,FALSE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
+220,10,M,Bachelors Degree,x,k g,cushion,[none],None,k,none,TRUE,FALSE,FALSE,FALSE,FALSE,noVMS,[none]
