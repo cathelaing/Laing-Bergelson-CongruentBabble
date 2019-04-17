@@ -10,11 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r Set up, include=FALSE}
-library(ggplot2)
-library(readr)
 library(forcats)
 library(effsize)
 library(rcompanion)
+library(tidyverse)
+library(stringi)
 
 multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
   library(grid)
@@ -132,7 +132,7 @@ CPdata %>% filter(object == "[toy]") %>% tally() # 78
 ```
 
 For both caregiver input and attended object, in around 5% of cases (40 caregiver prompts and 58 attended objects) this meant there was no codable consonant for a word (e.g. neither wow nor  whisk have a supra-glottal consonant with full closure in syllable-initial position).
-```{r Counting data for CGprompt}
+```{r Counting other data for CGprompt}
 
 CPdata %>% filter(!grepl("^\\[",cgprompt) & C1Prompt == "none") %>% tally()  # 40 instances of CGprompts with no supraglottal consonant
 
