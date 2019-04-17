@@ -794,7 +794,7 @@ match.data.Object %>% filter(Type == "outREP") %>% group_by(VMSgroup) %>%
 # Discussion
 
 
-In a preliminary analysis of our home recordings, however, caregivers rarely responded to infants’ babble (<25%), leading us to forego such an analysis here. 
+In a preliminary analysis of our home recordings, however, caregivers rarely responded to infants’ babble (~25%), leading us to forego such an analysis here. 
 ```{r CG responsiveness}
 
 CPdata %>% filter(cgresponse == "None" | is.na(cgresponse)) %>% tally() #1404
