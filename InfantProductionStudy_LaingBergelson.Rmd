@@ -94,7 +94,7 @@ vmstotal %>% group_by(VMSgroup) %>% filter(month == 11) %>% tally()
 
 ```
 
-53% (n=1022) of CPs were preceded by audible caregiver speech in this timeframe. The majority of these (74%) included a noun.
+51% (n=976) of CPs were preceded by audible caregiver speech in this timeframe. The majority of these (74%) included a concrete noun.
 
 ```{r Counting data for CGprompt}
 
@@ -173,16 +173,16 @@ cor.test(CPtypes_audio$MOTedulevel, CPtypes_audio$CPtypes, method = 'spearman') 
 
 ```{r Data Analysis Plan - counfounding variables - Video data}
 
-shapiro.test(ProdData$CPtokens) # Not normal
-shapiro.test(ProdData$CPtypes) # Not normal
+#shapiro.test(ProdData$CPtokens) # Not normal
+#shapiro.test(ProdData$CPtypes) # Not normal
 
-wilcox.test(CPtokens ~ sex, ProdData) # p=.656
+wilcox.test(CPtokens ~ sex, ProdData) # p=.655
 
-wilcox.test(CPtypes ~ sex, ProdData) # p=.97
+wilcox.test(CPtypes ~ sex, ProdData) # p=.971
 
 wilcox.test(CPtokens ~ month, ProdData) # p=.596
 
-wilcox.test(CPtypes ~ month, ProdData) # p=.323
+wilcox.test(CPtypes ~ month, ProdData) # p=.363
 
 cor.test(ProdData$MOTedulevel, ProdData$CPtokens, method = 'spearman') # p=.193
 cor.test(ProdData$MOTedulevel, ProdData$CPtypes, method = 'spearman') # p=.886
@@ -229,26 +229,26 @@ vmscount %>% group_by(Consonant) %>% summarise(total = sum(n))
 
 # Audio
 
-vmstotal %>% summarise(meantyp = mean(audiotypes),
-                       sdtyp = sd(audiotypes))
-
-vmstotal %>% group_by(VMSgroup) %>%
-  summarise(meantyp = mean(audiotypes),
-                       sdtyp = sd(audiotypes))
+vmstotal %>% summarise(meantyp = mean(audiotypes),  # 3.23
+                       sdtyp = sd(audiotypes))      # 1.43
+ 
+vmstotal %>% group_by(VMSgroup) %>%                 
+  summarise(meantyp = mean(audiotypes),             # 2.3(1.42)
+                       sdtyp = sd(audiotypes))      # 4(.88)
 
 vmscount %>% filter(VMSgroup == "withVMS") %>% 
   group_by(subj) %>% 
   summarise(total = sum(n)) %>% 
   ungroup() %>%
-  summarise(meanprod = mean(total),
-                          sdprod = sd(total))
-
+  summarise(meanprod = mean(total),                 # 165.75
+                          sdprod = sd(total))       # 119.51
+ 
 vmscount %>% filter(VMSgroup == "noVMS") %>% 
   group_by(subj) %>% 
   summarise(total = sum(n)) %>% 
   ungroup() %>%
-  summarise(meanprod = mean(total),
-                          sdprod = sd(total))
+  summarise(meanprod = mean(total),                 # 13.6
+                          sdprod = sd(total))       # 14.41
 ```
 
 ```{r Table 3 Video}
@@ -257,102 +257,114 @@ vmscount %>% filter(VMSgroup == "noVMS") %>%
 
 CPdata %>% group_by(subj) %>% 
   summarise(videotypes = n_distinct(ctype)) %>% ungroup() %>%
-  summarise(Mvideotypes = mean(videotypes),
-            SDvideotypes = sd(videotypes))
+  summarise(Mvideotypes = mean(videotypes),                     # 4.34
+            SDvideotypes = sd(videotypes))                      # 1.27
 
 CPdata %>% group_by(subj) %>% 
   filter(VMSgroup == "withVMS") %>%
   summarise(videotypes = n_distinct(ctype)) %>% ungroup() %>%
-  summarise(Mvideotypes = mean(videotypes),
-            SDvideotypes = sd(videotypes))
+  summarise(Mvideotypes = mean(videotypes),                     # 4.67
+            SDvideotypes = sd(videotypes))                      # 1.31
 
 CPdata %>% group_by(subj) %>% 
   filter(VMSgroup == "noVMS") %>%
   summarise(videotypes = n_distinct(ctype)) %>% ungroup() %>%
-  summarise(Mvideotypes = mean(videotypes),
-            SDvideotypes = sd(videotypes))
+  summarise(Mvideotypes = mean(videotypes),                     # 3.95
+            SDvideotypes = sd(videotypes))                      # 1.15
 
 CPdata %>% group_by(subj) %>% tally() %>%
   ungroup() %>%
-  summarise(Mvideotok = mean(n),
-            SDvideotok = sd(n))
+  summarise(Mvideotok = mean(n),                                # 43.55
+            SDvideotok = sd(n))                                 # 34.13
 
 CPdata %>% filter(VMSgroup == "withVMS") %>%
   group_by(subj) %>% tally() %>%
   ungroup() %>%
-  summarise(Mvideotok = mean(n),
-            SDvideotok = sd(n))
+  summarise(Mvideotok = mean(n),                                # 60.13
+            SDvideotok = sd(n))                                 # 34.59
 
 CPdata %>% filter(VMSgroup == "noVMS") %>%
   group_by(subj) %>% tally() %>%
   ungroup() %>%
-  summarise(Mvideotok = mean(n),
-            SDvideotok = sd(n))
+  summarise(Mvideotok = mean(n),                                # 23.65
+            SDvideotok = sd(n))                                 # 20.59
 
 
 # Input prompt match
 
-table(is.na(ProdData$Prod.Prompt.match.PC)) # all 44
-ProdData %>% summarize(Promptmatch = mean(Prod.Prompt.match.PC, na.rm=T),
-                   SDPromptmatch = sd(Prod.Prompt.match.PC, na.rm=T))
+table(is.na(ProdData$Prod.Prompt.match.PC)) # all 44 infants have caregiver prompts prior to some CPs
 
-ProdData %>% group_by(VMSgroup) %>% summarize(Promptmatch = mean(Prod.Prompt.match.PC, na.rm=T),
-                   SDPromptmatch = sd(Prod.Prompt.match.PC, na.rm=T))
+ProdData %>% summarize(Promptmatch = mean(Prod.Prompt.match.PC, na.rm=T),  # .48
+                   SDPromptmatch = sd(Prod.Prompt.match.PC, na.rm=T))      # .23
+
+ProdData %>% group_by(VMSgroup) %>% summarize(Promptmatch = mean(Prod.Prompt.match.PC, na.rm=T),   # .55 vs. .41
+                   SDPromptmatch = sd(Prod.Prompt.match.PC, na.rm=T))                              # .17 vs/ .28
 
 # Attended object match
-table(is.na(ProdData$Prod.Obj.match.PC)) # only 43 infants
-ProdData %>% summarize(Objmatch = mean(Prod.Obj.match.PC, na.rm=T),
-                   SDObjmatch = sd(Prod.Obj.match.PC, na.rm=T))
+table(is.na(ProdData$Prod.Obj.match.PC)) # only 43 infants attend to objects during CP
 
-ProdData %>% group_by(VMSgroup) %>% summarize(Objmatch = mean(Prod.Obj.match.PC, na.rm=T),
-                   SDObjmatch = sd(Prod.Obj.match.PC, na.rm=T))
+ProdData %>% summarize(Objmatch = mean(Prod.Obj.match.PC, na.rm=T),         # .38
+                   SDObjmatch = sd(Prod.Obj.match.PC, na.rm=T))             # .27
+
+ProdData %>% group_by(VMSgroup) %>% summarize(Objmatch = mean(Prod.Obj.match.PC, na.rm=T),         # .49 vs. .25
+                   SDObjmatch = sd(Prod.Obj.match.PC, na.rm=T))                                    # .27 vs. .22
 
 ```
 
-As expected, withVMS infants produced more babble in the audio recordings, and this difference was significant (Est.Diff=-130, p<.001 by Wilcoxon Signed-Rank test)
+As expected, withVMS infants produced more babble in the audio recordings than noVMS infants, and this difference was significant for both types and tokens (Types: Est.Diff.=1.99, δ=.99, p<.001, 95% CI=[0.99, 2.99]; Tokens: Est.Diff=130, δ=.69, p<.001, 95% CI=[103, 155]; by Wilcoxon Rank Sum test; see Table 3 & Figure 1).  
 
 ```{r comparing production across groups in audio recordings}
 
-shapiro.test(vmstotal$audiotokens) # not normal
+#shapiro.test(vmstotal$audiotypes) # not normal
 
-wilcox.test(subset(vmstotal, VMSgroup == "withVMS")$audiotokens, subset(vmstotal, VMSgroup == "noVMS")$audiotokens, conf.int=T) # p<.001
-
-cliff.delta(d = subset(vmstotal, VMSgroup == "withVMS")$audiotokens, 
-     f = subset(vmstotal, VMSgroup == "noVMS")$audiotokens)   # .99 large
-
-shapiro.test(vmstotal$audiotypes) # not normal
-
-wilcox.test(subset(vmstotal, VMSgroup == "withVMS")$audiotypes, subset(vmstotal, VMSgroup == "noVMS")$audiotypes, conf.int=T) # p<.001
+wilcox.test(subset(vmstotal, VMSgroup == "withVMS")$audiotypes, 
+            subset(vmstotal, VMSgroup == "noVMS")$audiotypes, conf.int=T) # p<.001
 
 cliff.delta(d = subset(vmstotal, VMSgroup == "withVMS")$audiotypes, 
      f = subset(vmstotal, VMSgroup == "noVMS")$audiotypes)   # .69 large
 
+#shapiro.test(vmstotal$audiotokens) # not normal
+
+wilcox.test(subset(vmstotal, VMSgroup == "withVMS")$audiotokens, 
+            subset(vmstotal, VMSgroup == "noVMS")$audiotokens, conf.int=T) # p<.001
+
+cliff.delta(d = subset(vmstotal, VMSgroup == "withVMS")$audiotokens, 
+     f = subset(vmstotal, VMSgroup == "noVMS")$audiotokens)   # .99 large
+
 ```
 
 ```{r Figure 1}
-Figure1a <- ggplot(subset(vmscount, VMSgroup == "withVMS"), aes(x=Consonant, y=log10(n))) +
-  stat_summary(fun.y=mean, geom = "point", aes(group = subj, colour = Consonant), shape=1, size=2, 
+
+Figure1a <- ggplot(subset(vmscount, VMSgroup == "withVMS"), 
+                   aes(x=Consonant, y=log10(n))) +
+  stat_summary(fun.y=mean, geom = "point", 
+               aes(group = subj, colour = Consonant), shape=1, size=2, 
                position = position_jitter(width = .1, height=0)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", shape=2, size=1) +
   scale_x_discrete(limits = c("p", "t", "k", "m", "n"),
                    labels = c("pb", "td", "kg", "m", "n")) +
   theme_bw(base_size=15) +
-  scale_y_continuous(breaks=c(0, .301, 1, 1.699, 2.69897), labels=c(0, 2, 10, 50, 500)) +
+  scale_y_continuous(breaks=c(0, .301, 1, 1.699, 2.69897), 
+                     labels=c(0, 2, 10, 50, 500)) +
   xlab("Consonant Type") +
   ylab("n") +
   theme(legend.position = "none",
         axis.title = element_text(size=22),
-           axis.text = element_text(size=22),
+        axis.text = element_text(size=22),
         strip.text = element_text(face="bold", size=22,lineheight=7.0)) +
   facet_wrap(~VMSgroup)
-Figure1b <- ggplot(subset(vmscount, VMSgroup == "noVMS"), aes(x=Consonant, y=log10(n))) +
-  stat_summary(fun.y=mean, geom = "point", aes(group = subj, colour = Consonant), shape=1, size=2,
+
+Figure1b <- ggplot(subset(vmscount, VMSgroup == "noVMS"), 
+                   aes(x=Consonant, y=log10(n))) +
+  stat_summary(fun.y=mean, geom = "point", 
+               aes(group = subj, colour = Consonant), shape=1, size=2,
                position = position_jitter(width = .1, height=0)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", shape=2, size=1) +
   scale_x_discrete(limits = c("p", "t", "k", "m", "n"),
                    labels = c("pb", "td", "kg", "m", "n")) +
   theme_bw(base_size=15) +
-  scale_y_continuous(breaks=c(0, .301, 1, 1.477, 1.699, 2), labels=c(0, 2, 10, 30, 50, 100)) +
+  scale_y_continuous(breaks=c(0, .301, 1, 1.477, 1.699, 2), 
+                     labels=c(0, 2, 10, 30, 50, 100)) +
   xlab("Consonant Type") +
   ylab("n") +
   theme(legend.position = "none",
@@ -367,27 +379,29 @@ multiplot(Figure1a, Figure1b, cols=2)
 # Infant Production: Video recordings
 
 
-On average, infants produced 44 CP tokens in the hour-long video recordings and 4.34 CP types. Once again, withVMS infants produced significantly more tokens than noVMS infants, while the number of CP types was marginally higher for withVMS infants.
+On average, infants produced 44 CP tokens in the hour-long video recordings and 4.34 CP types. See Table 3 and Figure 2. Once again, withVMS infants produced significantly more tokens than noVMS infants (60.13 vs. 23.65), while the number of CP types was marginally higher for withVMS infants (4.67 vs. 3.95; see Table 3 and 4). 
 
 ```{r Effect of VMS group on CP types/tokens}
 
-wilcox.test(subset(ProdData, VMSgroup == "withVMS")$CPtokens, subset(ProdData, VMSgroup == "noVMS")$CPtokens, conf.int=T) # p<.001
+wilcox.test(subset(ProdData, VMSgroup == "withVMS")$CPtokens, 
+            subset(ProdData, VMSgroup == "noVMS")$CPtokens, conf.int=T) # p<.001
 
 cliff.delta(d = subset(ProdData, VMSgroup == "withVMS")$CPtokens, 
      f = subset(ProdData, VMSgroup == "noVMS")$CPtokens)   # .68 large
 
 ProdData %>% group_by(VMSgroup) %>% summarise(meantok = mean(CPtokens))
 
-wilcox.test(subset(ProdData, VMSgroup == "withVMS")$CPtypes, subset(ProdData, VMSgroup == "noVMS")$CPtypes, conf.int=T) # p=.06
+wilcox.test(subset(ProdData, VMSgroup == "withVMS")$CPtypes, 
+            subset(ProdData, VMSgroup == "noVMS")$CPtypes, conf.int=T) # p=.06
 
 cliff.delta(d = subset(ProdData, VMSgroup == "withVMS")$CPtypes, 
-     f = subset(ProdData, VMSgroup == "noVMS")$CPtypes)   # .32 small
+            f = subset(ProdData, VMSgroup == "noVMS")$CPtypes)   # .32 small
 
 ProdData %>% group_by(VMSgroup) %>% summarise(meantyp = mean(CPtypes))
 
 ```
 
-As expected, withVMS infants produced their INREP consonants significantly more often (mean tokens=23.3, SD=21.7) than their OUTREP consonants (mean tokens=8.7, SD= 7.5; Est.Diff.=-9.6, p<.01). 
+withVMS infants produced significantly more consonants that were in their stable VMS repertoire (INREP consonants) relative to other consonants (OUTREP consonants), as assessed by comparing the total number of INREP tokens/total number of VMS consonant types vs. the total number of OUTREP tokens/number of non-VMS consonant types produced in the video data (INREP: mean tokens=23.3; OUTREP: mean tokens=8.7; Est.Diff.=9.6, r=.63, p=.002, 95% CI=[4.08, 24.12]; paired Wilcoxon Signed-Rank test). 
   
 ```{r calcuating number of in vs out VMS consonants in video recordings}
 
@@ -397,9 +411,10 @@ compareRecordings %>% filter(VMS.Prod.Cong == T) %>% summarise(meanOverall = mea
 compareRecordings %>% filter(VMS.Prod.Cong == F) %>% summarise(meanOverall = mean(meanProd),
                                                                sdOverall = sd(meanProd))
 
-shapiro.test(compareRecordings$meanProd) # not normal
+#shapiro.test(compareRecordings$meanProd) # not normal
 
-wilcox.test(compareRecordings.spread$VMS.Prod.Cong, compareRecordings.spread$VMS.Prod.Incong, paired=T, conf.int=T)
+wilcox.test(compareRecordings.spread$VMS.Prod.Cong, 
+            compareRecordings.spread$VMS.Prod.Incong, paired=T, conf.int=T)
 
 wilcoxonPairedR(x = compareRecordings$meanProd,
                 g = compareRecordings$VMS.Prod.Cong) # r= .63
@@ -410,29 +425,33 @@ wilcoxonPairedR(x = compareRecordings$meanProd,
 ```{r Figure 2}
 Figure2a <- ggplot(ProdData, aes(x=VMSgroup, y=CPtokens)) +
   geom_violin(aes(fill = VMSgroup), alpha=.3) +
-  stat_summary(fun.y=mean, geom = "point", aes(group = subj), shape=1, size=2.5, position=position_jitter(height = 0, width = 0.01)) +
+  stat_summary(fun.y=mean, geom = "point", 
+               aes(group = subj), shape=1, size=2.5, position=position_jitter(height = 0, width = 0.01)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", colour='red', shape=17, size=1) +
-  scale_x_discrete(limits = c("withVMS", "noVMS"), labels = c("withVMS", "noVMS")) +
-    theme_bw(base_size=15) +
-     theme(axis.text = element_text(size=18),
+  scale_x_discrete(limits = c("withVMS", "noVMS"), 
+                   labels = c("withVMS", "noVMS")) +
+  theme_bw(base_size=15) +
+  theme(axis.text = element_text(size=18),
            axis.title = element_text(size=18),
            legend.position="none") +
   ylab("n CP tokens") +
   xlab('')
-  Figure2b <- ggplot(ProdData, aes(x=VMSgroup, y=CPtypes)) +
+
+Figure2b <- ggplot(ProdData, aes(x=VMSgroup, y=CPtypes)) +
     geom_violin(aes(fill = VMSgroup), alpha=.3) +
-  stat_summary(fun.y=mean, geom = "point", aes(group = subj), shape=1, size=2.5, position=position_jitter(height = 0, width = .1)) +
+  stat_summary(fun.y=mean, geom = "point", 
+               aes(group = subj), shape=1, size=2.5, position=position_jitter(height = 0, width = .1)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", colour='red', shape=17, size=1) +
-  scale_x_discrete(limits = c("withVMS", "noVMS"), labels = c("withVMS", "noVMS")) +
+  scale_x_discrete(limits = c("withVMS", "noVMS"), 
+                   labels = c("withVMS", "noVMS")) +
   coord_cartesian(ylim=c(0, 8)) +
   scale_y_continuous(breaks=seq(0, 8, 2))  +
-   ylab("n CP types") +
+  ylab("n CP types") +
   xlab('') +
   theme_bw(base_size=15) +
   theme(legend.position="none",
         axis.title = element_text(size=18),
         axis.text = element_text(size=18))
-
 
 multiplot(Figure2a, Figure2b, cols=2)
 ```
@@ -443,19 +462,19 @@ multiplot(Figure2a, Figure2b, cols=2)
 Overall, 1451 CPs in the data were produced alongside either an input prompt or an attended object; 527 CPs were produced alongside both an input prompt and an attended object.  
 ```{r Overview of context and CPs}
 
-CPdata %>% filter(C1Prompt != "none") %>% tally() # 936
-
 CPdata %>% mutate(nostim = ifelse(C1Obj == "none" & C1Prompt == "none", T, F)) %>%
   filter(nostim == FALSE) %>% tally() # 1451
 
 CPdata %>% mutate(bothstim = ifelse(C1Obj != "none" & C1Prompt != "none", T, F)) %>%
   filter(bothstim == TRUE) %>% tally() # 527
+
+CPdata %>% filter(C1Prompt != "none") %>% tally() # 936
 ```
 
 
 
 
-On average, 51% of the infants' CPs were preceded by caregiver speech (SD=.18), and 48% of these matched the salient word in this preceding segment (SD=.23). ). We ran a Wilcoxon Rank Sum test Tto determine whether the proportion of each infant’s congruent CPs differed by VMS group, we ran a one-way ANOVA.. This difference was  not significant VMS group accounted for a significant amount of variance in our data (Est.Diff.=-.11, p=.11F(1,42)=4.27, p<.05; see Tablele 4);  withVMS infants’ CPs matched input promptcaregiver prompts 145%  more often than noVMS infants’ did (.55(.17) vs. .41(.28)). 
+On average, 51% of the infants’ CPs were preceded by caregiver speech (SD=.18), and 48% of these matched the salient word in this preceding segment (e.g. mother says ‘ball’ and baby says ‘ba’; SD=.23). We ran a Wilcoxon Rank Sum test to determine whether the proportion of each infant’s congruent CPs differed by VMS group. This difference was  not significant (Est.Diff.=.11, δ=.28, p=.111, 95% CI=[-.03, .3]; see Table 4); withVMS infants’ CPs matched caregiver prompts 14% more often than noVMS infants’ did (.55(.17) vs. .41(.28)). 
 ```{r Input prompt overview}
 
 ProdData %>% summarize(meanPrompt = mean(nPrompt/CPtokens, na.rm=T), #.51
@@ -471,15 +490,14 @@ wilcox.test(subset(ProdData, VMSgroup=="withVMS")$Prod.Prompt.match.PC,
             subset(ProdData, VMSgroup=="noVMS")$Prod.Prompt.match.PC, conf.int=T) # p=.11, EstDiff=-.11
 
 cliff.delta(d = subset(ProdData, VMSgroup=="withVMS")$Prod.Prompt.match.PC, 
-     f = subset(ProdData, VMSgroup=="noVMS")$Prod.Prompt.match.PC)   # .28 small
-
+            f = subset(ProdData, VMSgroup=="noVMS")$Prod.Prompt.match.PC)   # .28 small
 
 ProdData %>% group_by(VMSgroup) %>% summarise(meanInput = mean(Prod.Prompt.match.PC),
                                               sdInput = sd(Prod.Prompt.match.PC))
 
 ```
 
-WithVMS infants’ CPs matched the consonantal properties of their caregivers’ speech significantly more in the real data set than in the scrambled one (.55(.17) vs. .22(.14), Est.Diff.=.33, p<.001 by Wilcoxon Test), as did noVMS infants’ CPs (.41(.28) vs. .2(.16), Est.Diff.=.24, p<.01). 
+WithVMS infants’ CPs matched the consonantal properties of their caregivers’ speech significantly more in the real data set than in the scrambled one (.55(.17) vs. .22(.14), Est.Diff.=.33, δ=.90, p<.001, 95% CI=[.23, .43], by Wilcoxon test), as did noVMS infants’ CPs (.41(.28) vs. .2(.16), Est.Diff.=.24, δ=.45, p=.014, 95% CI=[.04, .37]). 
 ```{r Input prompt data vs scrambled data}
 
 prompt.real <- ProdData %>%
@@ -505,35 +523,38 @@ wilcox.test(subset(prompt.real, VMSgroup == "withVMS")$PC,
             subset(prompt.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # Significant, p<.001
 
 cliff.delta(d = subset(prompt.real, VMSgroup == "withVMS")$PC, 
-     f = subset(prompt.scramble, VMSgroup == "withVMS")$PC)   # .90 large
+            f = subset(prompt.scramble, VMSgroup == "withVMS")$PC)   # .90 large
 
 wilcox.test(subset(prompt.real, VMSgroup == "noVMS")$PC, 
             subset(prompt.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # Significant, p<.05
 
 cliff.delta(d = subset(prompt.real, VMSgroup == "noVMS")$PC, 
-     f = subset(prompt.scramble, VMSgroup == "noVMS")$PC)   # .45 medium
+            f = subset(prompt.scramble, VMSgroup == "noVMS")$PC)   # .45 medium
 
 ```
 
 ```{r Figure 3a}
 
 Figure3a <- 
-  ggplot(scramble.comparison.prompt, aes(x=Type, y=PC, shape = Type, color = VMSgroup))+
+  ggplot(scramble.comparison.prompt, 
+         aes(x=Type, y=PC, shape = Type, color = VMSgroup))+
   geom_point(aes(group=VMSgroup), size = 5, position=position_dodge(-.2)) +
-  stat_summary(fun.data=mean_cl_boot, geom = "pointrange", aes(shape=Type, fill = VMSgroup), 
+  stat_summary(fun.data=mean_cl_boot, geom = "pointrange", 
+               aes(shape=Type, fill = VMSgroup), 
                size=1.5, position = position_dodge(-.2), colour = "grey32", show.legend = FALSE) +
-  stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), geom='line', size=.8, position = position_dodge(-.2), show.legend = FALSE) +
-    scale_shape_manual(name = "VMSgroup",
+  stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), 
+               geom='line', size=.8, position = position_dodge(-.2), show.legend = FALSE) +
+  scale_shape_manual(name = "VMSgroup",
                       labels = c("noVMS", "withVMS"),
                        values=c(21,24)) +
-    scale_colour_manual(name = "VMSgroup",
+  scale_colour_manual(name = "VMSgroup",
                      labels = c("noVMS", "withVMS"),
                       values = c("#F8766D","#00BFC4")) +
   xlab("Data type") +
   ylab('% Congruent CPs') +
   ggtitle("Caregiver Prompt") +
   theme_bw(base_size=15) +
-   theme(axis.text = element_text(size = 20),
+  theme(axis.text = element_text(size = 20),
          axis.title = element_text(size=20),
          legend.title = element_blank(),
          legend.justification=c(1,1), legend.position=c(1,.99)) +
@@ -543,20 +564,8 @@ Figure3a <-
 #plot(Figure3a)
 ```
 
-A paired Wilcoxon Signed-Rank test showed that withVMS infants produced significantly more CPs to match caregiver prompts when the prompt was INREP (M=.71, SD=.24) than when it was OUTREP (M=.38, SD=.23; Est.Diff.=.35, p=.001).  
+A paired Wilcoxon Signed-Rank test showed that withVMS infants produced significantly more CPs to match caregiver prompts when the prompt was INREP (M=.71, SD=.24) than when it was OUTREP (M=.38, SD=.23; Est.Diff.=.35, r=.67, p=.001, 95% CI=[.15, .50]). 
 ```{r Input prompt inREP vs outREP comparison}
-
-#since value of PC for noVMS is all NA, no need to even subset
-shapiro.test(subset(match.data.Prompt, VMSgroup=="withVMS")$PC) #normal
-
-# t.test(subset(match.data.Prompt.spread, VMSgroup=="withVMS")$inREP,
-# subset(match.data.Prompt.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.001
-
-wilcox.test(subset(match.data.Prompt.spread, VMSgroup=="withVMS")$inREP,
-subset(match.data.Prompt.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p=.001, Est.Diff=.34
-
-wilcoxonPairedR(x = subset(match.data.Prompt, VMSgroup == "withVMS")$PC,
-                g = subset(match.data.Prompt, VMSgroup == "withVMS")$Type) # r= .67
 
 match.data.Prompt %>% 
   filter(VMSgroup == "withVMS") %>% 
@@ -564,39 +573,49 @@ match.data.Prompt %>%
   summarise(meanmatch = mean(PC, na.rm = T),
             sdmatch = sd(PC, na.rm = T))
 
+# shapiro.test(match.data.Prompt$PC) #normal
+
+# t.test(subset(match.data.Prompt.spread, VMSgroup=="withVMS")$inREP,
+# subset(match.data.Prompt.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.001
+
+wilcox.test(subset(match.data.Prompt.spread, VMSgroup=="withVMS")$inREP,
+            subset(match.data.Prompt.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p=.001, Est.Diff=.34
+
+wilcoxonPairedR(x = subset(match.data.Prompt, VMSgroup == "withVMS")$PC,
+                g = subset(match.data.Prompt, VMSgroup == "withVMS")$Type) # r= .67
+
 ```
 
 
 ```{r Figure 4a}
+
 Figure4a <- 
   ggplot(match.data.Prompt, aes(x=Type, y=PC, shape = Type, color = VMSgroup))+
   geom_point(aes(group=VMSgroup), size = 5, position=position_dodge(-.2)) +
   geom_line(aes(group=subj), colour='grey63', position = position_nudge(x = -.05), linetype=6) +
-  stat_summary(fun.data=mean_cl_boot, geom = "pointrange", aes(shape=Type, fill = VMSgroup), 
-               size=1.5, position = position_dodge(-.2), colour = "grey32", show.legend = FALSE) +
-  stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), geom='line', size=.8, position = position_dodge(-.2), show.legend = FALSE) +
-    scale_shape_manual(values=c(23,25)) +
+  stat_summary(fun.data=mean_cl_boot, geom = "pointrange", 
+               aes(shape=Type, fill = VMSgroup), 
+               size=1.5, position = position_dodge(-.2), 
+               colour = "grey32", show.legend = FALSE) +
+  stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), 
+               geom='line', size=.8, position = position_dodge(-.2), show.legend = FALSE) +
+  scale_shape_manual(values=c(23,25)) +
   xlab("Consonant Type") +
   ylab('% Congruent CPs') +
   ggtitle("Caregiver Prompt") +
   theme_bw(base_size=15) +
-   theme(axis.text = element_text(size = 20),
-         axis.title = element_text(size=20),
-         legend.title = element_blank(),
-         legend.justification=c(1,1), legend.position=c(1,.99)) +
+  theme(axis.text = element_text(size = 20),
+        axis.title = element_text(size=20),
+        legend.title = element_blank(),
+        legend.justification=c(1,1), legend.position=c(1,.99)) +
   guides(shape = FALSE,
          color = guide_legend(override.aes = list(shape=15)))
   
 #plot(Figure4a)
 ```
 
-A Wilcoxon Rank Sum test revealed no difference between withVMS (M=.38, SD=.23) and noVMS infants’ CPs (M=.41, SD=.28) when the CP was not INREP (Est.Diff.=.02, p=.74).   
+A Wilcoxon Rank Sum test revealed no difference between withVMS (M=.38, SD=.23) and noVMS infants’ CPs (M=.41, SD=.28) when the CP was not INREP (Est.Diff.=-.02, p=.741, δ=-.06, 95% CI=[-.2, .14]).  
 ```{r Input prompt outREP comparison}
-
-match.data.Prompt %>% 
-  filter(Type == "outREP") %>% 
-  summarise(meanMatch = mean(PC, na.rm=T),
-              sdMatch = sd(PC, na.rm=T))
 
 match.data.Prompt %>% 
   filter(Type == "outREP") %>% 
@@ -604,40 +623,38 @@ match.data.Prompt %>%
   summarise(meanMatch = mean(PC, na.rm=T),
             sdMatch = sd(PC, na.rm=T))
 
-shapiro.test(subset(match.data.Prompt, Type=='outREP')$PC)#normal
+# shapiro.test(subset(match.data.Prompt, Type=='outREP')$PC)#normal
 
-#t.test(PC ~ VMSgroup, subset(match.data.Prompt, Type=='outREP'), conf.int=T) # ns
+# t.test(PC ~ VMSgroup, subset(match.data.Prompt, Type=='outREP'), conf.int=T) # ns
 
 wilcox.test(subset(match.data.Prompt, VMSgroup == "withVMS" & Type == "outREP")$PC, 
             subset(match.data.Prompt, VMSgroup == "noVMS" & Type == "outREP")$PC, conf.int = T) # ns
 
 cliff.delta(d = subset(match.data.Prompt, VMSgroup == "withVMS" & Type == "outREP")$PC, 
-     f = subset(match.data.Prompt, VMSgroup == "noVMS" & Type == "outREP")$PC)   # -.06 negligible
+            f = subset(match.data.Prompt, VMSgroup == "noVMS" & Type == "outREP")$PC)   # -.06 negligible
 
 ```
 
 
 ## Attended objects
 
-On average, 56% of CPs (SD=.22) were produced while attending to an object, and 38% showed a phonological match with the attended object (SD=.27). To test whether the proportion of CPs that matched attended objects differed by VMS group, we ran a Wilcoxon Rank Sum test with proportion of matching CPs as our dependent variable and VMS group as a factor. This showed that VMS group accounted for a significant amount of variance in the data (Est.Diff.=-.28, p<.01; Table 4). 
+On average, 56% of CPs (SD=.22) were produced while attending to an object, and 38% showed a phonological match with the attended object (SD=.27). To test whether the proportion of CPs that matched attended objects differed by VMS group, we ran a Wilcoxon Rank Sum test, comparing the proportion of matching CPs by VMS group. WithVMS infants had more matching CPs than noVMS infants (Est.Diff.=.28, δ=.46, p=.003, 95% CI=[.09, .43]; Table 4). 
 ```{r Object overview}
 
-CPdata %>% filter(C1Obj != "none") %>% tally() # 1042
 ProdData %>% summarize(meanObject = mean(nObj/CPtokens, na.rm=T), #.56
                    sdObject = sd(nObj/CPtokens, na.rm=T), #.22
                    Objectmatch = mean(Prod.Obj.match.PC, na.rm=T), # .39
                    SDobjectmatch = sd(Prod.Obj.match.PC, na.rm=T)) # 28
 
-
 wilcox.test(subset(ProdData, VMSgroup == "withVMS")$Prod.Obj.match.PC, 
             subset(ProdData, VMSgroup == "noVMS")$Prod.Obj.match.PC, conf.int = T) # p<.01
 
 cliff.delta(d = subset(ProdData, VMSgroup == "withVMS")$Prod.Obj.match.PC, 
-     f = subset(ProdData, VMSgroup == "noVMS")$Prod.Obj.match.PC)   # .46 medium
+            f = subset(ProdData, VMSgroup == "noVMS")$Prod.Obj.match.PC)   # .46 medium
 
 ```
 
-We found that infants with a stable consonant repertoire matched their CPs to an attended object significantly more in the real dataset than in the scrambled one (.49(.27) vs. .24(.11), Est.Diff.=.28, p<.001; by Wilcoxon Signed-Rank test), while infants who lacked such a repertoire did not (.25(.22) vs. .25(.16), Est.Diff.<.1, p=1). 
+We found that infants with a stable consonant repertoire matched their CPs to an attended object significantly more in the real dataset than in the scrambled one (.49(.27) vs. .24(.11), Est.Diff.=.28, δ=.61, p<.001, 95% CI=[.15, .40]; by Wilcoxon Rank Sum test), while infants who lacked such a repertoire did not (.25(.22) vs. .24(.16), Est.Diff.<.1, δ<.01, p=1, 95% CI=[-.17, .12]). 
 ```{r Object data vs scrambled data}
 
 obj.real <- ProdData %>%
@@ -656,69 +673,70 @@ scramble.comparison.object <- rbind(obj.real, obj.scramble)
 
 scramble.comparison.object %>% group_by(Type, VMSgroup) %>% summarise(meanscramble = mean(PC, na.rm=T),
                                                                       sdscramble = sd(PC, na.rm=T))
-
-#shapiro.test(scramble.comparison.object$PC) # not normal
+# shapiro.test(scramble.comparison.object$PC) # not normal
 
 wilcox.test(subset(obj.real, VMSgroup == "withVMS")$PC, 
             subset(obj.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # p<.001
 
 cliff.delta(d = subset(obj.real, VMSgroup == "withVMS")$PC, 
-     f = subset(obj.scramble, VMSgroup == "withVMS")$PC)   # .61 large
+            f = subset(obj.scramble, VMSgroup == "withVMS")$PC)   # .61 large
 
 wilcox.test(subset(obj.real, VMSgroup == "noVMS")$PC, 
             subset(obj.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # ns
 
 cliff.delta(d = subset(obj.real, VMSgroup == "noVMS")$PC, 
-     f = subset(obj.scramble, VMSgroup == "noVMS")$PC)   # <.01 negligible
+            f = subset(obj.scramble, VMSgroup == "noVMS")$PC)   # <.01 negligible
 
 ```
 
 ```{r Figure 3b}
 
 Figure3b <- 
-  ggplot(scramble.comparison.object, aes(x=Type, y=PC, shape = Type, color = VMSgroup))+
+  ggplot(scramble.comparison.object, 
+         aes(x=Type, y=PC, shape = Type, color = VMSgroup))+
   geom_point(aes(group=VMSgroup), size = 5, position=position_dodge(-.2)) +
-  stat_summary(fun.data=mean_cl_boot, geom = "pointrange", aes(shape=Type, fill = VMSgroup), 
-               size=1.5, position = position_dodge(-.2), colour = "grey32", show.legend = FALSE) +
-  stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), geom='line', size=.8, position = position_dodge(-.2), , show.legend = FALSE) +
-scale_shape_manual(name = "VMSgroup",
-                      labels = c("noVMS", "withVMS"),
-                       values=c(21,24)) +
-    scale_colour_manual(name = "VMSgroup",
+  stat_summary(fun.data=mean_cl_boot, geom = "pointrange", 
+               aes(shape=Type, fill = VMSgroup), 
+               size=1.5, position = position_dodge(-.2), 
+               colour = "grey32", show.legend = FALSE) +
+  stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), 
+               geom='line', size=.8, position = position_dodge(-.2), show.legend = FALSE) +
+  scale_shape_manual(name = "VMSgroup",
                      labels = c("noVMS", "withVMS"),
+                     values=c(21,24)) +
+  scale_colour_manual(name = "VMSgroup",
+                      labels = c("noVMS", "withVMS"),
                       values = c("#F8766D","#00BFC4")) +
-    xlab("Data type") +
+  xlab("Data type") +
   ylab('% Congruent CPs') +
   ggtitle("Attended Object") +
   theme_bw(base_size=15) +
-   theme(axis.text = element_text(size = 20),
-         axis.title = element_text(size=20),
-         legend.title = element_blank(),
-         legend.justification=c(1,1), legend.position=c(1,.99)) +
+  theme(axis.text = element_text(size = 20),
+        axis.title = element_text(size=20),
+        legend.title = element_blank(),
+        legend.justification=c(1,1), legend.position=c(1,.99)) +
   guides(shape = FALSE,
          color = guide_legend(override.aes = list(shape=15)))
   
 #plot(Figure3b)
+
 multiplot(Figure3a, Figure3b, cols=2)
 ```
 
 
-Similar to the caregiver prompts, infants produced more object-matching CPs when the object’s label provided a phonological match with their VMS inventory; this difference was marginally significant (Est.Diff.=.32, p=.056). 
+Using a paired Wilcoxon Signed Rank test, we compared the proportion of infants’ CPs that matched both the attended object and were part of their established VMS inventory (INREP; .57(.37)) with the proportion of CPs that matched the attended object but were not in the infant’s VMS inventory (OUTREP, .36(.32)). Similar to the caregiver prompts, infants produced more object-matching CPs when the object’s label provided a phonological match with their VMS inventory; this difference was marginally significant (Est.Diff.=.32, r=.42, p=.056, 95% CI=[-.01, .52]). 
 ```{r Object inREP vs outREP comparison}
 
-#shapiro.test(subset(match.data.Prompt, VMSgroup=="withVMS")$PC) # normal
+# shapiro.test(subset(match.data.Object, VMSgroup=="withVMS")$PC) # not normal
 
 match.data.Object %>% 
   filter(VMSgroup == "withVMS") %>% 
   group_by(Type) %>% 
   summarise(meanmatch = mean(PC, na.rm = T),
             sdmatch = sd(PC, na.rm = T))
-# 
-# t.test(subset(match.data.Object.spread, VMSgroup=="withVMS")$inREP,
-# subset(match.data.Object.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p=.052
 
-wilcox.test(subset(match.data.Object.spread, VMSgroup=="withVMS")$inREP,
-subset(match.data.Object.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p=.056, Est Diff = .32
+wilcox.test(subset(match.data.Object.spread, VMSgroup=="withVMS")$inREP, 
+            subset(match.data.Object.spread, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p=.056, Est Diff = .32
 
 wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == "withVMS")$PC,
                 g = subset(match.data.Object, VMSgroup == "withVMS")$Type) # r= .42
@@ -728,10 +746,14 @@ wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == "withVMS")$PC,
 ```{r Figure 4b}
 
 Figure4b <- ggplot(match.data.Object, aes(x=Type, y=PC)) +
-  geom_point(aes(colour=VMSgroup, shape=Type), size=5, position = position_dodge(-.2)) +
+  geom_point(aes(colour=VMSgroup, shape=Type), 
+             size=5, position = position_dodge(-.2)) +
   geom_line(aes(group=subj), colour='grey63',position = position_nudge(x = -.05), linetype=6) +
-  stat_summary(fun.data=mean_cl_boot, geom = "pointrange", aes(shape=Type, fill= VMSgroup), colour = "gray32", size=1.5, position = position_dodge(-.2), show.legend = FALSE) +
-  stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), geom='line', size=.8, position = position_dodge(-.2), show.legend = FALSE) +
+  stat_summary(fun.data=mean_cl_boot, geom = "pointrange", 
+               aes(shape=Type, fill= VMSgroup), colour = "gray32", size=1.5, 
+               position = position_dodge(-.2), show.legend = FALSE) +
+  stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), 
+               geom='line', size=.8, position = position_dodge(-.2), show.legend = FALSE) +
   scale_shape_manual(values=c(23,25)) +
   ylab("% Congruent CPs") +
   xlab("Consonant Type") +
@@ -741,7 +763,7 @@ Figure4b <- ggplot(match.data.Object, aes(x=Type, y=PC)) +
          axis.title.x = element_text(size=20),
          axis.title.y = element_text(size=20),
          axis.text.y = element_text(size=20),
-                  legend.title = element_blank(),
+         legend.title = element_blank(),
          legend.justification=c(1,1), legend.position=c(1,.99)) +
   guides(shape = FALSE,
          color = guide_legend(override.aes = list(shape=15)))
@@ -751,16 +773,14 @@ multiplot(Figure4a, Figure4b, cols=2)
 #plot(Figure4)
 ```
 
-Overall, 31% of OUTREP CPs matched an attended object (SD=.29), and this did not differ between VMS groups (Est.Diff.=-.08, p=.32; withVMS: M=.36, SD=.32; noVMS: M=.25, SD=.22). 
+Overall, 31% of OUTREP CPs matched an attended object (SD=.29), and this did not differ between VMS groups (Est.Diff.=-.08, δ=.13, p=.318, 95% CI=[-.07, .25]; withVMS: M=.36, SD=.32; noVMS: M=.25, SD=.22). 
 ```{r Object outREP comparison }
 
 match.data.Object %>% filter(Type == "outREP") %>% summarise(meanMatch = mean(PC, na.rm=T),
-                                sdMatch = sd(PC, na.rm=T))
-
-#t.test(PC ~ VMSgroup, subset(match.data.Object, Type=='outREP'), conf.int=T) # ns
+                                                             sdMatch = sd(PC, na.rm=T))
 
 wilcox.test(subset(match.data.Object, VMSgroup == "withVMS" & Type == "outREP")$PC, 
-            subset(match.data.Object, VMSgroup == "noVMS" & Type == "outREP")$PC, conf.int = T) # ns
+            subset(match.data.Object, VMSgroup == "noVMS" & Type == "outREP")$PC, conf.int = T) # p=.32, Est.Diff.=.08
 
 cliff.delta(d = subset(match.data.Object, VMSgroup == "withVMS" & Type == "outREP")$PC, 
             f = subset(match.data.Object, VMSgroup == "noVMS" & Type == "outREP")$PC) # .13 negligible
@@ -773,9 +793,12 @@ match.data.Object %>% filter(Type == "outREP") %>% group_by(VMSgroup) %>%
 
 # Discussion
 
+
+In a preliminary analysis of our home recordings, however, caregivers rarely responded to infants’ babble (<25%), leading us to forego such an analysis here. 
 ```{r CG responsiveness}
 
 CPdata %>% filter(cgresponse == "None" | is.na(cgresponse)) %>% tally() #1404
+
 1404/1916 #73%
 
 ```
