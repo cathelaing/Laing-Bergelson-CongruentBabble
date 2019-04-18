@@ -4,7 +4,7 @@
 # these randomly scarmbled responses, and re-calculates all proportions based on these.
 
 source("ProductionData_Nounsonly_randsubj.R")
-
+library(stringi)
 set.seed(42) #meaning of life
 CPdata.scr.C1Prompt <- dplyr::select(CPdata_nouns, subj, month, sex, ctype, VMS, C1Obj, C1Prompt) %>% 
   mutate(Prompt.scrambled = sample(C1Prompt)) # C1 of CG prompts are scrambled

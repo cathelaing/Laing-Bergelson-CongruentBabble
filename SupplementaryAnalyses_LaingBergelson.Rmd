@@ -16,6 +16,10 @@ output: html_document
 source("ProductionData_nostimmatch_randsubj.R")
 source("Data_scrambling_nostimmatch_randsubj.R")
 library(effsize)
+library(tidyverse)
+library(stringi)
+library(rcompanion)
+
 
 1916-1772 # Total CPs in original data - total CPs in data with matches removed = 144
 
