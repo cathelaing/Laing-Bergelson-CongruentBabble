@@ -3,7 +3,7 @@
 The R scripts below read in CPdata_randsubj.csv. This is generated with data from .opf files (DataVyu), which is then anonymised before being read in
 to scripts on the GitHub repository.
 
-#Notes on generation of CPdata_randsubj:
+# Notes on generation of CPdata_randsubj:
 
 **Consonant selection:** 
 
