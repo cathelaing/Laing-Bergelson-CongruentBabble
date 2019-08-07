@@ -1,10 +1,12 @@
-# Updated 16th April 2019
+# Updated 29th July 2019
 
 # This script works with the main consonant production spreadsheet (CPdata_randsubj.csv) to count how
 # many CPs match VMS/Objects/Prompts for each infant. This creates the main dataset to be used in the production study analysis.
 
 library(tidyverse)
 library(forcats)
+library(stringi)
+library(feather)
 
 CPdata <- read_csv("Data/CPdata_randsubj.csv") %>%# read in CPdata_randsubj.csv to use as a base df for all following dfs
  mutate(subj = factor(subj))
@@ -138,26 +140,47 @@ ProdData <- ProdData %>%           # How many consonant tokens are produced by e
 
 # Read in VMS datasets for analysis in .Rmd script
 
+# Read in VMS datasets for analysis in .Rmd script
+
 VMS <- read_csv("Data/VMS_randsubj.csv") %>%
   mutate(subj = factor(subj))
 
 vmscount <- read_csv("Data/vms_count_randsubj.csv") %>%    # number of each consonant type produced during audio recordings
   mutate(subj = factor(subj)) %>% 
-  left_join(VMS) %>%
-  mutate(VMSgroup = ifelse(Group == "Nx", "noVMS", "withVMS"))
+  left_join(VMS, by = "subj") %>%
+  mutate(VMSgroup = ifelse(Group == "Nx", "noVMS", "withVMS")) %>%
+  #select(-month.y) %>%
+  rename("month" = "month.y",                # month used in full analysis (i.e. month at which infant was tested)
+         "month_chron" = "month.x") %>%      # data from month 10 or 11, for infants who were analyzed twice
+  group_by(subj, month_chron) %>% 
+  mutate(totalprod = sum(n)) %>%
+  ungroup()
 
 vmscount$Consonant <- substr(vmscount$Consonant, 1, 1)  # to classify consonant as inREP or outREP
 
 vmscount <- vmscount %>% mutate(inREP = stri_detect_regex((vmscount$VMS), (vmscount$Consonant))) # match between VMS and CP: inREP or outREP
 
+vmscount$subj <- reorder(vmscount$subj, vmscount$totalprod, sum)   # reorder consonants for plotting in order by total n
+vmscount$subj <- fct_rev(vmscount$subj)
+
+# Create subsets for summaries in methodology
+
+vmssubset1 <- vmscount %>% group_by(subj) %>% tally() %>% filter(n == 5)  # infants with data at 10m only
+vms_subset2 <- vmscount %>% group_by(subj) %>% tally() %>% filter(n == 10) # 17 infants with data at 10 and 11 months
+
+
 # Create new datasets for analysis in .Rmd script
 
 # vmstotal: calculates total consonant production (types and tokens) in audio recordings
 
-CPtypes_audio <- vmscount %>% filter(n > 0) %>% group_by(subj) %>% 
+CPtypes_audio <- vmscount %>% 
+  filter(n > 0 & month == month_chron) %>% 
+  group_by(subj, month, sex, MOTedu) %>% 
   summarise(audiotypes = n_distinct(Consonant))
 
-vmstotal <- vmscount %>% group_by(subj, month, sex, MOTedu, VMSgroup, VMS) %>% 
+vmstotal <- vmscount %>% 
+  filter(month == month_chron) %>%
+  group_by(subj, month, sex, MOTedu, VMSgroup, VMS) %>% 
   summarise(audiotokens = sum(n)) %>% 
   ungroup() %>% mutate(MOTedulevel = fct_recode(MOTedu,
                                                 "1" = "High School",
@@ -241,4 +264,5 @@ match.data.Object<- bind_rows(matchObject, nomatchObject)
 match.data.Object.spread <- match.data.Object %>%      # to allow for paired comparisons of inREP vs. outREP consonants for withVMS infants
   group_by(subj) %>% # to allow pairwise comparisons
   spread(Type, PC)
+
 

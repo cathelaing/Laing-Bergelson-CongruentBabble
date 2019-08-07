@@ -6,7 +6,6 @@
 
 library(tidyverse)
 library(forcats)
-library(stringi)
 
 CPdata <- read_csv("Data/CPdata_randsubj.csv") %>%# read in CPdata_randsubj.csv to use as a base df for all following dfs
   mutate(subj = factor(subj))
