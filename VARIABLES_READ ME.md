@@ -58,19 +58,19 @@ Responses were coded as 'unavailable' if the infant was eating, crying (and thus
 
 Other variables
 
-**C1Obj:** The initial consonant of the attended object
+ - **C1Obj:** The initial consonant of the attended object
 
-**C1Prompt:** The initial consonant of the caregiver prompt
+ - **C1Prompt:** The initial consonant of the caregiver prompt
 
-**Prod.Obj.Cong:** is the CP congruent with the attended object? TRUE/FALSE
+ - **Prod.Obj.Cong:** is the CP congruent with the attended object? TRUE/FALSE
 
-**Prod.Prompt.Cong:** is the CP congruent with the caregiver prompt? TRUE/FALSE
+ - **Prod.Prompt.Cong:** is the CP congruent with the caregiver prompt? TRUE/FALSE
 
-**VMS.Obj.Cong:** is the VMS congruent with the attended object? TRUE/FALSE
+ - **VMS.Obj.Cong:** is the VMS congruent with the attended object? TRUE/FALSE
 
-**VMS.Prompt.Cong:** is the VMS congruent with the caregiver prompt? TRUE/FALSE
+ - **VMS.Prompt.Cong:** is the VMS congruent with the caregiver prompt? TRUE/FALSE
 
-**VMS.Prod.Cong:** is the CP congruent with the VMS? TRUE/FALSE
+ - **VMS.Prod.Cong:** is the CP congruent with the VMS? TRUE/FALSE
 
 
 These variables are used to generate the dataset ProdData, which uses the following variables in the analysis:
