@@ -464,6 +464,10 @@ cliff.delta(d = subset(vmstotal, VMSgroup == "withVMS")$audiotokens,
      f = subset(vmstotal, VMSgroup == "noVMS")$audiotokens)   # .99 large
 
 # wilcox.test(subset(vmstotal, VMSgroup == "withVMS" & !subj %in% c(279, 129, 268))$audiotokens, subset(vmstotal, VMSgroup == "noVMS")$audiotokens, conf.int=T) # p<.001
+# All key variables are re-tested throughout with subjects 279, 129 and 268 removed from the data. 
+# These infants showed consistent consonant production in the audio recordings at 0;10 and 0;11 but did not reach 50+ tokens of a consonant in either session. 
+# Their consonant production combined across sessions (for each consonant type) was more than 50 tokens.
+
 
 shapiro.test(vmstotal$audiotypes) # not normal
 
