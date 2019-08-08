@@ -147,39 +147,6 @@ vmscount %>%
 
 ```
 
-```{r Figure 1}
-
-Figure1 <- ggplot(vmscount, aes(x= reorder(month_chron, n), y=n, alpha=inREP, fill = Consonant, colour = Consonant))  +  
-  geom_col(lwd = 1, aes(linetype = VMSgroup)) +
-  scale_linetype_manual(values = c("withVMS" = "solid", "noVMS" = "twodash"), guide = F) +
-  scale_alpha_discrete(range=c(0.1,0.6), 
-                    labels = c("outREP", "inREP")) +
-  facet_grid(~subj, scales = "free_x", switch = "x") + 
-  xlab("Subject") + 
-  ylab("n tokens at 0;10 (n=44) and 0;11 (n=17)") +
-  scale_colour_discrete(breaks = c("p", "t", "k", "m", "n"), guide = F) +
-  scale_fill_discrete(breaks = c("p", "t", "k", "m", "n")) +
-  scale_y_continuous(breaks = c(0, 20, 50, 200, 400, 600)) +
-  theme_bw(base_size = 18) + 
-  theme(strip.text.x = element_text(angle=75),
-        axis.text.x  = element_blank(),
-        axis.title.y = element_text(size = 22, face = "bold"),
-        axis.text.y = element_text(size = 22),
-        axis.ticks.x = element_blank(),
-        panel.border =element_blank(),
-        legend.text = element_text(size = 22),
-        legend.title = element_text(size = 24),
-        strip.background = element_blank(),
-        legend.position = c(.95, .80)) +
-  guides(VMSgroup = FALSE) +
-  labs(alpha = "VMS") +
-  geom_hline(yintercept = 20, linetype = 2, lwd = .8, colour = "gray27") +
-  geom_hline(yintercept = 50, linetype = 3, lwd = .8, colour = "gray27") 
-  
-plot(Figure1)  
-  
-
-```
 
 ```{r Table 1}
 
@@ -481,8 +448,8 @@ cliff.delta(d = subset(vmstotal, VMSgroup == "withVMS")$audiotypes,
 
 ```
 
-```{r Figure 2}
-Figure2a <- ggplot(subset(vmscount, month == month_chron & VMSgroup == "withVMS"), aes(x=Consonant, y=log10(n))) +
+```{r Figure 1}
+Figure1a <- ggplot(subset(vmscount, month == month_chron & VMSgroup == "withVMS"), aes(x=Consonant, y=log10(n))) +
   stat_summary(fun.y=mean, geom = "point", aes(group = subj, colour = Consonant), shape=1, size=2, 
                position = position_jitter(width = .1, height=0)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", shape=2, size=1) +
@@ -497,7 +464,7 @@ Figure2a <- ggplot(subset(vmscount, month == month_chron & VMSgroup == "withVMS"
            axis.text = element_text(size=22),
         strip.text = element_text(face="bold", size=22,lineheight=7.0)) +
   facet_wrap(~VMSgroup)
-Figure2b <- ggplot(subset(vmscount, month == month_chron & VMSgroup == "noVMS"), aes(x=Consonant, y=log10(n))) +
+Figure1b <- ggplot(subset(vmscount, month == month_chron & VMSgroup == "noVMS"), aes(x=Consonant, y=log10(n))) +
   stat_summary(fun.y=mean, geom = "point", aes(group = subj, colour = Consonant), shape=1, size=2,
                position = position_jitter(width = .1, height=0)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", shape=2, size=1) +
@@ -514,7 +481,7 @@ Figure2b <- ggplot(subset(vmscount, month == month_chron & VMSgroup == "noVMS"),
         strip.text = element_text(face="bold", size=22,lineheight=7.0)) +
   facet_wrap(~VMSgroup)
 
-multiplot(Figure2a, Figure2b, cols=2)
+multiplot(Figure1a, Figure1b, cols=2)
 ```
   
 # Infant Production: Video recordings
@@ -567,8 +534,8 @@ wilcoxonPairedR(x = compareRecordings$meanProd,
 ```
 
 
-```{r Figure 3}
-Figure3a <- ggplot(ProdData, aes(x=VMSgroup, y=CPtokens)) +
+```{r Figure 2}
+Figure2a <- ggplot(ProdData, aes(x=VMSgroup, y=CPtokens)) +
   geom_violin(aes(fill = VMSgroup), alpha=.3) +
   stat_summary(fun.y=mean, geom = "point", aes(group = subj), shape=1, size=2.5, position=position_jitter(height = 0, width = 0.01)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", colour='red', shape=17, size=1) +
@@ -579,7 +546,7 @@ Figure3a <- ggplot(ProdData, aes(x=VMSgroup, y=CPtokens)) +
            legend.position="none") +
   ylab("n CP tokens") +
   xlab('')
-  Figure3b <- ggplot(ProdData, aes(x=VMSgroup, y=CPtypes)) +
+  Figure2b <- ggplot(ProdData, aes(x=VMSgroup, y=CPtypes)) +
     geom_violin(aes(fill = VMSgroup), alpha=.3) +
   stat_summary(fun.y=mean, geom = "point", aes(group = subj), shape=1, size=2.5, position=position_jitter(height = 0, width = .1)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", colour='red', shape=17, size=1) +
@@ -594,7 +561,7 @@ Figure3a <- ggplot(ProdData, aes(x=VMSgroup, y=CPtokens)) +
         axis.text = element_text(size=18))
 
 
-multiplot(Figure3a, Figure3b, cols=2)
+multiplot(Figure2a, Figure2b, cols=2)
 ```
 
 
@@ -681,9 +648,9 @@ cliff.delta(d = subset(prompt.real, VMSgroup == "noVMS")$PC,
 
 ```
 
-```{r Figure 4a}
+```{r Figure 3a}
 
-Figure4a <- 
+Figure3a <- 
   ggplot(scramble.comparison.prompt, aes(x=Type, y=PC, shape = Type, color = VMSgroup))+
   geom_point(aes(group=VMSgroup), size = 5, position=position_dodge(-.2)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", aes(shape=Type, fill = VMSgroup), 
@@ -706,7 +673,7 @@ Figure4a <-
   guides(shape = FALSE,
          color = guide_legend(override.aes = list(shape=15)))
   
-#plot(Figure4a)
+#plot(Figure3a)
 ```
 
 A paired Wilcoxon Signed-Rank test showed that withVMS infants produced significantly more CPs to match caregiver prompts when the prompt was INREP (M=.71, SD=.24) than when it was OUTREP (M=.38, SD=.23; Est.Diff.=.35, p=.001).  
@@ -736,8 +703,8 @@ match.data.Prompt %>%
 ```
 
 
-```{r Figure 5a}
-Figure5a <- 
+```{r Figure 4a}
+Figure4a <- 
   ggplot(match.data.Prompt, aes(x=Type, y=PC, shape = Type, color = VMSgroup))+
   geom_point(aes(group=VMSgroup), size = 5, position=position_dodge(-.2)) +
   geom_line(aes(group=subj), colour='grey63', position = position_nudge(x = -.05), linetype=6) +
@@ -756,7 +723,7 @@ Figure5a <-
   guides(shape = FALSE,
          color = guide_legend(override.aes = list(shape=15)))
   
-#plot(Figure5a)
+#plot(Figure4a)
 ```
 
 A Wilcoxon Rank Sum test revealed no difference between withVMS (M=.38, SD=.23) and noVMS infants’ CPs (M=.41, SD=.28) when the CP was not INREP (Est.Diff.=.02, p=.74).   
@@ -851,9 +818,9 @@ cliff.delta(d = subset(obj.real, VMSgroup == "noVMS")$PC,
 
 ```
 
-```{r Figure 4b}
+```{r Figure 3b}
 
-Figure4b <- 
+Figure3b <- 
   ggplot(scramble.comparison.object, aes(x=Type, y=PC, shape = Type, color = VMSgroup))+
   geom_point(aes(group=VMSgroup), size = 5, position=position_dodge(-.2)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", aes(shape=Type, fill = VMSgroup), 
@@ -876,8 +843,8 @@ scale_shape_manual(name = "VMSgroup",
   guides(shape = FALSE,
          color = guide_legend(override.aes = list(shape=15)))
   
-#plot(Figure4b)
-multiplot(Figure4a, Figure4b, cols=2)
+#plot(Figure3b)
+multiplot(Figure3a, Figure3b, cols=2)
 ```
 
 
@@ -906,9 +873,9 @@ wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == "withVMS")$PC,
 
 ```
 
-```{r Figure 5b}
+```{r Figure 4b}
 
-Figure5b <- ggplot(match.data.Object, aes(x=Type, y=PC)) +
+Figure4b <- ggplot(match.data.Object, aes(x=Type, y=PC)) +
   geom_point(aes(colour=VMSgroup, shape=Type), size=5, position = position_dodge(-.2)) +
   geom_line(aes(group=subj), colour='grey63',position = position_nudge(x = -.05), linetype=6) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", aes(shape=Type, fill= VMSgroup), colour = "gray32", size=1.5, position = position_dodge(-.2), show.legend = FALSE) +
@@ -927,7 +894,7 @@ Figure5b <- ggplot(match.data.Object, aes(x=Type, y=PC)) +
   guides(shape = FALSE,
          color = guide_legend(override.aes = list(shape=15)))
 
-multiplot(Figure5a, Figure5b, cols=2)
+multiplot(Figure4a, Figure4b, cols=2)
 
 ```
 
@@ -1111,41 +1078,7 @@ vmscount %>%
 
 ```
 
-```{r Figure 1}
 
-Figure1 <- ggplot(vmscount, aes(x= reorder(month_chron, n), y=n, alpha=inREP, fill = Consonant, colour = Consonant))  +  
-  geom_col(lwd = 1, aes(linetype = VMSgroup)) +
-  scale_linetype_manual(values = c("withVMS" = "solid", "noVMS" = "twodash"), guide = F) +
-  scale_alpha_discrete(range=c(0.1,0.6), 
-                    labels = c("outREP", "inREP")) +
-  facet_grid(~subj, scales = "free_x", switch = "x") + 
-  xlab("Subject") + 
-  ylab("n tokens at 0;10 (n=44) and 0;11 (n=17)") +
-  scale_colour_discrete(breaks = c("p", "t", "k", "m", "n"), guide = F) +
-  scale_fill_discrete(breaks = c("p", "t", "k", "m", "n")) +
-  scale_y_continuous(breaks = c(0, 20, 50, 200, 400, 600)) +
-  theme_bw(base_size = 18) + 
-  theme(strip.text.x = element_text(angle=75),
-        axis.text.x  = element_blank(),
-        axis.title.y = element_text(size = 22, face = "bold"),
-        axis.text.y = element_text(size = 22),
-        axis.ticks.x = element_blank(),
-        panel.border =element_blank(),
-        legend.text = element_text(size = 22),
-        legend.title = element_text(size = 24),
-        strip.background = element_blank(),
-        legend.position = c(.95, .80)) +
-  guides(VMSgroup = FALSE) +
-  labs(alpha = "VMS") +
-  geom_hline(yintercept = 20, linetype = 2, lwd = .8, colour = "gray27") +
-  geom_hline(yintercept = 50, linetype = 3, lwd = .8, colour = "gray27") 
-  
-plot(Figure1)  
-
-
-
-
-```
 
 ```{r Table 1}
 

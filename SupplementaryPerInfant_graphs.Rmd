@@ -42,6 +42,7 @@ figS1a <- ggplot(vmscount
                     linetype=VMSgroup))  +  
   geom_col(lwd = .3, color = "black") +
   facet_grid(month_chron~subj, scales = "free")+
+  scale_fill_discrete(breaks = c("p", "t", "k", "m", "n")) +
   xlab("Individual Subjects") + 
   ylab("n tokens") +
   scale_y_continuous(breaks = c(0, 20, 50, 200, 400)) +
@@ -67,6 +68,7 @@ figS1b <- ggplot(vmscount
            linetype=VMSgroup))  +  
   geom_col(lwd = .3, color = "black") +
   facet_grid(month_chron~subj, scales = "free")+
+  scale_fill_discrete(breaks = c("p", "t", "k", "m", "n"), guide = F) +
   xlab("Individual Subjects") + 
   ylab("n tokens") +
   scale_y_continuous(breaks = c(0, 20, 50, 200, 400)) +
