@@ -1,0 +1,83 @@
+---
+title: "SupplementaryPerInfantGraphs.rmd"
+author: "EB"
+date: "8/7/2019"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+
+```{r Set up, include=FALSE}
+library(tidyverse)
+
+```
+
+```{r data and theme, include=FALSE}
+source("ProductionData_randsubj.R")
+mytheme <- theme(strip.text.x = element_blank(),
+      axis.text.x  = element_blank(),
+      axis.title.y = element_text(),
+      axis.text.y = element_text(size=7),
+      axis.ticks.x = element_blank(),
+      legend.text = element_text(),
+      legend.title = element_text(),
+      panel.grid = element_blank(),
+      panel.border = element_blank(),
+      panel.spacing.x = unit(0.,"lines")
+)
+
+```
+
+
+
+```{r just10mo, echo = F}
+
+
+figS1a <- ggplot(vmscount 
+                %>% filter(month==10 & month_chron==10), 
+                aes(subj,
+                    y=n, fill = Consonant,
+                    linetype=VMSgroup))  +  
+  geom_col(lwd = .3, color = "black") +
+  facet_grid(month_chron~subj, scales = "free")+
+  xlab("Individual Subjects") + 
+  ylab("n tokens") +
+  scale_y_continuous(breaks = c(0, 20, 50, 200, 400)) +
+  scale_linetype_manual(values = c(0,1))+
+  theme_bw()+
+  mytheme+
+  labs(linetype = "VMS") +
+  geom_hline(yintercept = 20, linetype = 2, colour = "grey27") +
+  geom_hline(yintercept = 50, linetype = 4, colour = "grey27")
+
+plot(figS1a)
+
+
+```
+
+
+
+```{r month10and11, echo = F}
+figS1b <- ggplot(vmscount 
+       %>% filter(month==11), 
+       aes(subj,
+           y=n, fill = Consonant,
+           linetype=VMSgroup))  +  
+  geom_col(lwd = .3, color = "black") +
+  facet_grid(month_chron~subj, scales = "free")+
+  xlab("Individual Subjects") + 
+  ylab("n tokens") +
+  scale_y_continuous(breaks = c(0, 20, 50, 200, 400)) +
+  scale_linetype_manual(values = c(0,1))+
+  theme_bw()+
+  mytheme+ 
+  labs(linetype = "VMS") +
+  geom_hline(yintercept = 20, linetype = 2, colour = "grey27") +
+  geom_hline(yintercept = 50, linetype = 4, colour = "grey27")
+
+plot(figS1b)
+```
+
+

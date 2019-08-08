@@ -176,7 +176,9 @@ Figure1 <- ggplot(vmscount, aes(x= reorder(month_chron, n), y=n, alpha=inREP, fi
   geom_hline(yintercept = 50, linetype = 3, lwd = .8, colour = "gray27") 
   
 plot(Figure1)  
-  
+
+
+
 
 ```
 
