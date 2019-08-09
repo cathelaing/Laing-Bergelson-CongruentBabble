@@ -9,15 +9,274 @@ output: html_document
 
 ```{r Set up, include=FALSE}
 library(tidyverse)
+library(effsize)
+library(rcompanion)
 
 ```
 
-### Part 1: Figure S5
+### Part 1: Running analysis with three infants removed (all produced <50 but >20 tokens of a given consonant at 0;10 and 0;11)
+
+```{r source data}
+
+source("ProductionData_randsubj.R")
+source("Data_scrambling_randsubj.R")
+
+```
+
+```{r check audio production}
+
+toexclude <- vmscount %>% 
+  group_by(subj, VMSgroup, month_chron, n) %>% 
+  filter(subj %in% vms_subset2$subj &
+           month_chron == 11 & 
+           n < 50 & n >19 &
+           inREP == T) %>%
+  #view()
+  ungroup() %>%
+  group_by(subj) %>%
+  tally()   # 3 infants, 279, 129, 268
+
+vmscount %>%
+  group_by(subj, Consonant, inREP) %>%
+  summarise(totalprod = sum(n)) %>%
+  filter(subj %in% toexclude$subj & inREP == T & totalprod < 50)  # all consonant production >50 tokens with months combined
+
+```
+
+```{r exclude these infants from datasets ro re-run analysis}
+
+ProdData_subset <- ProdData %>%
+  filter(!subj %in% toexclude$subj)
+
+data.scrambled_subset <- data.scrambled %>%
+  filter(!subj %in% toexclude$subj)
+
+vmstotal_subset <- vmstotal %>%
+  filter(!subj %in% toexclude$subj)
+
+compareRecordings_subset <- compareRecordings %>%
+  filter(!subj %in% toexclude$subj)
+
+compareRecordings.spread_subset <- compareRecordings.spread %>%
+  filter(!subj %in% toexclude$subj)
+
+match.data.Prompt_subset <- match.data.Prompt %>%
+  filter(!subj %in% toexclude$subj)
+
+match.data.Prompt.spread_subset <- match.data.Prompt.spread %>%
+  filter(!subj %in% toexclude$subj)
+
+match.data.Object_subset <- match.data.Object %>%
+  filter(!subj %in% toexclude$subj)
+
+match.data.Object.spread_subset <- match.data.Object.spread %>%
+  filter(!subj %in% toexclude$subj)
+
+
+```
+
+
+```{r comparing production across groups in audio recordings - subset}
+
+shapiro.test(vmstotal_subset$audiotokens) # not normal
+
+wilcox.test(subset(vmstotal_subset, VMSgroup == "withVMS")$audiotokens, subset(vmstotal_subset, VMSgroup == "noVMS")$audiotokens, conf.int=T) # p<.001
+
+cliff.delta(d = subset(vmstotal_subset, VMSgroup == "withVMS")$audiotokens, 
+     f = subset(vmstotal_subset, VMSgroup == "noVMS")$audiotokens)   # .99 large
+
+
+shapiro.test(vmstotal_subset$audiotypes) # not normal
+
+wilcox.test(subset(vmstotal_subset, VMSgroup == "withVMS")$audiotypes, subset(vmstotal_subset, VMSgroup == "noVMS")$audiotypes, conf.int=T) # p<.001
+
+cliff.delta(d = subset(vmstotal_subset, VMSgroup == "withVMS")$audiotypes, 
+     f = subset(vmstotal_subset, VMSgroup == "noVMS")$audiotypes)   # .74 large
+
+```
+
+# Infant Production: Video recordings
+
+```{r Effect of VMS group on CP types/tokens}
+
+wilcox.test(subset(ProdData_subset, VMSgroup == "withVMS")$CPtokens, subset(ProdData_subset, VMSgroup == "noVMS")$CPtokens, conf.int=T) # p<.001
+
+cliff.delta(d = subset(ProdData_subset, VMSgroup == "withVMS")$CPtokens, 
+     f = subset(ProdData_subset, VMSgroup == "noVMS")$CPtokens)   # .68 large
+
+wilcox.test(subset(ProdData_subset, VMSgroup == "withVMS")$CPtypes, subset(ProdData_subset, VMSgroup == "noVMS")$CPtypes, conf.int=T) # p=.15 
+
+cliff.delta(d = subset(ProdData_subset, VMSgroup == "withVMS")$CPtypes, 
+     f = subset(ProdData_subset, VMSgroup == "noVMS")$CPtypes)   # .32 small
+
+```
+
+```{r calcuating number of in vs out VMS consonants in video recordings}
+
+shapiro.test(compareRecordings_subset$meanProd) # not normal
+
+wilcox.test(compareRecordings.spread_subset$VMS.Prod.Cong, compareRecordings.spread_subset$VMS.Prod.Incong, paired=T, conf.int=T) # p<.01
+
+wilcoxonPairedR(x = compareRecordings_subset$meanProd,
+                g = compareRecordings_subset$VMS.Prod.Cong) # r=-.58
+
+```
+## Input prompts
+
+```{r Input prompt overview}
+
+#shapiro.test(ProdData_subset$Prod.Prompt.match.PC) # p=.03
+
+#t.test(Prod.Prompt.match.PC ~ VMSgroup, ProdData_subset) # p=.04
+
+wilcox.test(subset(ProdData_subset, VMSgroup=="withVMS")$Prod.Prompt.match.PC, 
+            subset(ProdData_subset, VMSgroup=="noVMS")$Prod.Prompt.match.PC, conf.int=T) # p=.09, EstDiff=-.13
+
+cliff.delta(d = subset(ProdData_subset, VMSgroup=="withVMS")$Prod.Prompt.match.PC, 
+     f = subset(ProdData_subset, VMSgroup=="noVMS")$Prod.Prompt.match.PC)   # .32 small
+
+wilcox.test(subset(ProdData_subset, VMSgroup=="withVMS" & !subj %in% c(279, 129, 268))$Prod.Prompt.match.PC, 
+            subset(ProdData_subset, VMSgroup=="noVMS")$Prod.Prompt.match.PC, conf.int=T) # p=.09, EstDiff=-.13
+
+```
+
+WithVMS infants’ CPs matched the consonantal properties of their caregivers’ speech significantly more in the real data set than in the scrambled one (.55(.17) vs. .22(.14), Est.Diff.=.33, p<.001 by Wilcoxon Test), as did noVMS infants’ CPs (.41(.28) vs. .2(.16), Est.Diff.=.24, p<.01). 
+```{r Input prompt data vs scrambled data}
+
+prompt.real <- ProdData_subset %>%
+  select(subj, month, VMSgroup, Prod.Prompt.match.PC) %>%
+  ungroup() %>%
+  rename(PC = Prod.Prompt.match.PC) %>%
+  mutate(Type = 'Real')
+
+prompt.scramble <- data.scrambled_subset %>%
+  ungroup() %>%
+  select(subj, month, VMSgroup, Prod.Prompt.match.PC) %>%
+  rename(PC = Prod.Prompt.match.PC) %>%
+  mutate(Type = 'Scrambled')
+
+scramble.comparison.prompt <- rbind(prompt.real, prompt.scramble)
+
+#shapiro.test(scramble.comparison.prompt$PC) # not normal
+
+wilcox.test(subset(prompt.real, VMSgroup == "withVMS")$PC, 
+            subset(prompt.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # Significant, p<.001
+
+cliff.delta(d = subset(prompt.real, VMSgroup == "withVMS")$PC, 
+     f = subset(prompt.scramble, VMSgroup == "withVMS")$PC)   # .92 large
+
+wilcox.test(subset(prompt.real, VMSgroup == "noVMS")$PC, 
+            subset(prompt.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # Significant, p<.05
+
+cliff.delta(d = subset(prompt.real, VMSgroup == "noVMS")$PC, 
+     f = subset(prompt.scramble, VMSgroup == "noVMS")$PC)   # .39 medium
+
+```
+
+```{r Input prompt inREP vs outREP comparison}
+
+shapiro.test(subset(match.data.Prompt_subset, VMSgroup=="withVMS")$PC) #normal
+
+# t.test(subset(match.data.Prompt.spread_subset, VMSgroup=="withVMS")$inREP,
+# subset(match.data.Prompt.spread_subset, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p=.001
+
+wilcox.test(subset(match.data.Prompt.spread_subset, VMSgroup=="withVMS")$inREP,
+            subset(match.data.Prompt.spread_subset, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p<.01, Est.Diff=.34
+
+wilcoxonPairedR(x = subset(match.data.Prompt_subset, VMSgroup == "withVMS")$PC,
+                g = subset(match.data.Prompt_subset, VMSgroup == "withVMS")$Type) # r= .64
+
+```
+```{r Input prompt outREP comparison}
+
+shapiro.test(subset(match.data.Prompt_subset, Type=='outREP')$PC)#normal
+
+#t.test(PC ~ VMSgroup, subset(match.data.Prompt_subset, Type=='outREP'), conf.int=T) # ns
+
+wilcox.test(subset(match.data.Prompt_subset, VMSgroup == "withVMS" & Type == "outREP")$PC, 
+            subset(match.data.Prompt_subset, VMSgroup == "noVMS" & Type == "outREP")$PC, conf.int = T) # ns
+
+cliff.delta(d = subset(match.data.Prompt_subset, VMSgroup == "withVMS" & Type == "outREP")$PC, 
+     f = subset(match.data.Prompt_subset, VMSgroup == "noVMS" & Type == "outREP")$PC)   # -.05 negligible
+
+```
+
+
+## Attended objects
+
+```{r Object overview}
+
+wilcox.test(subset(ProdData_subset, VMSgroup == "withVMS")$Prod.Obj.match.PC, 
+            subset(ProdData_subset, VMSgroup == "noVMS")$Prod.Obj.match.PC, conf.int = T) # p<.01
+
+cliff.delta(d = subset(ProdData_subset, VMSgroup == "withVMS")$Prod.Obj.match.PC, 
+     f = subset(ProdData, VMSgroup == "noVMS")$Prod.Obj.match.PC)   # .5 large
+
+```
+
+
+```{r Object data vs scrambled data}
+
+obj.real <- ProdData_subset %>%
+  select(subj, month, VMSgroup, Prod.Obj.match.PC) %>%
+  ungroup() %>%
+  rename(PC = Prod.Obj.match.PC) %>%
+  mutate(Type = 'Real')
+
+obj.scramble <- data.scrambled_subset %>%
+  ungroup() %>%
+  select(subj, month, VMSgroup, Prod.Obj.match.PC) %>%
+  rename(PC = Prod.Obj.match.PC) %>%
+  mutate(Type = 'Scrambled')
+
+scramble.comparison.object <- rbind(obj.real, obj.scramble)
+
+#shapiro.test(scramble.comparison.object$PC) # not normal
+
+wilcox.test(subset(obj.real, VMSgroup == "withVMS")$PC, 
+            subset(obj.scramble, VMSgroup == "withVMS")$PC, conf.int = T) # p<.001
+
+cliff.delta(d = subset(obj.real, VMSgroup == "withVMS")$PC, 
+     f = subset(obj.scramble, VMSgroup == "withVMS")$PC)   # .67 large
+
+wilcox.test(subset(obj.real, VMSgroup == "noVMS")$PC, 
+            subset(obj.scramble, VMSgroup == "noVMS")$PC, conf.int = T) # ns
+
+cliff.delta(d = subset(obj.real, VMSgroup == "noVMS")$PC, 
+     f = subset(obj.scramble, VMSgroup == "noVMS")$PC)   # <-.1 negligible
+
+```
+
+
+```{r Object inREP vs outREP comparison}
+
+# shapiro.test(subset(match.data.Object_subset, VMSgroup=="withVMS")$PC) # not normal
+
+wilcox.test(subset(match.data.Object.spread_subset, VMSgroup=="withVMS")$inREP, 
+            subset(match.data.Object.spread_subset, VMSgroup=="withVMS")$outREP, conf.int=T, paired = T) # p=.11, Est Diff = .31
+
+wilcoxonPairedR(x = subset(match.data.Object_subset, VMSgroup == "withVMS")$PC,
+                g = subset(match.data.Object_subset, VMSgroup == "withVMS")$Type) # r= .38
+
+```
+
+
+```{r Object outREP comparison }
+
+wilcox.test(subset(match.data.Object_subset, VMSgroup == "withVMS" & Type == "outREP")$PC, 
+            subset(match.data.Object_subset, VMSgroup == "noVMS" & Type == "outREP")$PC, conf.int = T) # ns
+
+
+cliff.delta(d = subset(match.data.Object_subset, VMSgroup == "withVMS" & Type == "outREP")$PC, 
+            f = subset(match.data.Object_subset, VMSgroup == "noVMS" & Type == "outREP")$PC) # .17 small
+
+```
+
+
+### Part 2: Figure S5
 
 ```{r data and theme, include=FALSE}
 
-
-source("ProductionData_randsubj.R")
 mytheme <- theme(strip.text.x = element_blank(),
       axis.text.x  = element_blank(),
       axis.title.y = element_text(),
@@ -80,7 +339,7 @@ figS5b <- ggplot(vmscount
 plot(figS5b)
 ```
 
-### Part 2: reanalyse variables with matching stimuli removed
+### Part 3: reanalyse variables with matching stimuli removed
 
 # Input prompt
 
@@ -88,8 +347,6 @@ plot(figS5b)
 
 source("ProductionData_nostimmatch_randsubj.R")
 source("Data_scrambling_nostimmatch_randsubj.R")
-library(effsize)
-library(rcompanion)
 
 1916-1772 # Total CPs in original data - total CPs in data with matches removed = 144
 
@@ -210,7 +467,7 @@ wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == "withVMS")$PC,
 ```
 
 
-## Part 3: Reanalyse variables after removing objects and prompts with matching onset consonants
+## Part 4: Reanalyse variables after removing objects and prompts with matching onset consonants
 
 # Input Prompts
 

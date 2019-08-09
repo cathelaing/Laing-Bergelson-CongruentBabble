@@ -851,7 +851,7 @@ multiplot(Figure3a, Figure3b, cols=2)
 Similar to the caregiver prompts, infants produced more object-matching CPs when the object’s label provided a phonological match with their VMS inventory; this difference was marginally significant (Est.Diff.=.32, p=.056). 
 ```{r Object inREP vs outREP comparison}
 
-#shapiro.test(subset(match.data.Prompt, VMSgroup=="withVMS")$PC) # normal
+#shapiro.test(subset(match.data.Object, VMSgroup=="withVMS")$PC) # not normal
 
 match.data.Object %>% 
   filter(VMSgroup == "withVMS") %>% 
