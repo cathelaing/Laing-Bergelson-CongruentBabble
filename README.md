@@ -68,3 +68,6 @@ with levels_cgprompt.csv, and then filters out all wordclasses except N, O and G
  - *vms_count_randsubj.csv*: for each infant, number of tokens of each consonant type produced in the 30-min audio segment at 10/11 months
 
  - *VMS_randsubj.csv*: file showing each infants' VMS, as well as demographic data (mothers' education and infant sex) and VMS group
+
+ - *demo_data_randsubj.csv*: file showing demographic data for all 44 infants, including VMS group, VMS consonants, CP tokens and types 
+    produced in the video file, mother's education and sibling number. All siblings are older or same age.
