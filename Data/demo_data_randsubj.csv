@@ -1,0 +1,45 @@
+subj,month,sex,MOTedu,Siblings,VMSgroup,VMS,CPtokens,CPtypes
+109,10,F,Assoc Degree,0,withVMS,p b,16,4
+126,10,M,Bachelors Degree,1,withVMS,k g,106,6
+129,11,F,Masters Degree,1,withVMS,p b,24,5
+151,10,F,Some college,2,noVMS,x,20,3
+168,11,F,Masters Degree,3,noVMS,x,35,5
+172,10,M,Assoc Degree,4,noVMS,x,25,3
+189,11,M,Bachelors Degree,0,noVMS,x,9,3
+220,10,M,Bachelors Degree,0,noVMS,x,74,5
+255,10,M,Some college,4,noVMS,x,21,6
+268,11,F,Bachelors Degree,0,withVMS,p b k g,53,7
+274,10,M,Bachelors Degree,0,noVMS,x,9,3
+279,11,F,Bachelors Degree,1,withVMS,t d,98,6
+288,11,M,Bachelors Degree,1,noVMS,x,28,3
+294,10,M,Masters Degree,1,withVMS,p b k g,31,4
+309,10,M,Masters Degree,0,noVMS,x,18,6
+342,10,M,Masters Degree,0,withVMS,t d k g,132,7
+351,10,F,Masters Degree,1,withVMS,p b t d k g,27,3
+357,11,M,Masters Degree,0,noVMS,x,3,3
+375,11,F,Masters Degree,2,withVMS,p b,12,3
+378,10,F,Bachelors Degree,0,withVMS,p b,89,5
+424,10,M,Masters Degree,1,withVMS,p b,19,4
+465,10,F,Masters Degree,0,noVMS,x,15,6
+515,10,F,Masters Degree,1,withVMS,p b k g,49,6
+518,11,F,Doctorate,1,withVMS,p b,54,3
+521,10,F,Masters Degree,0,withVMS,t d n,86,4
+563,11,F,Assoc Degree,3,withVMS,p b t d,52,4
+575,10,M,Assoc Degree,0,withVMS,t d,20,5
+623,10,M,Doctorate,2,noVMS,x,60,4
+625,10,F,Masters Degree,0,noVMS,x,9,3
+626,10,M,Bachelors Degree,2,withVMS,p b,77,3
+639,11,F,Some college,0,noVMS,x,11,3
+664,10,M,Masters Degree,0,noVMS,x,17,3
+737,10,M,Bachelors Degree,1,withVMS,p b t d n,52,7
+738,11,M,Masters Degree,0,withVMS,t d,35,5
+749,10,M,Assoc Degree,0,noVMS,x,10,4
+794,11,F,Masters Degree,1,withVMS,p b,97,5
+828,10,F,Doctorate,1,noVMS,x,69,5
+860,10,M,Assoc Degree,1,withVMS,p b k g,40,5
+861,11,M,Doctorate,0,withVMS,t d,96,4
+893,11,M,Masters Degree,2,withVMS,p b m,73,4
+926,11,F,Bachelors Degree,0,withVMS,t d k g,105,3
+944,10,M,Masters Degree,0,noVMS,x,6,3
+950,11,F,High School,0,noVMS,x,15,4
+986,10,F,Assoc Degree,1,noVMS,x,19,4
