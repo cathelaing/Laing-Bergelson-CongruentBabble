@@ -1,18 +1,17 @@
-# Updated 29th July 2019
+# Updated 18th December 2019
 
-# This script works with the main consonant production spreadsheet (CPdata_randsubj.csv) to count how
+# This script works with the main consonant production spreadsheet (CPdata.csv) to count how
 # many CPs match VMS/Objects/Prompts for each infant. This creates the main dataset to be used in the production study analysis.
 
 library(tidyverse)
 library(forcats)
-library(stringi)
 library(feather)
 
-CPdata <- read_csv("Data/CPdata_randsubj.csv") %>%# read in CPdata_randsubj.csv to use as a base df for all following dfs
+CPdata <- read_csv("Data/CPdata_randsubj.csv") %>% # read in CPdata_randsubj.csv to use as a base df for all following dfs
  mutate(subj = factor(subj))
 
 ProdData <- CPdata %>%
-  group_by(subj, month, sex, MOTedu, VMSgroup, VMS) %>%
+  group_by(subj, month, sex, MOTedu, Siblings, VMSgroup, VMS) %>%
   tally() %>%
   ungroup() %>%
   rename("CPtokens" = "n") %>%
@@ -140,8 +139,6 @@ ProdData <- ProdData %>%           # How many consonant tokens are produced by e
 
 # Read in VMS datasets for analysis in .Rmd script
 
-# Read in VMS datasets for analysis in .Rmd script
-
 VMS <- read_csv("Data/VMS_randsubj.csv") %>%
   mutate(subj = factor(subj))
 
@@ -169,18 +166,16 @@ vmssubset1 <- vmscount %>% group_by(subj) %>% tally() %>% filter(n == 5)  # infa
 vms_subset2 <- vmscount %>% group_by(subj) %>% tally() %>% filter(n == 10) # 17 infants with data at 10 and 11 months
 
 
+
 # Create new datasets for analysis in .Rmd script
 
 # vmstotal: calculates total consonant production (types and tokens) in audio recordings
 
-CPtypes_audio <- vmscount %>% 
-  filter(n > 0 & month == month_chron) %>% 
-  group_by(subj, month, sex, MOTedu) %>% 
+CPtypes_audio <- vmscount %>% filter(n > 0 & month_chron == month) %>% group_by(subj) %>% 
   summarise(audiotypes = n_distinct(Consonant))
 
-vmstotal <- vmscount %>% 
-  filter(month == month_chron) %>%
-  group_by(subj, month, sex, MOTedu, VMSgroup, VMS) %>% 
+vmstotal <- vmscount %>% group_by(subj, month, sex, MOTedu, VMSgroup, VMS) %>% 
+  filter(month_chron == month) %>%
   summarise(audiotokens = sum(n)) %>% 
   ungroup() %>% mutate(MOTedulevel = fct_recode(MOTedu,
                                                 "1" = "High School",
@@ -198,7 +193,7 @@ vmstotal$MOTedulevel <- as.numeric(as.character(vmstotal$MOTedulevel))
 # CPtypes_audio: calculates number of consonant types produced in audio recordings
 
 CPtypes_audio <- vmscount %>% group_by(subj, VMSgroup, month, sex, MOTedu) %>% 
-  filter(n > 0) %>%     # filter out consonants that are not produced
+  filter(n > 0 & month_chron == month) %>%     # filter out consonants that are not produced
   summarise(CPtypes = n_distinct(Consonant))
 
 CPtypes_audio <- CPtypes_audio %>% ungroup() %>% mutate(MOTedulevel = fct_recode(MOTedu,
@@ -265,4 +260,84 @@ match.data.Object.spread <- match.data.Object %>%      # to allow for paired com
   group_by(subj) %>% # to allow pairwise comparisons
   spread(Type, PC)
 
+# Read in developmental data for developmental analysis
 
+devdata_types <- read_feather("Data/basic_levels_Mar1518_randsubj.feather") %>%
+  mutate(subj = factor(subj)) %>%
+  filter(speaker == 'CHI') %>%    # select only infant productions
+  group_by(subj, month, audio_video) %>%
+  summarise(nTypes = n_distinct(basic_level))
+
+
+devdata_tokens <- read_feather("Data/basic_levels_Mar1518_randsubj.feather") %>%
+  mutate(subj = factor(subj)) %>%
+  filter(speaker == 'CHI') %>%    # select only infant productions
+  group_by(subj, month, audio_video) %>%
+  tally() %>%
+  rename("nTokens" = "n") %>%
+  left_join(devdata_types)
+
+devdata_input <- read_feather("Data/basic_levels_Mar1518_randsubj.feather") %>%
+  mutate(subj = factor(subj)) %>%
+  filter(speaker == 'MOT') %>%    # select only infant productions
+  group_by(subj, month, audio_video) %>%
+  tally() %>%
+  rename("nInput" = "n") %>%
+  left_join(devdata_tokens) %>%
+  replace(is.na(.), 0)
+
+devdataCDI <- read_csv("Data/CDI_randsubj.csv") %>%
+  mutate(subj = factor(subj),
+         month = factor(month),
+         month = fct_recode(month,
+                            "06" = "6",
+                            "07" = "7",
+                            "08" = "8",
+                            "09" = "9")) %>%
+  left_join(devdata_input) %>%
+  replace(is.na(.), 0)
+
+CPdata_dev <- ProdData %>% select(subj, VMSgroup, CPtypes, CPtokens)
+
+
+devdata <- devdataCDI %>%
+  left_join(devdata_tokens) %>%
+  select(subj, month, audio_video, nTokens, nTypes, nInput, CDI_TotalProd) %>%
+  left_join(vmstotal, by = "subj") %>%
+  select(-month.y) %>%
+  rename("month" = "month.x") %>%  # remember to filter by audio_video when running tests on CDI data
+  left_join(CPdata_dev)
+
+firstwordaudio <- devdata %>% filter(audio_video == "audio" & nTokens > 0) %>% group_by(subj) %>% summarise(Age1stWordaudio = min(month))
+firstwordvideo <- devdata %>% filter(audio_video == "video" & nTokens > 0) %>% group_by(subj) %>% summarise(Age1stWordvideo = min(month))
+firstwordCDI <- devdata %>% filter(CDI_TotalProd > 0) %>% group_by(subj) %>% summarise(Age1stWordCDI = min(month))
+
+devdata <- devdata %>% 
+  left_join(firstwordaudio) %>%
+  left_join(firstwordvideo) %>%
+  left_join(firstwordCDI)
+
+devdata$Age1stWordaudio <- as.numeric(as.character(devdata$Age1stWordaudio))
+devdata$Age1stWordvideo <- as.numeric(as.character(devdata$Age1stWordvideo))
+devdata$Age1stWordCDI <- as.numeric(as.character(devdata$Age1stWordCDI))
+
+
+
+devdata %>% filter(audio_video == "audio") %>%
+  group_by(subj) %>% 
+  summarise(totalprod = sum(nTokens)) %>% 
+  filter(totalprod == 0) # 3 infants produce no tokens in audio data
+
+devdata %>% filter(audio_video == "video") %>%
+  group_by(subj) %>% 
+  summarise(totalprod = sum(nTokens)) %>% 
+  filter(totalprod == 0) # 6 infants produce no tokens in video data
+
+devdata %>% 
+  group_by(subj) %>% 
+  summarise(totalprod = sum(CDI_TotalProd)) %>% 
+  filter(totalprod == 0) # 0 infants have 0 words according to CDI reports
+
+Demo_data_ProdStudy <- ProdData %>%     # save csv file of demo data for Git Repo
+  select(subj, month, sex, MOTedu, Siblings, VMSgroup, VMS, CPtokens, CPtypes) %>%
+  write_csv("Data/demo_data_randsubj.csv")

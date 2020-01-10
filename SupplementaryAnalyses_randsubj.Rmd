@@ -121,6 +121,7 @@ wilcoxonPairedR(x = compareRecordings_subset$meanProd,
                 g = compareRecordings_subset$VMS.Prod.Cong) # r=-.58
 
 ```
+
 ## Input prompts
 
 ```{r Input prompt overview}
@@ -140,7 +141,7 @@ wilcox.test(subset(ProdData_subset, VMSgroup=="withVMS" & !subj %in% c(279, 129,
 
 ```
 
-WithVMS infants’ CPs matched the consonantal properties of their caregivers’ speech significantly more in the real data set than in the scrambled one (.55(.17) vs. .22(.14), Est.Diff.=.33, p<.001 by Wilcoxon Test), as did noVMS infants’ CPs (.41(.28) vs. .2(.16), Est.Diff.=.24, p<.01). 
+
 ```{r Input prompt data vs scrambled data}
 
 prompt.real <- ProdData_subset %>%
@@ -598,7 +599,7 @@ wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == "withVMS")$PC,
 ```
 
 
-## Part 3: Reanlalyse caregiver input with a subset of data that only includes nouns, onomtopoeia and routine words in CPdata$cgprompt
+## Part 5: Reanlalyse caregiver input with a subset of data that only includes nouns, onomtopoeia and routine words in CPdata$cgprompt
 
 ```{r Source data}
 

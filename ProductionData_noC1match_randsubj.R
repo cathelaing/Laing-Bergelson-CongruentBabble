@@ -1,7 +1,7 @@
-# Updated 13th March 2019
+# Updated 16th April 2019
 
-# This script works with the main consonant production spreadsheet (CPdata) to count how
-# many CPs match VMS/Objects/Prompts for each infant. This creates another version of the ProdData_noC1match dataset but with all instances
+# This script works with the main consonant production spreadsheet (CPdata_randsubj.csv) to count how
+# many CPs match VMS/Objects/Prompts for each infant. This creates another version of the ProdData_noC1match_randsubj dataset but with all instances
 # of a word-intial consonant match between CG prompt and attended object removed.
 
 library(tidyverse)

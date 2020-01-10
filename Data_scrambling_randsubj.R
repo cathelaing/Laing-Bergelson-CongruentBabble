@@ -1,12 +1,11 @@
-# Updated 16th April 2019
+# Updated 8th January 2020
 
 # This script takes CPdata and scrambles various aspects of infant and caregiver data. It then recreates the TRUE/FALSE binomials in line with 
 # these randomly scarmbled responses, and re-calculates all proportions based on these.
 
 library(tidyverse)
-library(stringi)
 
-CPdata <- read_csv("Data/CPdata_randsubj.csv") %>%# read in CPdata_randsubj.csv to use as a base df for all following dfs
+CPdata <- read_csv("Data/CPdata_randsubj.csv") %>% # read in CPdata_randsubj.csv to use as a base df for all following dfs
   mutate(subj = factor(subj))
 
 set.seed(42) #meaning of life
@@ -53,4 +52,4 @@ Prompt.scramble <- CPdata.scr %>%
 
 data.scrambled <- Object.scrambled %>%
   left_join(Prompt.scramble) %>%
-  replace(is.na(.), 0)   # change NAs to 0
+  replace(is.na(.), 0)   # CL: In ProdData there are also a couple of NAs, which I change to 0 in the script, so doing the same here
