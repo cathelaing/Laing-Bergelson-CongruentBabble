@@ -58,6 +58,8 @@ Responses were coded as 'unavailable' if the infant was eating, crying (and thus
 
 Other variables
 
+ - **timediff:** Duration (in ms) between timestamp of caregiver prompt and infant CP
+
  - **C1Obj:** The initial consonant of the attended object
 
  - **C1Prompt:** The initial consonant of the caregiver prompt
