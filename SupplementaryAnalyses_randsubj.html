@@ -11,7 +11,7 @@
 
 <meta name="author" content="Catherine Laing &amp; Elika Bergelson" />
 
-<meta name="date" content="2019-08-07" />
+<meta name="date" content="2020-01-20" />
 
 <title>Supplementary Analyses: From babble to words</title>
 
@@ -377,37 +377,32 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Supplementary Analyses: From babble to words</h1>
 <h4 class="author">Catherine Laing &amp; Elika Bergelson</h4>
-<h4 class="date">7 August 2019</h4>
+<h4 class="date">20 January 2020</h4>
 
 </div>
 
 
-<div id="supplementary-data" class="section level2">
-<h2>Supplementary data</h2>
-<div id="part-1-running-analysis-with-three-infants-removed-all-produced-50-but-20-tokens-of-a-given-consonant-at-010-and-011" class="section level3">
-<h3>Part 1: Running analysis with three infants removed (all produced &lt;50 but &gt;20 tokens of a given consonant at 0;10 and 0;11)</h3>
+<div id="supplementary-data" class="section level1">
+<h1>Supplementary data</h1>
+</div>
+<div id="part-1-running-analysis-with-three-infants-removed-all-produced-50-but-20-tokens-of-a-given-consonant-at-010-and-011" class="section level1">
+<h1>Part 1: Running analysis with three infants removed (all produced &lt;50 but &gt;20 tokens of a given consonant at 0;10 and 0;11)</h1>
 <pre class="r"><code>source(&quot;ProductionData_randsubj.R&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
+##   .default = col_character(),
 ##   subj = col_double(),
 ##   month = col_double(),
-##   sex = col_character(),
-##   MOTedu = col_character(),
-##   VMS = col_character(),
-##   ctype = col_character(),
-##   object = col_character(),
-##   cgprompt = col_character(),
-##   cgresponse = col_character(),
-##   C1Obj = col_character(),
-##   C1Prompt = col_character(),
+##   timediff = col_double(),
+##   include_prompt = col_logical(),
 ##   Prod.Obj.Cong = col_logical(),
 ##   Prod.Prompt.Cong = col_logical(),
 ##   VMS.Obj.Cong = col_logical(),
 ##   VMS.Prompt.Cong = col_logical(),
 ##   VMS.Prod.Cong = col_logical(),
-##   VMSgroup = col_character(),
-##   wordclass = col_character()
+##   Siblings = col_double()
 ## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
 <pre><code>## Joining, by = &quot;subj&quot;</code></pre>
 <pre><code>## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)
 ## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)
@@ -434,29 +429,24 @@ $(document).ready(function () {
 ##   Consonant = col_character(),
 ##   n = col_double()
 ## )</code></pre>
-<pre><code>## Joining, by = c(&quot;subj&quot;, &quot;month&quot;, &quot;sex&quot;, &quot;MOTedu&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;subj&quot;</code></pre>
+<pre><code>## Warning: Column `subj` has different attributes on LHS and RHS of join</code></pre>
 <pre class="r"><code>source(&quot;Data_scrambling_randsubj.R&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
+##   .default = col_character(),
 ##   subj = col_double(),
 ##   month = col_double(),
-##   sex = col_character(),
-##   MOTedu = col_character(),
-##   VMS = col_character(),
-##   ctype = col_character(),
-##   object = col_character(),
-##   cgprompt = col_character(),
-##   cgresponse = col_character(),
-##   C1Obj = col_character(),
-##   C1Prompt = col_character(),
+##   timediff = col_double(),
+##   include_prompt = col_logical(),
 ##   Prod.Obj.Cong = col_logical(),
 ##   Prod.Prompt.Cong = col_logical(),
 ##   VMS.Obj.Cong = col_logical(),
 ##   VMS.Prompt.Cong = col_logical(),
 ##   VMS.Prod.Cong = col_logical(),
-##   VMSgroup = col_character(),
-##   wordclass = col_character()
+##   Siblings = col_double()
 ## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
 <pre><code>## Adding missing grouping variables: `VMSgroup`</code></pre>
 <pre><code>## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)</code></pre>
 <pre class="r"><code>toexclude &lt;- vmscount %&gt;% 
@@ -573,10 +563,8 @@ match.data.Object.spread_subset &lt;- match.data.Object.spread %&gt;%
 ## 95 percent confidence interval:
 ##     lower     upper 
 ## 0.4476738 0.8920476</code></pre>
-</div>
-</div>
-<div id="infant-production-video-recordings" class="section level1">
-<h1>Infant Production: Video recordings</h1>
+<div id="infant-production-video-recordings" class="section level2">
+<h2>Infant Production: Video recordings</h2>
 <pre class="r"><code>wilcox.test(subset(ProdData_subset, VMSgroup == &quot;withVMS&quot;)$CPtokens, subset(ProdData_subset, VMSgroup == &quot;noVMS&quot;)$CPtokens, conf.int=T) # p&lt;.001</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(ProdData_subset, VMSgroup ==
 ## &quot;withVMS&quot;)$CPtokens, : cannot compute exact p-value with ties</code></pre>
@@ -655,8 +643,8 @@ match.data.Object.spread_subset &lt;- match.data.Object.spread %&gt;%
                 g = compareRecordings_subset$VMS.Prod.Cong) # r=-.58</code></pre>
 <pre><code>##      r 
 ## -0.584</code></pre>
-<div id="input-prompts" class="section level2">
-<h2>Input prompts</h2>
+<div id="input-prompts" class="section level3">
+<h3>Input prompts</h3>
 <pre class="r"><code>#shapiro.test(ProdData_subset$Prod.Prompt.match.PC) # p=.03
 
 #t.test(Prod.Prompt.match.PC ~ VMSgroup, ProdData_subset) # p=.04
@@ -672,22 +660,22 @@ wilcox.test(subset(ProdData_subset, VMSgroup==&quot;withVMS&quot;)$Prod.Prompt.m
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(ProdData_subset, VMSgroup == &quot;withVMS&quot;)$Prod.Prompt.match.PC and subset(ProdData_subset, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC
-## W = 276.5, p-value = 0.08501
+## W = 276, p-value = 0.08726
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.01521061  0.32964034
+##  -0.01321087  0.32900689
 ## sample estimates:
 ## difference in location 
-##              0.1299715</code></pre>
+##              0.1297835</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(ProdData_subset, VMSgroup==&quot;withVMS&quot;)$Prod.Prompt.match.PC, 
      f = subset(ProdData_subset, VMSgroup==&quot;noVMS&quot;)$Prod.Prompt.match.PC)   # .32 small</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.3166667 (small)
+## delta estimate: 0.3142857 (small)
 ## 95 percent confidence interval:
 ##       lower       upper 
-## -0.06083596  0.61491513</code></pre>
+## -0.06279023  0.61284224</code></pre>
 <pre class="r"><code>wilcox.test(subset(ProdData_subset, VMSgroup==&quot;withVMS&quot; &amp; !subj %in% c(279, 129, 268))$Prod.Prompt.match.PC, 
             subset(ProdData_subset, VMSgroup==&quot;noVMS&quot;)$Prod.Prompt.match.PC, conf.int=T) # p=.09, EstDiff=-.13</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(ProdData_subset, VMSgroup ==
@@ -698,14 +686,13 @@ wilcox.test(subset(ProdData_subset, VMSgroup==&quot;withVMS&quot;)$Prod.Prompt.m
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(ProdData_subset, VMSgroup == &quot;withVMS&quot; &amp; !subj %in% c(279,  and subset(ProdData_subset, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC    129, 268))$Prod.Prompt.match.PC and subset(ProdData_subset, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC
-## W = 276.5, p-value = 0.08501
+## W = 276, p-value = 0.08726
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.01521061  0.32964034
+##  -0.01321087  0.32900689
 ## sample estimates:
 ## difference in location 
-##              0.1299715</code></pre>
-<p>WithVMS infants’ CPs matched the consonantal properties of their caregivers’ speech significantly more in the real data set than in the scrambled one (.55(.17) vs. .22(.14), Est.Diff.=.33, p&lt;.001 by Wilcoxon Test), as did noVMS infants’ CPs (.41(.28) vs. .2(.16), Est.Diff.=.24, p&lt;.01).</p>
+##              0.1297835</code></pre>
 <pre class="r"><code>prompt.real &lt;- ProdData_subset %&gt;%
   select(subj, month, VMSgroup, Prod.Prompt.match.PC) %&gt;%
   ungroup() %&gt;%
@@ -732,22 +719,22 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC and subset(prompt.scramble, VMSgroup == &quot;withVMS&quot;)$PC
-## W = 423, p-value = 3.733e-07
+## W = 424, p-value = 3.255e-07
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.2349236 0.4473551
+##  0.2455879 0.4514537
 ## sample estimates:
 ## difference in location 
-##              0.3418088</code></pre>
+##              0.3528706</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC, 
      f = subset(prompt.scramble, VMSgroup == &quot;withVMS&quot;)$PC)   # .92 large</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.9183673 (large)
+## delta estimate: 0.9229025 (large)
 ## 95 percent confidence interval:
 ##     lower     upper 
-## 0.7539819 0.9745093</code></pre>
+## 0.7650951 0.9761297</code></pre>
 <pre class="r"><code>wilcox.test(subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC, conf.int = T) # Significant, p&lt;.05</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(prompt.real, VMSgroup == &quot;noVMS&quot;)
@@ -758,58 +745,54 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC and subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC
-## W = 277.5, p-value = 0.03637
+## W = 274.5, p-value = 0.04423
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  5.728778e-05 3.589496e-01
+##  1.366031e-05 3.590388e-01
 ## sample estimates:
 ## difference in location 
-##              0.2030327</code></pre>
+##              0.2103352</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC, 
      f = subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC)   # .39 medium</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.3875 (medium)
+## delta estimate: 0.3725 (medium)
 ## 95 percent confidence interval:
-##         lower         upper 
-## -9.557916e-05  6.738737e-01</code></pre>
+##       lower       upper 
+## -0.01460746  0.66249881</code></pre>
 <pre class="r"><code>shapiro.test(subset(match.data.Prompt_subset, VMSgroup==&quot;withVMS&quot;)$PC) #normal</code></pre>
 <pre><code>## 
 ##  Shapiro-Wilk normality test
 ## 
 ## data:  subset(match.data.Prompt_subset, VMSgroup == &quot;withVMS&quot;)$PC
-## W = 0.94918, p-value = 0.06035</code></pre>
+## W = 0.94499, p-value = 0.04282</code></pre>
 <pre class="r"><code># t.test(subset(match.data.Prompt.spread_subset, VMSgroup==&quot;withVMS&quot;)$inREP,
 # subset(match.data.Prompt.spread_subset, VMSgroup==&quot;withVMS&quot;)$outREP, conf.int=T, paired = T) # p=.001
 
 wilcox.test(subset(match.data.Prompt.spread_subset, VMSgroup==&quot;withVMS&quot;)$inREP,
             subset(match.data.Prompt.spread_subset, VMSgroup==&quot;withVMS&quot;)$outREP, conf.int=T, paired = T) # p&lt;.01, Est.Diff=.34</code></pre>
-<pre><code>## Warning in wilcox.test.default(subset(match.data.Prompt.spread_subset,
-## VMSgroup == : cannot compute exact p-value with ties</code></pre>
-<pre><code>## Warning in wilcox.test.default(subset(match.data.Prompt.spread_subset,
-## VMSgroup == : cannot compute exact confidence interval with ties</code></pre>
 <pre><code>## 
-##  Wilcoxon signed rank test with continuity correction
+##  Wilcoxon signed rank test
 ## 
 ## data:  subset(match.data.Prompt.spread_subset, VMSgroup == &quot;withVMS&quot;)$inREP and subset(match.data.Prompt.spread_subset, VMSgroup == &quot;withVMS&quot;)$outREP
-## V = 199.5, p-value = 0.003702
+## V = 196, p-value = 0.003753
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.1250365 0.5374599
+##  0.1183386 0.5416667
 ## sample estimates:
 ## (pseudo)median 
-##      0.3353695</code></pre>
+##        0.34039</code></pre>
 <pre class="r"><code>wilcoxonPairedR(x = subset(match.data.Prompt_subset, VMSgroup == &quot;withVMS&quot;)$PC,
                 g = subset(match.data.Prompt_subset, VMSgroup == &quot;withVMS&quot;)$Type) # r= .64</code></pre>
 <pre><code>##     r 
-## 0.637</code></pre>
+## 0.611</code></pre>
 <pre class="r"><code>shapiro.test(subset(match.data.Prompt_subset, Type==&#39;outREP&#39;)$PC)#normal</code></pre>
 <pre><code>## 
 ##  Shapiro-Wilk normality test
 ## 
 ## data:  subset(match.data.Prompt_subset, Type == &quot;outREP&quot;)$PC
-## W = 0.93909, p-value = 0.02924</code></pre>
+## W = 0.93055, p-value = 0.01507</code></pre>
 <pre class="r"><code>#t.test(PC ~ VMSgroup, subset(match.data.Prompt_subset, Type==&#39;outREP&#39;), conf.int=T) # ns
 
 wilcox.test(subset(match.data.Prompt_subset, VMSgroup == &quot;withVMS&quot; &amp; Type == &quot;outREP&quot;)$PC, 
@@ -822,13 +805,13 @@ wilcox.test(subset(match.data.Prompt_subset, VMSgroup == &quot;withVMS&quot; &am
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(match.data.Prompt_subset, VMSgroup == &quot;withVMS&quot; &amp; Type ==  and subset(match.data.Prompt_subset, VMSgroup == &quot;noVMS&quot; &amp; Type ==     &quot;outREP&quot;)$PC and     &quot;outREP&quot;)$PC
-## W = 200, p-value = 0.8039
+## W = 200, p-value = 0.8038
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.1978788  0.1500385
+##  -0.1922955  0.1500415
 ## sample estimates:
 ## difference in location 
-##            -0.01955668</code></pre>
+##            -0.01960645</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(match.data.Prompt_subset, VMSgroup == &quot;withVMS&quot; &amp; Type == &quot;outREP&quot;)$PC, 
      f = subset(match.data.Prompt_subset, VMSgroup == &quot;noVMS&quot; &amp; Type == &quot;outREP&quot;)$PC)   # -.05 negligible</code></pre>
 <pre><code>## 
@@ -837,10 +820,10 @@ wilcox.test(subset(match.data.Prompt_subset, VMSgroup == &quot;withVMS&quot; &am
 ## delta estimate: -0.04761905 (negligible)
 ## 95 percent confidence interval:
 ##      lower      upper 
-## -0.3941079  0.3107215</code></pre>
+## -0.3950762  0.3117573</code></pre>
 </div>
-<div id="attended-objects" class="section level2">
-<h2>Attended objects</h2>
+<div id="attended-objects" class="section level3">
+<h3>Attended objects</h3>
 <pre class="r"><code>wilcox.test(subset(ProdData_subset, VMSgroup == &quot;withVMS&quot;)$Prod.Obj.match.PC, 
             subset(ProdData_subset, VMSgroup == &quot;noVMS&quot;)$Prod.Obj.match.PC, conf.int = T) # p&lt;.01</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(ProdData_subset, VMSgroup ==
@@ -985,40 +968,33 @@ wilcox.test(subset(match.data.Object.spread_subset, VMSgroup==&quot;withVMS&quot
 ## 95 percent confidence interval:
 ##      lower      upper 
 ## -0.1704158  0.4802270</code></pre>
-<div id="part-2-figure-s5" class="section level3">
-<h3>Part 2: Figure S5</h3>
+</div>
+</div>
+<div id="part-2-figure-s5" class="section level2">
+<h2>Part 2: Figure S5</h2>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABUAAAAPACAMAAADDuCPrAAAB+FBMVEUAAAAAADoAAGYAOjoAOmYAOpAAZpAAZrYAsPYAv30ZGT8ZGWIZP2IZP4EZYp8aGhozMzM6AAA6ADo6AGY6OgA6Ojo6OmY6OpA6ZmY6ZpA6ZrY6kJA6kLY6kNs/GRk/Pz8/P2I/YmI/Yp8/gb1FRUVNTU1NTW5NTY5Nbo5NbqtNjshZWVliGRliPxliPz9iYj9iYmJiYoFigYFigZ9in9lmAABmADpmOgBmOjpmOmZmZgBmZjpmZmZmZpBmkGZmkJBmkLZmkNtmtttmtv9uTU1ujqtujshuq8huq+SBPxmBYmKBgWKBvdmOTU2Obk2Obm6Oq8iOyOSOyP+QOgCQOjqQZjqQZmaQZpCQkDqQkLaQtraQttuQ27aQ29uQ2/+fYhmfYj+fgWKfn5+fn72fvdmf2dmjpQCrbk2rjm6rq46r5P+2ZgC2Zjq2Zma2kDq2kGa2kJC2tma2tpC2tra2ttu2tv+225C229u22/+2/7a2/9u2//+9gT+9n5+9vb292dnIjk3Ijm7Iq27Iq47I5P/I///Zn2LZvYHZvZ/Z2Z/Z2b3Z2dnbkDrbkGbbtmbbtpDbtrbb25Db27bb29vb2//b/7bb/9vb///kq27k///na/P4dm3/tmb/yI7/25D/27b/29v/5Kv/5Mj//7b//8j//9v//+T///9IQif+AAAACXBIWXMAAB2HAAAdhwGP5fFlAAAgAElEQVR4nO3djX8k933Y97k7XmDnoRQSHk1SPqsPAiWxadIkRU4N6ZLmsa7sVLKiK9kqTNmHJGIiqKQTuRETNs1FD62rQkeHYX2iBeJEQrj9Nzsz+/DdBbDAfnd2FrOD9/uVELuLwfxmT8DH87zFAIClFJe9AACbSkABliSgAEsSUIAlCSjAkgQUYEkCCrAkAQVYkoACLElAAZYkoABLElCAJQkowJIEFEj5XNJlL2+bBBRI+dz/myGgABMCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ1rCWhxjnWMD6yOgIb1BPQXcwkobBgBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGhYNmCf7Hyr+vL4R6/tPP/Nj088PDWIgEJvCGhYMmCfvjYM6P2dygsnHp4aREChNwQ0LBewx2/v1AH9ZOfLPx589o3q8dTD04MIKPSGgIblAvbz5/9pXcr7z393UK2OvjDz8PQgAgq9IaBhqYB9svOteh/o47e/Uu3zrL5MPRxO87mRehABhd4Q0LBMwH719ReGB5GqB5X7X/rJ1MPhRAIK/SSgYZmAVZG8MKAzgwgo9IaAhiUC9vPhMSMBhStJQEM+YJ++9rWBgMKVJaAhH7Cf74w8/93zDiLNDCKg0BsCGhoF1GlMcPUIaGh2KacT6eHKEdDQ8Fp4l3LCVSOgoenNRH4YNxP5oZuJwBUgoMHt7IAUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQ0mJA94ri7tTTo93i+vuHf/np3/6jeO34g5dubY0ef/j6U0VR3Hj5veZvakkCCqS0GNCDotiafXp7cLhdFNfemn5tNM3xvWLsuYereGNLEFAgpcWAlk28/n483avKWQW07Gi8NgroVD+L4uYlFXQ9AT3HOsYHVqfNfaD7060st+DLMJYBvRWBPNq99tQwoOWk1179qHzwy3e3Z7f812g9Af3OXAIKG6bNgJa1jJXJg7qL5Usvb0+24Q+KP3evDmi1svreWT+1VtZAgZRWj8LvTe3v3Ku358s6vnpvsl66Vz3ZGtSrp1uD2SkvwXoC+utzCShsmFYDehDb8GU5t4Zf7u6P1zCPdq//q8ka6Nbq3tOyBBRIaTWgw/2etf3hymgV0MPxNvxBsTUu535R/OZlHXyfEFAgpd0T6ffH2/BlKOuUVgE9Hm/D7xW3xwEtU1sUz/z9j1b51tIEFEhpN6CjDff6we3R17uD0Tb80e61tybb7uPzmG69cnkRFVAgpd2ATk4F3R99rQM62oY/KDs6tfPzw9e3hw194rKuRRJQIKXla+GHJy/FQaI6oOX2erU6Wm7Bnzh6dPwnb1SXc05dqrRWAgqktBzQ0flJB+OT4+uAlukst+GP75WhPH34/fidot+nMTkPFHqj7bsxDbfd98ZH44cBPRhe1VlX9PT5S/uXdSnSegL6a3MJKGyYtgM6vc0+fjp8vl+9NgrozLnzMfWaCSiQ0nZA6/OXDia7NYcBLYO5VW/BjwM6s9I5PmK/dgIKpLR+Q+UqnnuT7fRRQA+K6/+82oIfB7R8eXIt/Mn7iK6PgAIprQe03CD//O6kiKOAli/emrmGs7qv3bM/qF744M6l3c9OQIGU9j/So2rjZA/nKKD1i9PnN9VXIo31+zQmAYXeaD+g1T2Ub089qQO6P4rqqSuRqhPpL6mfAgrktB/QMo2xSjkO6Pgaz6nTmB69cata+3z6zcbvaVkCCqT4VM4goECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUtoM6H+a0Nb7yxBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgZQNC+jxvWJr8uSguP7+wY1nvv1w/M0/fPGvvF8/ePepoiiefjOzsAMBBZI2LKCD/TKa48d7xe0yokVxd/S8fFx/83C7GHri/bNnMoeAAimbFtCj3Ukvj3avvVVG88b21uiFvRvbVUDLtdSb75VPP7gztba6CAEFUjYtoOVq59bo0UFx82H5nyfujNZJj3Y/v1s9rF8fvlAWNkFAgZSuBnSvuPvgqaJ49r362aPXi/Hjg8k2fLUFX9XyndE66cG1f1AHdH+S2HqKxQkokNLdgN6qd2PWtTwY7tS8VoWy3EAf9vJovLr570bb8HvX/+Xopeu5fZ9jAgqkdDegxdbDwYPtqpaH28WzHw2Ov1fUW+TjFcyD+msZ0D+9VwfzaHdr2NSj3eLaKx8t8W8hoEBKdwNa78isN8LHyRzu/jzcHu7Z3KvXRKsdnvv1o/K/w4AOHt2p1lef/nY2ogIKpHQ3oFvVl6qdk4324dGh8mm1Z3MUy+q1el30uFwPHb02OP6gTmjx7MOTsz2XgAIp3Q1offynCujkYPpUM8db8PWT+vXD7a3xBLUPq5PpcztDBRRI2YiATs5TGu3srIK6N6xqXdNqa77ajp8OaOnRrqPwQIs2IqCza6D19452hyd7jk4G3aq24IcTTJ39OTkjdDECCqRsQEBP7AOtDiNV+z1vx2tlOP9FdS5THdDJ5AIKtGsDAnriKHx1vOjaW6Mt+GEjyxderKp5NDqRPk6138osr4ACKZsQ0OF5oL98vRhvm+8Xn9/dGj4crmTuD48XxXmgrz6sL19yKSfQok0I6MyVSJXqdkujx8OAli9UX2bOA53+gcUIKJCyEQGdvhZ+9N3xVvpZ54YOjj/4ajn9jezlSAIKpHQ1oJdBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAiltBnTTCCiQIqBBQIGUNgNaZLT1BhMEFEhpNaCJfaBdiIeAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIGUDQnofnF7MDh+97ny4V71sHZ8r9iaTHFQXH//4MYz3344/uYfvvhX3q8fvPtUURRPv7nA8mbe3LIEFPpjkwJ6UPcyAlq+ev398ePq5YOylHdHz8vH9TcPt0c3HH3i/cEFBBRI2ZCA1k4F9Gh30suj3WtvlRPc2N4avbB3Y7sKaLmWevO98ukHd6bWVuctb+bNLavjN5UGEjY6oOXjrcn3bj4s//PEndE66dHu53erh/XrwxfKwl6wvJk3t6ziz+YSUNgw3QzoqHb7dR8Pt28+LDfhy3XJ0lYV0MM7RfFs1cWDyTb83nAb/+Y7o3XSg2v/oA7o/iSx0+Gds7yZN7csAYX+6GZAy9rdrf9brT5WDZwJ6DP1bs3qW+Vrw14ejVc3/91oG37v+r8cvXT9wn2fk+XNvLllCSj0R0cDWh80Otqt61fFdOYgUrVX88F2nc7xCubwW2VA//ReHcyj3a1hU8t5XHvlowWXN/PmliWg0B8dDehhtSJ5uH2r3JKvQzgT0Hqv5nCL/HB7uGdzuMZa7fDcH4X17jCgg0d3qtXVp7+9QEQFFEjpaECP79XVfHn7br0LdDag1X9H657lNnzV0VEsq4DWE1U/PnptcPxBndDhTtPzlzfz5pYloNAfHQ3oYK9cs6z2Y94etvP0eaCjjffhUfaDeFJ3s1qBHQe08mF1Mv2FO0MFFEjpakAPqm3wm396b+v4XrWRPjegw+P1e8MN+bqmw12md2cCWnq06yg8sFpdDejh9u3y/w32bv5/o7OR5gS0flqmtt4+H50MulXvAKgDOnX25+SM0PnLm3lzyxJQ6I+uBvT43s0H5WrkwfV/VodyfkCrXaQHo5XLupFlOP9FdQiqDujkPCcBBVauqwEd7F3/O+XK4+FffnF0VH1eQKtN/NEW/LCR5Qv1zxyNVl3jVPuti5Y38+aWJaDQH50N6EExXJ0sRtck3R6vQ54IaPng87tb458ZnnhfDM8AHZ8H+mr54qPXC5dyAqvV2YAebg/PRxpueNcBrW6sdPPhyYBWr44204cBLV+ovsycB1q6dvfkEKeWN/PmliWg0B+dDejoDM9JLqsvP9s+I6DlJOOt9IPx9Z1T54YOjj/4apnPGwtcjiSgQEpnA3oJBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJDSakAz2nqDCQIKpLQZ0E0joECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqDhgoAd/8n3/2gFgwgo9IaAhrkBe/TfPxwMju4URfHEW40HEVDoDQEN8wK2X1x/fzDYKyrVo2aDCCj0hoCGOQE7qLN5uF3cfPhot7jddBABhd4Q0DAnYHtlOauMXnur+m/1uNEgAgq9IaDh7IAd36vKOcro0W7TbXgBhf4Q0HB2wIbNPNottgYCCkwT0HBeQA+3i7sDAQWmCWg4bxN+v94Fah8oMEVAw9yDSFvV4feqnI7CA1MENMw/jalyd3D8ejFcD200iIBCbwhomH8ifWmrPpB07W7jQQQUekNAw/xLOd/47TfLL0d/+9n3mg8ioNAbAho6czem4jzrWEhgIQIauhPQX8wnoNAdAhrOa9O/H/uo6SACCr0hoGFemx69PrUFvY4T6QUUNoOAhjltOtot1h1Q+0BhIwhomNOm/aJ44uXvj/3RGq5EKr4zn4BCdwhomHcpZ30bkZUNIqDQG+0H9IPXt8sNz6ffbLjmtgbzbibS+OqjmUEEFHqj7YB+8NR43921V9tY/os9+I1F033e3ZhWRkChP1oO6P704Y+m9+FYyt7i908694bKqyKg0B/tBrTq541XqlMnP/zqCm7EsYzGAS3fxCrLL6DQH60G9HC7KJ4b56uMadN7aS6jeUDLVdAV7n0QUOiPVgO6V0wfwN67lFXQ5pvwb7xYrjw/89LIb6/jNCbngcJGaDOg1e3fppJ5+PTLw5sZPaqOy18b3dmonOj28btPVZv6ozQ9Gh22H//cBZMPPqynvzV8fuL7+5m9r/MOIs30ay0n0v/6fAIK3dFmQA+KM8+gHB9YuvY71bOyT5+/M3zhibpND8apGj69aPLj781Mf+L7Agq0p82A7p9ZrurCnh+U6413itHHtFVtfDh4dG849eF2cbNc2Tx+Z1TfCyavvl/tZn10pxh9bOaJ7zffB7paAgr90XJAT9/A/Wh3VLTje8Xo84KHU5XPq2/sj9fx9sbfPnfy0ccNTyY8+X0BBVqz9oDuT/aLluuat6cKOSrm/uyhposmPxh/PwI78/2VBfS46X3sxoMIKPTG2gO6N9mLOFx5nKxCjtY9D6oDRj9YePKTMz71/ZUE9IOvVjs/j/72K83PwxJQ6I+WDyKd2gc63rKePDyafFLwqHjDg0LD0+8XmLzyyw+//8ZTxTigs99fQUCHx6nKgO6OD2w1IKDQH20GtDoeNB2vn337o5l7G+2dXcRqda8+iv7mYJHJHzw1fYC8jYDulcvyX21ff//4v1vBtQACCv2xxvNA692Ti61SfvhGXcW7F6+Blq9WJ4G+9O2P9toKaLki/eroliIPts/YKZEjoNAfrV6JtD9zIujwrKYzdmqeDuhgeB5Tmb6LJt+fXCzaWkD3hgev6rntN743qIBCf6zvWvgHxbh4o5W44S7SE8Wb2mavi3jx5KM+lt9oJ6DDuzGNAnq47UR6YKz9uzFdqw4HHdc7Nqu0nXFi54lVyjgvabjJft7kEdD9tvaBDtM5Cmjzm4MKKPRHy/cD/d70VZDP1S9NXVo0CupM8aodp69WlxbdG657XjD5aBO++nYxXFM8EdAqyAuewymgQErbd6T/2fY4n8Nr2QdnXNw+W7zDyU/cXmDyo9GF78Wz79TBPTW7g+qbWwst69zPRLo7KedB48PwAgr90fpnIh3/4VenbpZUG95e6bnhauHpg0jH796qTgR97qOFJq9vvVSdej/vmNSD8qe3Fqre3Bsqb40DuoIPmBNQ6A+fyhnmtKlcJX7uYR3QR3ea39JUQKE/BDTMa1O1E+HW9rVnnlr4xnjnDSKg0BsCGua26Wcndss2GkRAoTfmBfSPf/9v/RsBHfvlcLfs6K74zQYRUOiNeQH96e89+V8IaBuDCCj0xtxN+P/ryb/wjwW0hUEEFHpj/j7Q/+nJv3RqI/4qBvTof59+9sF/6UR6YGQmoD/9/f88/PXfOl3QKxnQ3bgB0/H3fKgcMDET0P/nrz456+RW/NUM6LVxQT+441M5gTB/DbTyN/6NgB7dK4YFrW9M/0TTA/ECCv3hPNAwp01Hw+uPPtieup6/wSACCr0hoGFem6qC/o+vVzcscR4oMEVAw9w2DW/5dO3VlQwioNAbAhrmt6kq6J9r/pHG9SACCr0hoOGcNpUFvb6C7feBgEKfnAroH//dv/aFJ5988gtf+Jv/6KoH9PiNlyZeLDfh6we/7YbKwMiJgP7xfzZ1FuhfPJXQqxXQo93iNOeBAmOzAf2/f+vJP/83/+H/WfnXf/e3Tl8NL6DdCegZyzbRbBGBBc0GdOb695/+3pP/QaOAnvcn3sW/+c26mUjxi7m68I8JV8GJSzn//H87sz7a7FLO4tcW14W/+WWW4bM/2Nl5/nc/rh4+/tFrO89/8+TDU4MIKPTGiYDOFPPEUwE97dPXdipf/kn5+H798IXB7MNTgwgo9MbstfC/d2IN9OTtmK5qQOs70l+79crJz5d//PbO3yvXQt/e+dpg8MnOl388+OwbO9+aeXh6EAGF3pjdB/p/PPkX4sj7H//VJ/+TZvtA+xLQ/cme2hOfifSrr78w+XL/+e8OqlXS2YenBxFQ6I3ZgP7095588j/8W/9r5X/5a08++RebHYXvS0Crft545qUX534qZxXQx29/pdrnWX2ZenjGICsLaLePyMFVcOI80J/+z1Pngf7HDe9I35OAHm4XN4dXIT26d/bnwn9SbsKPVkYH97/0k6mHw+9/bqQeZGUB/c5cXfjHhKvg1JVIP/3Xv//Xv/CFL/xHf+MfnvzOVQ3oXnFzfPXR8b1i6/QEn75WrmoKKFw9bV4L34+AHt+bWus83L556lLOT1+rdnmeF9CZQQQUekNAw7yP9Ji6+GjmydDPq0PulxFQ+0DhsgloWCagj9/eGR4qWv9BpAWmAVoloGHeJnwRH8t5UMxuwj+uTwGtrf00JgGFyyagYYmDSPfjZPm1n0gvoHDZBDTMP43piR/Ujz68c+I0ptGVnDs71d7OdV/KKaBw2QQ0nHcifXHr1q3TlyJ9sjMV0Mc/jJuJ/HANNxMRULhsAhrmLsOD7dHR7RV8rpyAQn8IaJi/DMcfvFiugT7z5go+V05AoT8ENGzYDZUFFC6bgIY5pzG9MfU5cocv/kZXPlROQOHSdTWge8XdwzvFtVdW82HsCy7vma9edCVSdhABhd7obkBfro/cbK3urV68vGe+OtPMw20BBca6G9DqHnIPtqeuAmrdqe6c9bGcp28mkhxEQKE3uhvQelVvv3GwMst76pWD0wFtGnQBhf7obkDrU9ab73PMLO+pV47/t5deenH72jMvjb38g8aDCCj0RncDWq/qzdyMs20L7ANdwSACCr0hoFPLe+arM6cxrWAQAYXeENCp5V3LIAIKvdHdgNb7QJufNpRZ3rUMIqDQG90NaH34fX+dJ4IKKJDS3YAWWw8v+zzQVgYRUOiN7gb0peL0/TfbJaBASncDerdc/bzR/P6bmeVdyyACCr3R4YCu8F0uuLxrGURAoTcEdGp51zKIgEJvCOjU8q5lEAGF3hDQqeU953v/fuyjpoMIKPSGgE4t75zXH70+dTcm9wMFxroa0MswZxlm7woqoMCYgIY5y7BfFE+8/P2xP3JDZWBEQMOcuzHdW+nlpAIK/SGgYd79QFd6QygBhf4Q0OCGykCKgIZ5m/DWQIEzCWiYexBplXc0EVDoj1YDmtHWG0yYswzlKugK72kioNAfbQZ008z7TKQXiyI+mLPpByQJKPSHNdAw7yDSzHI6kR4YazWg81sxPx6XSECBFAEN7sYEpAhoEFAgRUCDgAIpAhoEFEgR0NC/gHb8tAfYdAIaehjQX8zVhX9w2HQCGq5mQLt+di50mICGKxrQ+dNYTYXzCWgQUAGFFAENAiqgkCKgQUAFFFIENAiogEKKgAYBFVBI6WpAj999boXvcsHlXcsgAgq90dWAHqz0s4QXXN61DCKg0BsCOrW8axlEQKE3BHRqedcyiIBCb3QzoMf3qusIt1b5RhdZ3rUMIqDQGwI6tbxrGURAoTe6GVCb8AIKG0BAp5Z3LYMIKPSGgE4t71oGEVDoDQGdWt61DLKRAXXPUDiLgE4t71oG2cyAWkuFMwjo1PKuZZDOBXSRtUsBhbMI6NTyrmWQzgX0O/MJKJxLQKeWdy2DCCj0RncDevPhCt/mYsu7lkEEFHqjqwE93C7WnlABbRRQR+q5eroa0MHPtgV0wwJqLZUrp7MBvQQCKqCQIqBBQG3CQ4qABgFtFtAF5gP9IqBBQAUUUgQ0CKiAQoqABgEVUEgR0CCgAgopAhoEVEAhRUCDgAoopAhoEFABhRQBDQIqoJAioEFABRRSWg1oRltvMEFABRRS2gzophFQAYUUa6BBQAUUUloN6Py/uvl/hpdIQAUUUgQ0CKiAQoqABgEVUEgR0CCgAgopAhoEVEAhRUCDgAoopAhoEFABhRQBDQIqoJAioOGKBnSRyxtWFdCuX0sBOQIarmhAFxpsVQHt+K8A5AhouKIBXesaaMd/BSBHQMMVDeivzSegcC4BDQIqoJAioEFABRRSuhrQ/eL2Ct/lgsu7lkEEVEDpDQGdWt61DCKgAkpvCOjU8q5lEAG9cEbOFWVTCOjU8q5lEAG9cEaL/5rA5ep2QA+3r721uvd64fKuZRABvXBGi/+awOXqdEDLft5d4Xu9cHnXMoiAXjijxX9N4HJ1OaBHu8U6+ymgAgo5HQ7o8b017wcVUAGFlA4HdG/dx5EEVEAhpbsBLQmogJ7/awKXq8MBfWath+AHAiqgkNTdgG7V/3+dBFRAIaW7AXUUftMC2uy+oskZuVqJLuhyQAcHxc2HK3yvFy7vWgbpb0CbzWdlq7ICyvp0OqBrPpFJQPsV0PPWUlWWleh0QAeH29ffX917vXB51zKIgF44o1UFNPH7BkvpdkAHe+s8jiSgHQlos52pAsr6dDWgl0FAOxLQVS1Qx3/f6AEBDQIqoJAioEFABRRSBDQIqCKl12cAABWsSURBVIBCioAGARVQSBHQIKACCikCGgRUQCFFQIOACiikCGgQUAGFFAENAiqgkCKgQUAFFFIENAiogEJKqwHNaOsNJgiogEJKmwHdNAIqoJBiDTQIqIBCSqsBnX9j3Pl3yr1EAiqgkCKgQUA3KKDNbrosoKyGgAYB3aCALvCrJKC0TkCDgAoopAhoEFABhRQBDQIqoJAioEFABRRSBDQIqIBCioAGARVQSBHQIKACCikCGgRUQCFFQIOACiikCGgQUAGFFAENArpBAXUtPF0goEFANyigzd69gLIaAhoEVEAhRUCDgAoopAho6E5AF9rDJ6ACymXrakD3iruHd4prvzMY/Gy7uPHmCt/xOcu7lkEWCehCTRNQAeWydTegL29X61u396r/XntrhW95/vKuZRABFVB6o7sBLZ57ePxO2c5XB4/uFVure8fnLO9aBhFQAaU3uhvQmw8Hg8Pt4nb55KB+0joBFVBI6W5Aq3Ie7dYb7wIqoAJKFwno1PKuYQwB7VhAFznhAebpbkDvDgRUQNsP6ALTwDwCOrW8axhDQAWUHhHQqeVdwxgCKqD0iIBOLe8axhBQAaVHBHRqedcwhoAKKD0ioFPLu4YxBFRA6REBnVreNYwhoAJKj3Q1oJdBQAVUQEkR0CCgAiqgpAhoEFABFVBSBDQIqIAKKCkCGgRUQAWUFAENAiqgAkqKgAYBFVABJUVAg4AKqICSIqBBQAVUQEkR0CCgAiqgpAhoEFABFVBSBDQIqIAKKCmtBjSjrTeYIKACKqCktBnQTSOgAiqgpFgDDQIqoAJKSqsBnf9LPv+3/hIJ6PzBFvg/fQLK1SOgQUDnD7aqaQSUXhHQIKACKqCkCGgQUAEVUFIENAiogAooKQIaBFRABZQUAQ0CKqACSoqABgEVUAElRUCDgAqogJIioEFABVRASRHQIKACKqCkCGgQUAEVUFIENAiogAooKQIaBFRABZQUAQ0CKqACSoqABgEVUAElRUCDgAqogJIioEFABVRASelqQPeKuw+eKopn31vhe71wedcyiICuJKCL3CJfQGlbdwN6q/5juP7+Ct/sRcu7lkEEdCUBXdlgAkoD3Q1osfVw8GC7uLvCN3vR8q5lEAEVUHqjuwG9+bD+cnt17/XC5V3LIAIqoPRGdwO6VX3ZH35Zjw0LaLO9gAK6+D8RzNPdgNarngLaVkIEdPF/IphHQKeWdy2DCKiA0hsCOrW8axlEQAWU3hDQqeVdyyACKqD0hoBOLe9aBhFQAaU3BHRqedcyiICuJKCuRKILBHRqedcyiICuJKCL/DMKKG0T0KnlXcsgAiqg9EZXA3oZBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQAIaBLTZYM0WSEDZQK0GNKOtN5ggoM0Ga7ZAAsoGajOgm0ZAmw3WbIEElA0koEFAmw3WbIE6HNCObzlxiQQ0CGizwZotUJcDusA0XE0CGgS02WDNFkhA2UACGgS02WDNFkhA2UACGgS02WDNFkhA2UACGgS02WDNFkhA2UACGjYsoM0+2FdAE/9EAsocAho2LKDNEiKgiX8iAWUOAQ3dCehCa5cCKqBcNgEN3Qno/GkWmkhAE4MJKA0IaBBQARVQUgQ0CKiACigpAhoEVEAFlBQBDQIqoAJKioAGARVQASVFQIOACqiAkiKgQUB7FtCVXawloMwhoEFAexbQhd6ZgNKAgIYeBnSRVTABFVCWJaChhwH9zlwCeuESCSgXEtDQw4BaAxVQ2iSgoYcBbdY9AV18Gq4mAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXIloGwgAQ0C2iyOzXLV5YAucEsBriYBDQLaLI7NctXlgC4wH64mAQ0CusxEmx7QZjesEtArTkCDgC4z0aYHdEXTcDUJaBDQ1jMjoPSLgAYBbT0zAkq/CGgQ0NYzI6D0i4AGAW09MwJKvwhoENDWMyOg9IuABgFtPTMCSr8IaBDQ1jMjoPSLgAYBbT0zAkq/CGgQ0NYzI6D0i4AGAW09MwJKvwhoENDWMyOg9IuABgFtPTMCSr8IaBDQ1jMjoPSLgAYBbT0zAkq/CGgQ0NYzI6D0i4AGAW09MwJKvwhoENDWMyOg9IuABgFtPTMCSr8IaBDQ1jMjoPSLgAYBbT0zAkq/CGgQ0NYzI6D0i4AGAW09MwJKvwhoENDWMyOg9IuABgFtPTMCSr8IaBDQ1jMjoPSLgAYBbT0zAkq/CGgQ0NYzI6D0i4AGAW09MwJKvwhoENDWMyOg9IuAhoZ/DD/fqX2rfPj4R6/tPP/Nj88cREAFlN4Q0NDwj+F+BHT48IUzBxFQAaU3BDQ0+2N4/PZXxqucn+x8+ceDz75Rt/TUIAIqoPSGgIZmfwy/+vpkjfP+898t//vpa2etggqogNIfAhqa/TF8+trXRo9G66JTq6TTgwiogNIbAhqa/TF8svPNP9jZ+a9/HOui97/0k+G3PjfyxS8O//K/ODL8g4+vQ4tNU010/jRfHP7lj58N/+Dja2aaaqLzp1l0sDKU42fDbMbX3GCL/DOu5J0tuECVk8/OfrXpNAbr0mACGpoFdHQQvtx6F1ABHXT+L99gK5mRgIZmAb2/8998PHj8b3deOB3QmUEW2facP41N+JW8e5vwrIaAhlX8MTx++0s/EdD50wgovSKgYSV/DGU1HUSaP42A0isCGhr9Mfzq61FNpzHNnUZA6RUBDU33gf7ux4PP3t75mhPpz5lGQOkVAQ1NT6Svj8LX66Eu5Zw3jYDSKwIaGv4xfPZPdnae/916t+fjH7qZyNnTCCi9IqBhLX8MAiqg9IeABgFtPTMCSr8IaBDQ1jMjoPSLgAYBbT0zAkq/CGgQ0NYzI6D0i4AGAW09MwJKvwhoENDWMyOg9IuABgFtPTMCSr8IaBDQ1jMjoPSLgAYBbT0zAkq/CGgQ0NYzI6D0i4AGAW09MwJKvwhoENDWMyOg9IuABgGdP9E5UoMJKL0ioEFA2+qVgNJTAhoEtK1eCSg9JaBBQNvqlYDSUwIaBLStXi20L1VA2TwCGgS0rV7FNN+ZT0DZPAIaBLStXgkoPSWgQUDb6pWA0lMCGgS0rV4JKD0loEFA2+qVgNJTAhoEtK1eCSg9JaBBQNvqlYDSUwIaBLStXgkoPSWgQUDb6pWA0lMCGgS0rV4JKD0loEFA2+qVgNJTAhoEtK1eCSg9JaBBQNvqlYDSUwIaBLStXgkoPSWgQUDb6pWA0lMCGgS0rV4lA7rIPUMFlC4Q0CCg8ydaa0Dbf/cCymoIaBDQ+ROtarDeBvSczyr5xTK/J2wGAQ0COn+iVQ0moPSKgIYeBrTZJxAJ6OLTCOjVJKChhwFdWWaazUhA6SkBDQIqoAJKioAGARVQASVFQIOACqiAkiKgQUAFVEBJEdAgoAIqoKQIaBBQARVQUgQ0NAzoZ3+ws/P8735cPXz8o9d2nv/mx2cO0qwOmx7QlV3nvrJ3JqA0IKChWUA/fW2n8uWflI/v1w9fOHOQZnXY9ID++nwCyuYR0NAooI/f3vl75Vro2ztfGww+2fnyjweffWPnW2cN0qwOArrqd7bOgJ7z7s/73aK7BDQ0Cuivvv7C5Mv95787qFZJz1oFFVABFdD+ENCwioNIVUAfv/2Vavfn6MvJQZrVYdMDerX3gQpo7whoWEVAPyk34Ucro4P7X/rJ8MXPjXxxZPynfuJ58cUpc6b5s+w0Cw02zsG85wsPNmdG7Qy2qne2qmm+OA7mvOeVcTDnPa+Mf5nmPV94olVNY7C50whoWEFAP32tXOsUUAE98/miM1pkPpuVmf4OJqCheUA/fa3a+3kqoDOD/NlcV2ETfmWDreydrWiahTbhz1mgwQIzOuM3jksmoKFxQH9eHX0X0OVS1OWALrDjVkCvJgENDQP6+O2d4VEjB5GWyVWXA7rAYAJ6NQloaBbQx/UpoLXNOo1pZQfGF0nRZh6FX2CwhQI6fz5/NlhgRmf8OnHJBDQ0C+j9OG9+s06kX9lgzVJ0WevWAkoDAhoaBXR0JefOTrXjc6Mu5VzZYFc6oOfcJeU7k//xz3n3k2kEdKMIaGgU0E92pgL6+IcbdDORlQ0moAJ65QhoWMWJ9BcP0qwOArqSBVp9QM8ZKw4QnfPuJ9MI6EYR0CCgzWYkoAJ65QhoENBmMxJQAb1yBDQIaLMZCaiAXjkCGgS02YwEVECvHAENAtpsRgIqoFeOgAYBbTYjARXQK0dAg4A2m5GAriKgi8yHzhDQIKDNZiSgAnrlCGgQ0GYzElABvXIENAhosxkJqIBeOQIaBLTZjAR0XQE950CTI03rJaBBQJvNSEAF9MoR0CCgzWbU7F7JGx7Qc95YxHGRaQR0owhoENCeDSagtE1Ag4D2bDABpW0CGgS0Z4MJKG0T0CCgPRvsagd0kWl+fb5Tv7mcRUCDgPZsMAEV0LYJaBDQng22kQFdZJq1BvScaWKiRbK/yKdGbRwBDQLas8EEVEDbJqBBQHs22NUOaMM4LjJNLqCLTLNxBDQIaM8GE1ABbZuABgHt2WBXO6CL9GplAV1kqRdZoHM287u5nS+gQUB7NpiACmjbBDSsLqCPf/TazvPf/PjMQRb4Y+xx09Y6mID2M6CLLNC6CGhYXUDv71ReOHOQBf4Ye9y0tQ4moALaNgENKwvoJztf/vHgs2/sfOusQRb4Y+xx09Y62EL3h2p2D6kND+gig601oCv7Z1wXAQ0rC+j9579b/vfT185aBe1eZgy2imnOGUtAV7JAAtp1qwro47e/8nF8OTnI/P/xr0Bm+jvYOWOtPqALDSag6yCgYVUB/dXXh6ue97/0k+ELnxupB5n/P/4VyEx/BztnLAFdyQIJaNetJ6AN98vldt4ZbF2DcTUJaGgtoEA/CWgQUCBFQMNaDiIB/SGgYS2nMQH9IaBhLSfSA/0hoGEtl3IC/SGgYYU3E/nh3JuJAP0hoME5fUCKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSBHQIKBAioAGAQVSBDQIKJAioEFAgRQBDQIKpAhoEFAgRUCDgAIpAhoEFEgR0CCgQIqABgEFUgQ0CCiQIqBBQIEUAQ0CCqQIaBBQIEVAg4ACKQIaBBRIEdAgoECKgAYBBVIENAgokCKgQUCBFAENAgqkCGgQUCBFQIOAAikCGgQUSPlc0mUvb5sEFEgR0CCgAEsSUIAlCSjAkgQUYEkCCrAkAQVYkoACLElAAZYkoABLElCAJQkowJIEFGBJAgqwJAEFWJKAAixJQAGWJKC9c3yv2Dp3gv3i+vvll73i5sOT3zr52mjSi5ye1YevP1UUxY2X3zv7B452i9sXzAE2gID2TgcCWi7C2HNndnHZgD74DZmlSwS0dy4/oFP9LM4O45IBtZ5Kxwho7ywa0EUsF9D9orj26kflg1++u10Ud8/4gVMBXYyA0jEC2juXHtByAa6P930ebp/ZPAGlHwS0dy49oGUdt6a+ddYcBJR+ENDeGQW0atTxu08VxY1XxtH54KvltvVzD6f3gU76Vv5U/XRUqJlJI3eToH74erlxXtwazfrUGujWiWU6OYd64b5XzuLpNwezc3hUzfjas5Oj9/Xz4VT7w52qt8evTn4YLouA9k4E9PN3hsl54v3R67Xrr08F9GC8j7Lc1r496diJSU8F9Ph740NEw1mf3gf6m7NrimcE9Nnd6YNM4znsT47eT2Y1eRoBfTA7PFwWAe2dCGhx7XceDh7dG660lY2qzimq2xcBnWxu7xfX3pp07MSkpwK6Pzw96VEZ6K3B4FRAq6GLZ/7+RzOvnAzoZIjpOZQzrlY+f/m9UUHL5zffq6e6PTVVtWO1nOr4neKCnRXQMgHtnamA3h09r7IzXMUc1FGaOo0p1jnj2clJz8jfVv20fDAK7tnngd56ZRTRswI6HqIKdwy8NZh6eTz/6rDU1JlXkx0JZ+9ghbUR0N6JgN4c76GsMjOJTfmNqRodDANWpuvuIKI6O+nJ/I1+5lTYpgz3kVYb2e+NZnQyoDHE1mQOccxq+CYmOxgOpjM7ji5cOgHtnQjo1vCFOktTR3b2pqtXTnZ3MElX/dqpSc84iHTWrE4ux5+8UV3OWbdu7jrszIrw9NGn+oXTw9XjHFSHmX6Q/oeBlRPQ3pk6Cj98oc7QVLJmr0Taq14ff3d2v+j0MfOZH6388sPvV4GcH9B6Wd6ZuxNgfBrTeP14OPCU8uWT8x0/Hx7DuvHKRwO4VALaO3MDOk7WbEAPqmfjjfJxx2YnPR3QB09NZe7c8zP3663wMwJ6dzD9Qi6g9VlW9Q4CJzJxqQS0d5JroEe7ZTvHZVpsDXR4jOjWS9/+6MxN+JlDO8OfXXgNdGswbW5ASx/WOwjOvFAU1kVAe+fsgM7bB1p9vT2Z9qJ9oMPn+5ObLJ0Z0P3prA2P6J+cw0xAp/eBngxmnOa/dWqcegeBS5O4TALaO2cHNHZfnjx0flDcfDA+rH3iYPho0sma4fB5dG72gP5Y2czJtfDVKaV3T81h6hSB0WKOMzo+vD4cY/o0/zhJ4PT/LYBLIqC9Myegk3Ms90/suDzavf53xkU6cTrmaNJJMQ+K2YCenNVgPJeiqI+SH39wpxg3b3oOcZLquJmTgUczOhh3d7yWPHseaJxGZQ2UyySgvTMnoKOrfE5ciTQYDHs32uaeuSAoJh1dEFTdnG5qE/7DO+OzlM66Emls2LoTc6in+M2Hg0evz15jtD88LjTZNj+YvRKpKufxR9VPX3u1uhLqnn2gXC4B7Z15AR2d/FM88T+cCOhorXAw9dqJScdXFt18Z5i/0TX2xbPvFFOb1jOLMLla/a2ZV8Zz2C0+vzt90fupa+FjHXdqqoPq4Va9plpMLoyHyyOgvTM3oIMPT9+NaTA444jOqUkHw9s6vTq5mUj1tDqXfeY6ommP3rhVrX3G/ZJm5xB3Y/rBiYEf1R+mFD83dTem0oPyyVa1S+DdavY3nnMiKJdLQOkCd/pkIwkoXSCgbCQBpQMuvIs+dJKA0gGTG+jBRhFQLlt9TpMb1LGJBJTLVp2U9MR7F08HnSOgAEsSUIAlCSjAkgQUYEkCCrAkAQVYkoACLElAAZYkoABLElCAJQkowJIEFGBJAgqwJAEFWNL/D2WT0QYHErHSAAAAAElFTkSuQmCC" width="672" /></p>
 <p><img src="data:image/png;base64,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" width="672" /></p>
 </div>
-<div id="part-3-reanalyse-variables-with-matching-stimuli-removed" class="section level3">
-<h3>Part 3: reanalyse variables with matching stimuli removed</h3>
-</div>
-</div>
-</div>
-<div id="input-prompt" class="section level1">
-<h1>Input prompt</h1>
+<div id="part-3-reanalyse-variables-with-matching-stimuli-removed" class="section level2">
+<h2>Part 3: reanalyse variables with matching stimuli removed</h2>
+<div id="input-prompt" class="section level3">
+<h3>Input prompt</h3>
 <pre class="r"><code>source(&quot;ProductionData_nostimmatch_randsubj.R&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
+##   .default = col_character(),
 ##   subj = col_double(),
 ##   month = col_double(),
-##   sex = col_character(),
-##   MOTedu = col_character(),
-##   VMS = col_character(),
-##   ctype = col_character(),
-##   object = col_character(),
-##   cgprompt = col_character(),
-##   cgresponse = col_character(),
-##   C1Obj = col_character(),
-##   C1Prompt = col_character(),
+##   timediff = col_double(),
+##   include_prompt = col_logical(),
 ##   Prod.Obj.Cong = col_logical(),
 ##   Prod.Prompt.Cong = col_logical(),
 ##   VMS.Obj.Cong = col_logical(),
 ##   VMS.Prompt.Cong = col_logical(),
 ##   VMS.Prod.Cong = col_logical(),
-##   VMSgroup = col_character(),
-##   wordclass = col_character()
+##   Siblings = col_double()
 ## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
 <pre><code>## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)</code></pre>
 <pre><code>## Joining, by = &quot;subj&quot;
 ## Joining, by = &quot;subj&quot;</code></pre>
@@ -1033,30 +1009,32 @@ wilcox.test(subset(match.data.Object.spread_subset, VMSgroup==&quot;withVMS&quot
 <pre class="r"><code>source(&quot;Data_scrambling_nostimmatch_randsubj.R&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
+##   .default = col_character(),
 ##   subj = col_double(),
 ##   month = col_double(),
-##   sex = col_character(),
-##   MOTedu = col_character(),
-##   VMS = col_character(),
-##   ctype = col_character(),
-##   object = col_character(),
-##   cgprompt = col_character(),
-##   cgresponse = col_character(),
-##   C1Obj = col_character(),
-##   C1Prompt = col_character(),
+##   timediff = col_double(),
+##   include_prompt = col_logical(),
 ##   Prod.Obj.Cong = col_logical(),
 ##   Prod.Prompt.Cong = col_logical(),
 ##   VMS.Obj.Cong = col_logical(),
 ##   VMS.Prompt.Cong = col_logical(),
 ##   VMS.Prod.Cong = col_logical(),
-##   VMSgroup = col_character(),
-##   wordclass = col_character()
+##   Siblings = col_double()
 ## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
+<pre><code>## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;subj&quot;
+## Joining, by = &quot;subj&quot;</code></pre>
+<pre><code>## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)
+## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;subj&quot;
+## Joining, by = &quot;subj&quot;</code></pre>
+<pre><code>## Adding missing grouping variables: `month`
+## Adding missing grouping variables: `month`
+## Adding missing grouping variables: `month`
+## Adding missing grouping variables: `month`</code></pre>
 <pre><code>## Joining, by = &quot;subj&quot;</code></pre>
-<pre class="r"><code>library(effsize)
-library(rcompanion)
-
-1916-1772 # Total CPs in original data - total CPs in data with matches removed = 144</code></pre>
+<pre class="r"><code>1916-1772 # Total CPs in original data - total CPs in data with matches removed = 144</code></pre>
 <pre><code>## [1] 144</code></pre>
 <pre class="r"><code>144/1916 #.08 of all CPs from original analysis</code></pre>
 <pre><code>## [1] 0.07515658</code></pre>
@@ -1064,7 +1042,7 @@ library(rcompanion)
 <pre><code>## # A tibble: 1 x 1
 ##   totalprompt
 ##         &lt;int&gt;
-## 1         839</code></pre>
+## 1         818</code></pre>
 <pre class="r"><code>#shapiro.test(ProdData_nostimmatch$Prod.Prompt.match.PC) # normal
 
 #t.test(Prod.Prompt.match.PC ~ VMSgroup, ProdData_nostimmatch, conf.int=T) # p=.07
@@ -1079,22 +1057,22 @@ wilcox.test(subset(ProdData_nostimmatch, VMSgroup == &quot;withVMS&quot;)$Prod.P
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(ProdData_nostimmatch, VMSgroup == &quot;withVMS&quot;)$Prod.Prompt.match.PC and subset(ProdData_nostimmatch, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC
-## W = 320.5, p-value = 0.05914
+## W = 322.5, p-value = 0.0531
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -1.494046e-06  3.271222e-01
+##  -7.297526e-06  3.332795e-01
 ## sample estimates:
 ## difference in location 
-##              0.1503758</code></pre>
+##              0.1423585</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(ProdData_nostimmatch, VMSgroup == &quot;withVMS&quot;)$Prod.Prompt.match.PC, 
             f = subset(ProdData_nostimmatch, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC) # .34, medium</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.3354167 (medium)
+## delta estimate: 0.34375 (medium)
 ## 95 percent confidence interval:
-##        lower        upper 
-## -0.008458744  0.608349716</code></pre>
+##       lower       upper 
+## -0.02724993  0.63151633</code></pre>
 <pre class="r"><code>prompt.real &lt;- ProdData_nostimmatch %&gt;%
   select(subj, month, VMSgroup, Prod.Prompt.match.PC) %&gt;%
   ungroup() %&gt;%
@@ -1119,22 +1097,22 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC and subset(prompt.scramble, VMSgroup == &quot;withVMS&quot;)$PC
-## W = 533.5, p-value = 4.351e-07
+## W = 537.5, p-value = 2.786e-07
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.2000536 0.4007953
+##  0.1943144 0.3888661
 ## sample estimates:
 ## difference in location 
-##              0.2999542</code></pre>
+##              0.2847143</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC, 
             f = subset(prompt.scramble, VMSgroup == &quot;withVMS&quot;)$PC) # .91 large</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.8524306 (large)
+## delta estimate: 0.8663194 (large)
 ## 95 percent confidence interval:
 ##     lower     upper 
-## 0.6312896 0.9453791</code></pre>
+## 0.6239128 0.9566536</code></pre>
 <pre class="r"><code>wilcox.test(subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC, conf.int = T) # Significant, p&lt;.05</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(prompt.real, VMSgroup == &quot;noVMS&quot;)
@@ -1145,22 +1123,22 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC and subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC
-## W = 263, p-value = 0.08927
+## W = 308.5, p-value = 0.003047
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.0000366342  0.3333473813
+##  0.06348792 0.41531514
 ## sample estimates:
 ## difference in location 
-##              0.1511461</code></pre>
+##              0.2666395</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             f = subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC) # .40 medium</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.315 (small)
+## delta estimate: 0.5425 (large)
 ## 95 percent confidence interval:
-##       lower       upper 
-## -0.06578577  0.61570248</code></pre>
+##     lower     upper 
+## 0.1766215 0.7766568</code></pre>
 <pre class="r"><code>#shapiro.test(subset(match.data.Prompt, VMSgroup==&quot;withVMS&quot;)$PC) # normal 
 
 # t.test(subset(match.data.Prompt.spread, VMSgroup==&quot;withVMS&quot;)$inREP,
@@ -1168,29 +1146,33 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 
 wilcox.test(subset(match.data.Prompt.spread, VMSgroup==&quot;withVMS&quot;)$inREP,
 subset(match.data.Prompt.spread, VMSgroup==&quot;withVMS&quot;)$outREP, conf.int=T, paired = T) # p&lt;.01 EstDiff=.31</code></pre>
+<pre><code>## Warning in wilcox.test.default(subset(match.data.Prompt.spread, VMSgroup
+## == : cannot compute exact p-value with zeroes</code></pre>
+<pre><code>## Warning in wilcox.test.default(subset(match.data.Prompt.spread, VMSgroup
+## == : cannot compute exact confidence interval with zeroes</code></pre>
 <pre><code>## 
-##  Wilcoxon signed rank test
+##  Wilcoxon signed rank test with continuity correction
 ## 
 ## data:  subset(match.data.Prompt.spread, VMSgroup == &quot;withVMS&quot;)$inREP and subset(match.data.Prompt.spread, VMSgroup == &quot;withVMS&quot;)$outREP
-## V = 254, p-value = 0.002001
+## V = 232, p-value = 0.004458
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.1296296 0.4818327
+##  0.1652404 0.5119573
 ## sample estimates:
 ## (pseudo)median 
-##       0.305111</code></pre>
+##       0.315519</code></pre>
 <pre class="r"><code>wilcoxonPairedR(x = subset(match.data.Prompt, VMSgroup==&quot;withVMS&quot;)$PC, 
                 g = subset(match.data.Prompt, VMSgroup==&quot;withVMS&quot;)$Type) # r = .61</code></pre>
 <pre><code>##     r 
-## 0.607</code></pre>
+## 0.592</code></pre>
 </div>
-<div id="attended-object" class="section level1">
-<h1>Attended object</h1>
+<div id="attended-object" class="section level3">
+<h3>Attended object</h3>
 <pre class="r"><code>ProdData_nostimmatch %&gt;% ungroup() %&gt;% summarise(totalobj = sum(nObj)) # 963</code></pre>
 <pre><code>## # A tibble: 1 x 1
 ##   totalobj
 ##      &lt;dbl&gt;
-## 1      963</code></pre>
+## 1      967</code></pre>
 <pre class="r"><code>#shapiro.test(ProdData_nostimmatch$Prod.Obj.match.PC) # not normal
 
 wilcox.test(subset(ProdData_nostimmatch, VMSgroup == &quot;withVMS&quot;)$Prod.Obj.match.PC, 
@@ -1203,22 +1185,22 @@ wilcox.test(subset(ProdData_nostimmatch, VMSgroup == &quot;withVMS&quot;)$Prod.O
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(ProdData_nostimmatch, VMSgroup == &quot;withVMS&quot;)$Prod.Obj.match.PC and subset(ProdData_nostimmatch, VMSgroup == &quot;noVMS&quot;)$Prod.Obj.match.PC
-## W = 349.5, p-value = 0.002944
+## W = 350.5, p-value = 0.00271
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.09459849 0.44117855
+##  0.09461141 0.44115310
 ## sample estimates:
 ## difference in location 
-##              0.2820698</code></pre>
+##              0.2820918</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(ProdData_nostimmatch, VMSgroup == &quot;withVMS&quot;)$Prod.Obj.match.PC, 
             f = subset(ProdData_nostimmatch, VMSgroup == &quot;noVMS&quot;)$Prod.Obj.match.PC) # .47 medium</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.4666667 (medium)
+## delta estimate: 0.4708333 (medium)
 ## 95 percent confidence interval:
 ##     lower     upper 
-## 0.1423562 0.7004947</code></pre>
+## 0.1488397 0.7025547</code></pre>
 <pre class="r"><code>object.real &lt;- ProdData_nostimmatch %&gt;%
   select(subj, month, VMSgroup, Prod.Obj.match.PC) %&gt;%
   ungroup() %&gt;%
@@ -1243,22 +1225,22 @@ wilcox.test(subset(object.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(object.real, VMSgroup == &quot;withVMS&quot;)$PC and subset(object.scramble, VMSgroup == &quot;withVMS&quot;)$PC
-## W = 457.5, p-value = 0.0004907
+## W = 463.5, p-value = 0.0003061
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.1425046 0.3705944
+##  0.1800421 0.4067817
 ## sample estimates:
 ## difference in location 
-##              0.2646767</code></pre>
+##              0.3082749</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(object.real, VMSgroup == &quot;withVMS&quot;)$PC, 
             f = subset(object.scramble, VMSgroup == &quot;withVMS&quot;)$PC) # .60 large</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.5885417 (large)
+## delta estimate: 0.609375 (large)
 ## 95 percent confidence interval:
-##    lower    upper 
-## 0.220864 0.809749</code></pre>
+##     lower     upper 
+## 0.2375213 0.8254571</code></pre>
 <pre class="r"><code>wilcox.test(subset(object.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             subset(object.scramble, VMSgroup == &quot;noVMS&quot;)$PC, conf.int = T) # Significant, p&lt;.05</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(object.real, VMSgroup == &quot;noVMS&quot;)
@@ -1269,22 +1251,22 @@ wilcox.test(subset(object.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(object.real, VMSgroup == &quot;noVMS&quot;)$PC and subset(object.scramble, VMSgroup == &quot;noVMS&quot;)$PC
-## W = 161.5, p-value = 0.429
+## W = 227, p-value = 0.2958
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.18747867  0.08574532
+##  -0.04648876  0.18750773
 ## sample estimates:
 ## difference in location 
-##            -0.04767605</code></pre>
+##             0.04997477</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(object.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             f = subset(object.scramble, VMSgroup == &quot;noVMS&quot;)$PC) # -.13 negligible</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: -0.15 (small)
+## delta estimate: 0.1947368 (small)
 ## 95 percent confidence interval:
 ##      lower      upper 
-## -0.4738469  0.2095863</code></pre>
+## -0.1604875  0.5053009</code></pre>
 <pre class="r"><code>#shapiro.test(subset(match.data.Object, VMSgroup==&quot;withVMS&quot;)$PC) # not normal
 
 wilcox.test(subset(match.data.Object.spread, VMSgroup==&quot;withVMS&quot;)$inREP, 
@@ -1304,20 +1286,20 @@ wilcox.test(subset(match.data.Object.spread, VMSgroup==&quot;withVMS&quot;)$inRE
 ## V = 167, p-value = 0.07627
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.0316910  0.5117616
+##  -0.03714429  0.51005773
 ## sample estimates:
 ## (pseudo)median 
-##      0.2742728</code></pre>
+##      0.2742671</code></pre>
 <pre class="r"><code>wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == &quot;withVMS&quot;)$PC,
                 g = subset(match.data.Object, VMSgroup == &quot;withVMS&quot;)$Type) # r = .38</code></pre>
 <pre><code>##    r 
 ## 0.38</code></pre>
+</div>
+</div>
 <div id="part-4-reanalyse-variables-after-removing-objects-and-prompts-with-matching-onset-consonants" class="section level2">
 <h2>Part 4: Reanalyse variables after removing objects and prompts with matching onset consonants</h2>
-</div>
-</div>
-<div id="input-prompts-1" class="section level1">
-<h1>Input Prompts</h1>
+<div id="input-prompts-1" class="section level3">
+<h3>Input Prompts</h3>
 <pre class="r"><code># How many CPs match C1 of both prompt and object?
 
 CPdata %&gt;% 
@@ -1329,31 +1311,25 @@ CPdata %&gt;%
 <pre><code>## # A tibble: 1 x 1
 ##       n
 ##   &lt;int&gt;
-## 1   223</code></pre>
+## 1   216</code></pre>
 <pre class="r"><code>223/1916 # 12% of original dataset</code></pre>
 <pre><code>## [1] 0.1163883</code></pre>
 <pre class="r"><code>source(&quot;ProductionData_noC1match_randsubj.R&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
+##   .default = col_character(),
 ##   subj = col_double(),
 ##   month = col_double(),
-##   sex = col_character(),
-##   MOTedu = col_character(),
-##   VMS = col_character(),
-##   ctype = col_character(),
-##   object = col_character(),
-##   cgprompt = col_character(),
-##   cgresponse = col_character(),
-##   C1Obj = col_character(),
-##   C1Prompt = col_character(),
+##   timediff = col_double(),
+##   include_prompt = col_logical(),
 ##   Prod.Obj.Cong = col_logical(),
 ##   Prod.Prompt.Cong = col_logical(),
 ##   VMS.Obj.Cong = col_logical(),
 ##   VMS.Prompt.Cong = col_logical(),
 ##   VMS.Prod.Cong = col_logical(),
-##   VMSgroup = col_character(),
-##   wordclass = col_character()
+##   Siblings = col_double()
 ## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
 <pre><code>## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)</code></pre>
 <pre><code>## Joining, by = &quot;subj&quot;
 ## Joining, by = &quot;subj&quot;</code></pre>
@@ -1368,25 +1344,30 @@ CPdata %&gt;%
 <pre class="r"><code>source(&quot;Data_scrambling_noC1match_randsubj.R&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
+##   .default = col_character(),
 ##   subj = col_double(),
 ##   month = col_double(),
-##   sex = col_character(),
-##   MOTedu = col_character(),
-##   VMS = col_character(),
-##   ctype = col_character(),
-##   object = col_character(),
-##   cgprompt = col_character(),
-##   cgresponse = col_character(),
-##   C1Obj = col_character(),
-##   C1Prompt = col_character(),
+##   timediff = col_double(),
+##   include_prompt = col_logical(),
 ##   Prod.Obj.Cong = col_logical(),
 ##   Prod.Prompt.Cong = col_logical(),
 ##   VMS.Obj.Cong = col_logical(),
 ##   VMS.Prompt.Cong = col_logical(),
 ##   VMS.Prod.Cong = col_logical(),
-##   VMSgroup = col_character(),
-##   wordclass = col_character()
+##   Siblings = col_double()
 ## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
+<pre><code>## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;subj&quot;
+## Joining, by = &quot;subj&quot;</code></pre>
+<pre><code>## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)
+## Joining, by = c(&quot;subj&quot;, &quot;VMSgroup&quot;)</code></pre>
+<pre><code>## Joining, by = &quot;subj&quot;
+## Joining, by = &quot;subj&quot;</code></pre>
+<pre><code>## Adding missing grouping variables: `month`
+## Adding missing grouping variables: `month`
+## Adding missing grouping variables: `month`
+## Adding missing grouping variables: `month`</code></pre>
 <pre><code>## Joining, by = &quot;subj&quot;</code></pre>
 <pre class="r"><code>1916-1693 # 223   # check that numbers are correct in new CP data </code></pre>
 <pre><code>## [1] 223</code></pre>
@@ -1394,7 +1375,7 @@ CPdata %&gt;%
 <pre><code>## # A tibble: 1 x 1
 ##   totalprompt
 ##         &lt;int&gt;
-## 1         753</code></pre>
+## 1         735</code></pre>
 <pre class="r"><code>#shapiro.test(ProdData_noC1match$Prod.Prompt.match.PC) # normal
 
 # t.test(Prod.Prompt.match.PC ~ VMSgroup, ProdData_noC1match, conf.int=T) # ns
@@ -1410,22 +1391,22 @@ wilcox.test(subset(ProdData_noC1match, VMSgroup == &quot;withVMS&quot;)$Prod.Pro
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(ProdData_noC1match, VMSgroup == &quot;withVMS&quot;)$Prod.Prompt.match.PC and subset(ProdData_noC1match, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC
-## W = 301.5, p-value = 0.1501
+## W = 302, p-value = 0.1468
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.05743589  0.30754687
+##  -0.05718156  0.32900693
 ## sample estimates:
 ## difference in location 
-##              0.1164541</code></pre>
+##              0.1141257</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(ProdData_noC1match, VMSgroup == &quot;withVMS&quot;)$Prod.Prompt.match.PC, 
             f = subset(ProdData_noC1match, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC) # .26 small</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.25625 (small)
+## delta estimate: 0.2583333 (small)
 ## 95 percent confidence interval:
-##       lower       upper 
-## -0.09856611  0.55326095</code></pre>
+##      lower      upper 
+## -0.1190628  0.5705067</code></pre>
 <pre class="r"><code>prompt.real &lt;- ProdData_noC1match %&gt;%
   select(subj, month, VMSgroup, Prod.Prompt.match.PC) %&gt;%
   ungroup() %&gt;%
@@ -1450,22 +1431,22 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC and subset(prompt.scramble, VMSgroup == &quot;withVMS&quot;)$PC
-## W = 510, p-value = 4.91e-06
+## W = 503, p-value = 9.689e-06
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.1575845 0.3615733
+##  0.1308744 0.3485504
 ## sample estimates:
 ## difference in location 
-##              0.2511842</code></pre>
+##              0.2266536</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC, 
             f = subset(prompt.scramble, VMSgroup == &quot;withVMS&quot;)$PC) # Significant, p&lt;.001</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.7708333 (large)
+## delta estimate: 0.7465278 (large)
 ## 95 percent confidence interval:
 ##     lower     upper 
-## 0.5097703 0.9019048</code></pre>
+## 0.4724909 0.8889417</code></pre>
 <pre class="r"><code>wilcox.test(subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC, conf.int = T) # Significant, p&lt;.05</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(prompt.real, VMSgroup == &quot;noVMS&quot;)
@@ -1476,49 +1457,53 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC and subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC
-## W = 250.5, p-value = 0.1735
+## W = 273.5, p-value = 0.04506
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.03574547  0.33324980
+##  7.003225e-05 3.778297e-01
 ## sample estimates:
 ## difference in location 
-##               0.142903</code></pre>
+##               0.199929</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             f = subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC) # Significant, p&lt;.05</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.2525 (small)
+## delta estimate: 0.3675 (medium)
 ## 95 percent confidence interval:
-##      lower      upper 
-## -0.1314415  0.5705710</code></pre>
+##        lower        upper 
+## -0.007592707  0.651932404</code></pre>
 <pre class="r"><code>#shapiro.test(match.data.Prompt$PC) # not normal
 
 wilcox.test(subset(match.data.Prompt.spread, VMSgroup==&quot;withVMS&quot;)$inREP, 
             subset(match.data.Prompt.spread, VMSgroup==&quot;withVMS&quot;)$outREP, conf.int=T, paired = T) # p&lt;.01</code></pre>
+<pre><code>## Warning in wilcox.test.default(subset(match.data.Prompt.spread, VMSgroup
+## == : cannot compute exact p-value with ties</code></pre>
+<pre><code>## Warning in wilcox.test.default(subset(match.data.Prompt.spread, VMSgroup
+## == : cannot compute exact confidence interval with ties</code></pre>
 <pre><code>## 
-##  Wilcoxon signed rank test
+##  Wilcoxon signed rank test with continuity correction
 ## 
 ## data:  subset(match.data.Prompt.spread, VMSgroup == &quot;withVMS&quot;)$inREP and subset(match.data.Prompt.spread, VMSgroup == &quot;withVMS&quot;)$outREP
-## V = 255, p-value = 0.00178
+## V = 253, p-value = 0.003404
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.1378205 0.5422078
+##  0.1483254 0.5576558
 ## sample estimates:
 ## (pseudo)median 
-##      0.3394481</code></pre>
+##      0.3445971</code></pre>
 <pre class="r"><code>wilcoxonPairedR(x = subset(match.data.Prompt, VMSgroup == &quot;withVMS&quot;)$PC,
                 g = subset(match.data.Prompt, VMSgroup == &quot;withVMS&quot;)$Type) # r = .61</code></pre>
 <pre><code>##     r 
-## 0.612</code></pre>
+## 0.601</code></pre>
 </div>
-<div id="attended-object-1" class="section level1">
-<h1>Attended Object</h1>
+<div id="attended-object-1" class="section level3">
+<h3>Attended Object</h3>
 <pre class="r"><code>ProdData_noC1match %&gt;% ungroup() %&gt;% summarise(totalobj = sum(nObj)) # 877</code></pre>
 <pre><code>## # A tibble: 1 x 1
 ##   totalobj
 ##      &lt;dbl&gt;
-## 1      877</code></pre>
+## 1      884</code></pre>
 <pre class="r"><code>#shapiro.test(ProdData_noC1match$Prod.Obj.match.PC) # not normal
 
 wilcox.test(subset(ProdData_noC1match, VMSgroup == &quot;withVMS&quot;)$Prod.Obj.match.PC, 
@@ -1532,22 +1517,22 @@ wilcox.test(subset(ProdData_noC1match, VMSgroup == &quot;withVMS&quot;)$Prod.Obj
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(ProdData_noC1match, VMSgroup == &quot;withVMS&quot;)$Prod.Obj.match.PC and subset(ProdData_noC1match, VMSgroup == &quot;noVMS&quot;)$Prod.Obj.match.PC
-## W = 352, p-value = 0.002366
+## W = 350, p-value = 0.002783
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.07163646 0.42671708
+##  0.07169979 0.42736225
 ## sample estimates:
 ## difference in location 
-##              0.2699473</code></pre>
+##              0.2727198</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(ProdData_noC1match, VMSgroup == &quot;withVMS&quot;)$Prod.Obj.match.PC, 
             f = subset(ProdData_noC1match, VMSgroup == &quot;noVMS&quot;)$Prod.Obj.match.PC) # .48 large</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.48125 (large)
+## delta estimate: 0.46875 (medium)
 ## 95 percent confidence interval:
 ##     lower     upper 
-## 0.1675264 0.7064689</code></pre>
+## 0.1525907 0.6978732</code></pre>
 <pre class="r"><code>object.real &lt;- ProdData_noC1match %&gt;%
   select(subj, month, VMSgroup, Prod.Obj.match.PC) %&gt;%
   ungroup() %&gt;%
@@ -1572,22 +1557,22 @@ wilcox.test(subset(object.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(object.real, VMSgroup == &quot;withVMS&quot;)$PC and subset(object.scramble, VMSgroup == &quot;withVMS&quot;)$PC
-## W = 448.5, p-value = 0.0009652
+## W = 442, p-value = 0.001538
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.1100637 0.3333966
+##  0.1077141 0.3575520
 ## sample estimates:
 ## difference in location 
-##              0.2481661</code></pre>
+##              0.2500354</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(object.real, VMSgroup == &quot;withVMS&quot;)$PC, 
             f = subset(object.scramble, VMSgroup == &quot;withVMS&quot;)$PC) # .60 large</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.5572917 (large)
+## delta estimate: 0.5347222 (large)
 ## 95 percent confidence interval:
 ##     lower     upper 
-## 0.1949735 0.7857749</code></pre>
+## 0.1765868 0.7678274</code></pre>
 <pre class="r"><code>wilcox.test(subset(object.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             subset(object.scramble, VMSgroup == &quot;noVMS&quot;)$PC, conf.int = T) # ns</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(object.real, VMSgroup == &quot;noVMS&quot;)
@@ -1598,22 +1583,22 @@ wilcox.test(subset(object.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(object.real, VMSgroup == &quot;noVMS&quot;)$PC and subset(object.scramble, VMSgroup == &quot;noVMS&quot;)$PC
-## W = 150, p-value = 0.2638
+## W = 176.5, p-value = 0.7116
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.19999179  0.07232868
+##  -0.1666290  0.1111237
 ## sample estimates:
 ## difference in location 
-##            -0.05678215</code></pre>
+##           -6.99918e-05</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(object.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             f = subset(object.scramble, VMSgroup == &quot;noVMS&quot;)$PC) # -.11 negligible</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: -0.2105263 (small)
+## delta estimate: -0.07105263 (negligible)
 ## 95 percent confidence interval:
 ##      lower      upper 
-## -0.5250338  0.1545711</code></pre>
+## -0.4093296  0.2843978</code></pre>
 <pre class="r"><code>#shapiro.test(subset(match.data.Object, VMSgroup==&quot;withVMS&quot;)$PC) # not normal
 
 wilcox.test(subset(match.data.Object.spread, VMSgroup==&quot;withVMS&quot;)$inREP, 
@@ -1629,38 +1614,34 @@ wilcox.test(subset(match.data.Object.spread, VMSgroup==&quot;withVMS&quot;)$inRE
 ## V = 169, p-value = 0.06545
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.01943465  0.53966394
+##  -0.01940548  0.53862945
 ## sample estimates:
 ## (pseudo)median 
-##      0.2897334</code></pre>
+##      0.2896294</code></pre>
 <pre class="r"><code>wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == &quot;withVMS&quot;)$PC,
                 g = subset(match.data.Object, VMSgroup == &quot;withVMS&quot;)$Type) # r = .61</code></pre>
 <pre><code>##     r 
 ## 0.391</code></pre>
-<div id="part-3-reanlalyse-caregiver-input-with-a-subset-of-data-that-only-includes-nouns-onomtopoeia-and-routine-words-in-cpdatacgprompt" class="section level2">
-<h2>Part 3: Reanlalyse caregiver input with a subset of data that only includes nouns, onomtopoeia and routine words in CPdata$cgprompt</h2>
+</div>
+</div>
+<div id="part-5-reanlalyse-caregiver-input-with-a-subset-of-data-that-only-includes-nouns-onomtopoeia-and-routine-words-in-cpdatacgprompt" class="section level2">
+<h2>Part 5: Reanlalyse caregiver input with a subset of data that only includes nouns, onomtopoeia and routine words in CPdata$cgprompt</h2>
 <pre class="r"><code>source(&quot;Data_scrambling_Nounsonly_randsubj.R&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
+##   .default = col_character(),
 ##   subj = col_double(),
 ##   month = col_double(),
-##   sex = col_character(),
-##   MOTedu = col_character(),
-##   VMS = col_character(),
-##   ctype = col_character(),
-##   object = col_character(),
-##   cgprompt = col_character(),
-##   cgresponse = col_character(),
-##   C1Obj = col_character(),
-##   C1Prompt = col_character(),
+##   timediff = col_double(),
+##   include_prompt = col_logical(),
 ##   Prod.Obj.Cong = col_logical(),
 ##   Prod.Prompt.Cong = col_logical(),
 ##   VMS.Obj.Cong = col_logical(),
 ##   VMS.Prompt.Cong = col_logical(),
 ##   VMS.Prod.Cong = col_logical(),
-##   VMSgroup = col_character(),
-##   wordclass = col_character()
+##   Siblings = col_double()
 ## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
 ##   subj = col_double(),
@@ -1689,6 +1670,7 @@ wilcox.test(subset(match.data.Object.spread, VMSgroup==&quot;withVMS&quot;)$inRE
 ##   VMS = col_character(),
 ##   MOTedu = col_character()
 ## )</code></pre>
+<pre><code>## Warning: Unknown levels in `f`: 1, 2, 3, 4, 6, 7, 8, 9</code></pre>
 <pre><code>## Joining, by = &quot;subj&quot;</code></pre>
 <pre class="r"><code># 752 CPs with noun/onomatopoeia as prompts
 
@@ -1696,9 +1678,9 @@ CPdata_nouns %&gt;% group_by(wordclass) %&gt;% tally()  #32 onomatopoeia, 39 gre
 <pre><code>## # A tibble: 3 x 2
 ##   wordclass     n
 ##   &lt;chr&gt;     &lt;int&gt;
-## 1 G            39
-## 2 N           720
-## 3 O            32</code></pre>
+## 1 G            37
+## 2 N           708
+## 3 O            30</code></pre>
 <pre class="r"><code>                              # (cf Laing et al 2015 who show that onomatopoiea are particularly salient in caregier input)</code></pre>
 <pre class="r"><code>#shapiro.test(ProdData_nouns$Prod.Prompt.match.PC) # normal
 
@@ -1715,22 +1697,22 @@ wilcox.test(subset(ProdData_nouns, VMSgroup == &quot;withVMS&quot;)$Prod.Prompt.
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(ProdData_nouns, VMSgroup == &quot;withVMS&quot;)$Prod.Prompt.match.PC and subset(ProdData_nouns, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC
-## W = 298, p-value = 0.1743
+## W = 294, p-value = 0.2066
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.03853089  0.27777461
+##  -0.05947618  0.27782016
 ## sample estimates:
 ## difference in location 
-##              0.1046385</code></pre>
+##                0.10005</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(ProdData_nouns, VMSgroup == &quot;withVMS&quot;)$Prod.Prompt.match.PC, 
             f = subset(ProdData_nouns, VMSgroup == &quot;noVMS&quot;)$Prod.Prompt.match.PC) # p=.24 small</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.2416667 (small)
+## delta estimate: 0.225 (small)
 ## 95 percent confidence interval:
-##       lower       upper 
-## -0.09919865  0.53177214</code></pre>
+##      lower      upper 
+## -0.1195705  0.5211945</code></pre>
 <pre class="r"><code>prompt.real &lt;- ProdData_nouns %&gt;%
   select(subj, month, VMSgroup, Prod.Prompt.match.PC) %&gt;%
   ungroup() %&gt;%
@@ -1757,22 +1739,22 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC and subset(prompt.scramble, VMSgroup == &quot;withVMS&quot;)$PC
-## W = 536, p-value = 3.269e-07
+## W = 530.5, p-value = 5.851e-07
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.2054998 0.3939579
+##  0.1862967 0.3549516
 ## sample estimates:
 ## difference in location 
-##              0.2999463</code></pre>
+##              0.2665721</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC, 
             f = subset(prompt.scramble, VMSgroup == &quot;withVMS&quot;)$PC) # .90 large</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.8611111 (large)
+## delta estimate: 0.8420139 (large)
 ## 95 percent confidence interval:
 ##     lower     upper 
-## 0.6186109 0.9538205</code></pre>
+## 0.5662833 0.9482441</code></pre>
 <pre class="r"><code>wilcox.test(subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC, conf.int = T) # Significant, p&lt;.05</code></pre>
 <pre><code>## Warning in wilcox.test.default(subset(prompt.real, VMSgroup == &quot;noVMS&quot;)
@@ -1783,22 +1765,22 @@ wilcox.test(subset(prompt.real, VMSgroup == &quot;withVMS&quot;)$PC,
 ##  Wilcoxon rank sum test with continuity correction
 ## 
 ## data:  subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC and subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC
-## W = 270, p-value = 0.05828
+## W = 305, p-value = 0.004337
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  -0.0000282159  0.3332693377
+##  0.1026065 0.4359030
 ## sample estimates:
 ## difference in location 
-##              0.1666571</code></pre>
+##                 0.3054</code></pre>
 <pre class="r"><code>cliff.delta(d = subset(prompt.real, VMSgroup == &quot;noVMS&quot;)$PC, 
             f = subset(prompt.scramble, VMSgroup == &quot;noVMS&quot;)$PC) # .41 medium</code></pre>
 <pre><code>## 
 ## Cliff&#39;s Delta
 ## 
-## delta estimate: 0.35 (medium)
+## delta estimate: 0.525 (large)
 ## 95 percent confidence interval:
-##       lower       upper 
-## -0.03666898  0.64551594</code></pre>
+##     lower     upper 
+## 0.1406660 0.7718265</code></pre>
 <pre class="r"><code>#shapiro.test(subset(match.data.Prompt, VMSgroup==&quot;withVMS&quot;)$PC) # normal 
 
 # t.test(subset(match.data.Prompt_nouns.spread, VMSgroup==&quot;withVMS&quot;)$inREP,
@@ -1817,10 +1799,10 @@ wilcox.test(subset(match.data.Prompt_nouns.spread, VMSgroup==&quot;withVMS&quot;
 ## V = 248.5, p-value = 0.005103
 ## alternative hypothesis: true location shift is not equal to 0
 ## 95 percent confidence interval:
-##  0.07614507 0.52379975
+##  0.07529871 0.51959666
 ## sample estimates:
 ## (pseudo)median 
-##      0.3072308</code></pre>
+##      0.3069654</code></pre>
 <pre class="r"><code>wilcoxonPairedR(x = subset(match.data.Prompt_nouns, VMSgroup == &quot;withVMS&quot;)$PC,
                 g = subset(match.data.Prompt_nouns, VMSgroup == &quot;withVMS&quot;)$Type) # r = .58</code></pre>
 <pre><code>##     r 

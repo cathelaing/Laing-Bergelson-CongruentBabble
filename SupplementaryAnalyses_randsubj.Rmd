@@ -1,20 +1,25 @@
 ---
 title: "Supplementary Analyses: From babble to words"
 author: "Catherine Laing & Elika Bergelson"
-date: "7 August 2019"
+date: "20 January 2020"
 output: html_document
 ---
 
-## Supplementary data
+# Supplementary data
 
 ```{r Set up, include=FALSE}
+
+library(ggplot2)
 library(tidyverse)
+library(readr)
+library(forcats)
 library(effsize)
 library(rcompanion)
+library(stringi)
 
 ```
 
-### Part 1: Running analysis with three infants removed (all produced <50 but >20 tokens of a given consonant at 0;10 and 0;11)
+# Part 1: Running analysis with three infants removed (all produced <50 but >20 tokens of a given consonant at 0;10 and 0;11)
 
 ```{r source data}
 
@@ -95,7 +100,7 @@ cliff.delta(d = subset(vmstotal_subset, VMSgroup == "withVMS")$audiotypes,
 
 ```
 
-# Infant Production: Video recordings
+## Infant Production: Video recordings
 
 ```{r Effect of VMS group on CP types/tokens}
 
@@ -122,7 +127,7 @@ wilcoxonPairedR(x = compareRecordings_subset$meanProd,
 
 ```
 
-## Input prompts
+### Input prompts
 
 ```{r Input prompt overview}
 
@@ -203,7 +208,7 @@ cliff.delta(d = subset(match.data.Prompt_subset, VMSgroup == "withVMS" & Type ==
 ```
 
 
-## Attended objects
+### Attended objects
 
 ```{r Object overview}
 
@@ -274,7 +279,7 @@ cliff.delta(d = subset(match.data.Object_subset, VMSgroup == "withVMS" & Type ==
 ```
 
 
-### Part 2: Figure S5
+## Part 2: Figure S5
 
 ```{r data and theme, include=FALSE}
 
@@ -340,9 +345,9 @@ figS5b <- ggplot(vmscount
 plot(figS5b)
 ```
 
-### Part 3: reanalyse variables with matching stimuli removed
+## Part 3: reanalyse variables with matching stimuli removed
 
-# Input prompt
+### Input prompt
 
 ```{r Input prompt stats - reanalysis}
 
@@ -413,7 +418,7 @@ wilcoxonPairedR(x = subset(match.data.Prompt, VMSgroup=="withVMS")$PC,
 
 
 
-# Attended object
+### Attended object
 
 ```{r Att Obj stats - reanalysis}
 
@@ -470,7 +475,7 @@ wilcoxonPairedR(x = subset(match.data.Object, VMSgroup == "withVMS")$PC,
 
 ## Part 4: Reanalyse variables after removing objects and prompts with matching onset consonants
 
-# Input Prompts
+### Input Prompts
 
 ```{r Testing for C1 match}
 
@@ -545,7 +550,7 @@ wilcoxonPairedR(x = subset(match.data.Prompt, VMSgroup == "withVMS")$PC,
                 g = subset(match.data.Prompt, VMSgroup == "withVMS")$Type) # r = .61
 ```
 
-# Attended Object
+### Attended Object
 
 ```{r r Testing with noC1 match - Object}
 

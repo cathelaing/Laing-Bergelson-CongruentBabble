@@ -1,4 +1,4 @@
-# Updated 16th April 2019
+# Updated 20th January 2020
 
 # This script is the same as ProductionData_randsubj.r, though it joins CPdata with a dataset of cgprompt levels designated by wordclass.
 # This allows for filtering of nouns and onomatopoeia. This is only relevant to the CGprompt variable (since attended objects

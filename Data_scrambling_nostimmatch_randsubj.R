@@ -1,4 +1,4 @@
-# Updated 8th March 2019
+# Updated 20th January 2020
 
 # This script takes CPdata.csv and scrambles various aspects of infant and caregiver data. It then recreates the TRUE/FALSE binomials in line with 
 # these randomly scarmbled responses, and re-calculates all proportions based on these.
@@ -8,8 +8,7 @@
 library(dplyr)
 library(tidyverse)
 
-source("DataGathering_consonants.R")
-source("ProductionData_nostimmatch.R") # if script is run separately from InfanyProductionStudy.Rmd then this script should be run first
+source("ProductionData_nostimmatch_randsubj.R") # if script is run separately from InfantProductionStudy.Rmd then this script should be run first
 
 set.seed(42) #meaning of life
 CPdata.scr.C1Prompt_nostimmatch <- dplyr::select(CPdata_nostimmatch, subj, month, sex, VMSgroup, ctype, VMS, C1Obj, C1Prompt) %>% 
@@ -56,3 +55,4 @@ Prompt.scramble <- CPdata.scr_nostimmatch %>%
 data.scrambled_nostimmatch <- Object.scrambled %>%
   left_join(Prompt.scramble) %>%
   replace(is.na(.), 0)   
+

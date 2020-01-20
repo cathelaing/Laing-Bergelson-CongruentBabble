@@ -6,6 +6,7 @@
 library(tidyverse)
 library(forcats)
 library(feather)
+library(stringi)
 
 CPdata <- read_csv("Data/CPdata_randsubj.csv") %>% # read in CPdata_randsubj.csv to use as a base df for all following dfs
  mutate(subj = factor(subj))
@@ -260,84 +261,3 @@ match.data.Object.spread <- match.data.Object %>%      # to allow for paired com
   group_by(subj) %>% # to allow pairwise comparisons
   spread(Type, PC)
 
-# Read in developmental data for developmental analysis
-
-devdata_types <- read_feather("Data/basic_levels_Mar1518_randsubj.feather") %>%
-  mutate(subj = factor(subj)) %>%
-  filter(speaker == 'CHI') %>%    # select only infant productions
-  group_by(subj, month, audio_video) %>%
-  summarise(nTypes = n_distinct(basic_level))
-
-
-devdata_tokens <- read_feather("Data/basic_levels_Mar1518_randsubj.feather") %>%
-  mutate(subj = factor(subj)) %>%
-  filter(speaker == 'CHI') %>%    # select only infant productions
-  group_by(subj, month, audio_video) %>%
-  tally() %>%
-  rename("nTokens" = "n") %>%
-  left_join(devdata_types)
-
-devdata_input <- read_feather("Data/basic_levels_Mar1518_randsubj.feather") %>%
-  mutate(subj = factor(subj)) %>%
-  filter(speaker == 'MOT') %>%    # select only infant productions
-  group_by(subj, month, audio_video) %>%
-  tally() %>%
-  rename("nInput" = "n") %>%
-  left_join(devdata_tokens) %>%
-  replace(is.na(.), 0)
-
-devdataCDI <- read_csv("Data/CDI_randsubj.csv") %>%
-  mutate(subj = factor(subj),
-         month = factor(month),
-         month = fct_recode(month,
-                            "06" = "6",
-                            "07" = "7",
-                            "08" = "8",
-                            "09" = "9")) %>%
-  left_join(devdata_input) %>%
-  replace(is.na(.), 0)
-
-CPdata_dev <- ProdData %>% select(subj, VMSgroup, CPtypes, CPtokens)
-
-
-devdata <- devdataCDI %>%
-  left_join(devdata_tokens) %>%
-  select(subj, month, audio_video, nTokens, nTypes, nInput, CDI_TotalProd) %>%
-  left_join(vmstotal, by = "subj") %>%
-  select(-month.y) %>%
-  rename("month" = "month.x") %>%  # remember to filter by audio_video when running tests on CDI data
-  left_join(CPdata_dev)
-
-firstwordaudio <- devdata %>% filter(audio_video == "audio" & nTokens > 0) %>% group_by(subj) %>% summarise(Age1stWordaudio = min(month))
-firstwordvideo <- devdata %>% filter(audio_video == "video" & nTokens > 0) %>% group_by(subj) %>% summarise(Age1stWordvideo = min(month))
-firstwordCDI <- devdata %>% filter(CDI_TotalProd > 0) %>% group_by(subj) %>% summarise(Age1stWordCDI = min(month))
-
-devdata <- devdata %>% 
-  left_join(firstwordaudio) %>%
-  left_join(firstwordvideo) %>%
-  left_join(firstwordCDI)
-
-devdata$Age1stWordaudio <- as.numeric(as.character(devdata$Age1stWordaudio))
-devdata$Age1stWordvideo <- as.numeric(as.character(devdata$Age1stWordvideo))
-devdata$Age1stWordCDI <- as.numeric(as.character(devdata$Age1stWordCDI))
-
-
-
-devdata %>% filter(audio_video == "audio") %>%
-  group_by(subj) %>% 
-  summarise(totalprod = sum(nTokens)) %>% 
-  filter(totalprod == 0) # 3 infants produce no tokens in audio data
-
-devdata %>% filter(audio_video == "video") %>%
-  group_by(subj) %>% 
-  summarise(totalprod = sum(nTokens)) %>% 
-  filter(totalprod == 0) # 6 infants produce no tokens in video data
-
-devdata %>% 
-  group_by(subj) %>% 
-  summarise(totalprod = sum(CDI_TotalProd)) %>% 
-  filter(totalprod == 0) # 0 infants have 0 words according to CDI reports
-
-Demo_data_ProdStudy <- ProdData %>%     # save csv file of demo data for Git Repo
-  select(subj, month, sex, MOTedu, Siblings, VMSgroup, VMS, CPtokens, CPtypes) %>%
-  write_csv("Data/demo_data_randsubj.csv")

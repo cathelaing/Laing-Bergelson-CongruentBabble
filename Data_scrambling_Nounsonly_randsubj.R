@@ -1,9 +1,9 @@
-# Updated 18th March 2019
+# Updated 20th January 2020
 
 # This script takes CPdata.csv and scrambles various aspects of infant and caregiver data. It then recreates the TRUE/FALSE binomials in line with 
 # these randomly scarmbled responses, and re-calculates all proportions based on these.
 
-source("ProductionData_Nounsonly.R")
+source("ProductionData_Nounsonly_randsubj.R")
 
 set.seed(42) #meaning of life
 CPdata.scr.C1Prompt <- dplyr::select(CPdata_nouns, subj, month, sex, ctype, VMS, C1Obj, C1Prompt) %>% 
@@ -35,7 +35,7 @@ data.scrambled_base <- CPdata.scr %>%
   mutate(Prod.Prompt.match.PC = Match/(Match+NoMatch)) %>%
    select(subj, Prod.Prompt.match.PC, month)
 
-data.scrambled <- read_csv("Data/VMSdata.csv") %>%    # number of each consonant type produced during audio recordings
+data.scrambled <- read_csv("Data/VMS_randsubj.csv") %>%    # number of each consonant type produced during audio recordings
   dplyr::select(subj, Group, VMS) %>%
   mutate(subj = factor(subj),
          subj = fct_recode(subj,

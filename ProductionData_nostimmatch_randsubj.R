@@ -1,4 +1,4 @@
-# Updated 16th April 2019
+# Updated 20th January 2020
 
 # This script works with the main consonant production spreadsheet (CPdata_randsubj.csv) to count how
 # many CPs match VMS/Objects/Prompts for each infant. This creates another version of the ProdData dataset but with all instances
