@@ -465,6 +465,10 @@ cliff.delta(d = subset(vmstotal, VMSgroup == "withVMS")$audiotokens,
 ```
 
 ```{r Figure 1}
+
+groups <- c("withVMS" = "with-VMS",
+            "noVMS" = "no-VMS")
+
 Figure1a <- ggplot(subset(vmscount, VMSgroup == "withVMS" & month_chron == month), aes(x=Consonant, y=log10(n))) +
   stat_summary(fun.y=mean, geom = "point", aes(group = subj, colour = Consonant), shape=1, size=2, 
                position = position_jitter(width = .1, height=0)) +
@@ -479,7 +483,8 @@ Figure1a <- ggplot(subset(vmscount, VMSgroup == "withVMS" & month_chron == month
         axis.title = element_text(size=22),
            axis.text = element_text(size=22),
         strip.text = element_text(face="bold", size=22,lineheight=7.0)) +
-  facet_wrap(~VMSgroup)
+  facet_wrap(~VMSgroup, labeller = as_labeller(groups))
+
 Figure1b <- ggplot(subset(vmscount, VMSgroup == "noVMS" & month_chron == month), aes(x=Consonant, y=log10(n))) +
   stat_summary(fun.y=mean, geom = "point", aes(group = subj, colour = Consonant), shape=1, size=2,
                position = position_jitter(width = .1, height=0)) +
@@ -494,7 +499,7 @@ Figure1b <- ggplot(subset(vmscount, VMSgroup == "noVMS" & month_chron == month),
         axis.title = element_text(size=22),
            axis.text = element_text(size=22),
         strip.text = element_text(face="bold", size=22,lineheight=7.0)) +
-  facet_wrap(~VMSgroup)
+  facet_wrap(~VMSgroup, labeller = as_labeller(groups))
 
 multiplot(Figure1a, Figure1b, cols=2)
 ```
@@ -547,7 +552,7 @@ Figure2a <- ggplot(ProdData, aes(x=VMSgroup, y=CPtokens)) +
   geom_violin(aes(fill = VMSgroup), alpha=.3) +
   stat_summary(fun.y=mean, geom = "point", aes(group = subj), shape=1, size=2.5, position=position_jitter(height = 0, width = 0.01)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", colour='red', shape=17, size=1) +
-  scale_x_discrete(limits = c("withVMS", "noVMS"), labels = c("withVMS", "noVMS")) +
+  scale_x_discrete(limits = c("withVMS", "noVMS"), labels = c("with-VMS", "no-VMS")) +
     theme_bw(base_size=15) +
      theme(axis.text = element_text(size=18),
            axis.title = element_text(size=18),
@@ -558,7 +563,7 @@ Figure2b <- ggplot(ProdData, aes(x=VMSgroup, y=CPtypes)) +
     geom_violin(aes(fill = VMSgroup), alpha=.3) +
   stat_summary(fun.y=mean, geom = "point", aes(group = subj), shape=1, size=2.5, position=position_jitter(height = 0, width = .1)) +
   stat_summary(fun.data=mean_cl_boot, geom = "pointrange", colour='red', shape=17, size=1) +
-  scale_x_discrete(limits = c("withVMS", "noVMS"), labels = c("withVMS", "noVMS")) +
+  scale_x_discrete(limits = c("withVMS", "noVMS"), labels = c("with-VMS", "no-VMS")) +
   coord_cartesian(ylim=c(0, 8)) +
   scale_y_continuous(breaks=seq(0, 8, 2))  +
    ylab("n CP types") +
@@ -661,10 +666,10 @@ Figure3a <-
                size=1.5, position = position_dodge(-.2), colour = "grey32", show.legend = FALSE) +
   stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), geom='line', size=.8, position = position_dodge(-.2), show.legend = FALSE) +
     scale_shape_manual(name = "VMSgroup",
-                      labels = c("noVMS", "withVMS"),
+                      labels = c("no-VMS", "with-VMS"),
                        values=c(21,24)) +
     scale_colour_manual(name = "VMSgroup",
-                     labels = c("noVMS", "withVMS"),
+                     labels = c("no-VMS", "with-VMS"),
                       values = c("#F8766D","#00BFC4")) +
   xlab("Data type") +
   ylab('% Congruent CPs') +
@@ -716,6 +721,8 @@ Figure4a <-
   xlab("Consonant Type") +
   ylab('% Congruent CPs') +
   ggtitle("Caregiver Prompt") +
+  scale_colour_discrete(breaks=c("noVMS", "withVMS"),
+                      labels = c("no-VMS", "with-VMS")) +
   theme_bw(base_size=15) +
    theme(axis.text = element_text(size = 20),
          axis.title = element_text(size=20),
@@ -820,10 +827,10 @@ Figure3b <-
                size=1.5, position = position_dodge(-.2), colour = "grey32", show.legend = FALSE) +
   stat_summary(fun.y = mean, aes(group=VMSgroup, colour=VMSgroup), geom='line', size=.8, position = position_dodge(-.2), , show.legend = FALSE) +
 scale_shape_manual(name = "VMSgroup",
-                      labels = c("noVMS", "withVMS"),
+                      labels = c("no-VMS", "with-VMS"),
                        values=c(21,24)) +
     scale_colour_manual(name = "VMSgroup",
-                     labels = c("noVMS", "withVMS"),
+                     labels = c("no-VMS", "with-VMS"),
                       values = c("#F8766D","#00BFC4")) +
     xlab("Data type") +
   ylab('% Congruent CPs') +
@@ -874,6 +881,8 @@ Figure4b <- ggplot(match.data.Object, aes(x=Type, y=PC)) +
   ylab("% Congruent CPs") +
   xlab("Consonant Type") +
   ggtitle("Attended Object") +
+  scale_colour_discrete(breaks=c("noVMS", "withVMS"),
+                      labels = c("no-VMS", "with-VMS")) +
   theme_bw(base_size=15) +
    theme(axis.text.x = element_text(size = 20),
          axis.title.x = element_text(size=20),
@@ -886,7 +895,7 @@ Figure4b <- ggplot(match.data.Object, aes(x=Type, y=PC)) +
 
 multiplot(Figure4a, Figure4b, cols=2)
 
-#plot(Figure4)
+#plot(Figure4b)
 ```
 
 Overall, 31% of OUTREP CPs matched an attended object (SD=.29), and this did not differ between VMS groups (Est.Diff.=-.08, p=.32; withVMS: M=.36, SD=.32; noVMS: M=.25, SD=.22). 
