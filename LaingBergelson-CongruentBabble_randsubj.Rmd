@@ -1,7 +1,7 @@
 ---
 title: "From babble to words: Infants’ early productions match words and objects in their environment"
 author: "Catherine Laing & Elika Bergelson"
-date: "19th January 2020"
+date: "29th April 2020"
 output: html_document
 ---
 
@@ -917,10 +917,22 @@ match.data.Object %>% filter(Type == "outREP") %>% group_by(VMSgroup) %>%
             sdMatch = sd(PC, na.rm=T))
 ```
 
-
-
-
 # Discussion
+
+```{r Matching stimuli and VMS group}
+
+"%ni%" <- Negate("%in%")
+
+CPdata_stimmatch <- CPdata %>% 
+  mutate(match = cgprompt == object) %>%
+  filter(match == T & cgprompt %ni% c("[none]", "[imitation]", "[media]", "[unavailable]", "[unclear]"))
+
+CPdata_stimmatch %>%
+  filter(VMS.Prompt.Cong == T) %>%
+  group_by(VMS.Prod.Cong) %>%
+  tally() 
+
+```
 
 ```{r CG responsiveness}
 
@@ -928,3 +940,9 @@ CPdata %>% filter(cgresponse == "None" | is.na(cgresponse)) %>% tally() #1404
 1404/1916 #73%
 
 ```
+
+
+
+
+
+
