@@ -930,7 +930,7 @@ CPdata_stimmatch <- CPdata %>%
 CPdata_stimmatch %>%
   filter(VMS.Prompt.Cong == T) %>%
   group_by(VMS.Prod.Cong) %>%
-  tally() 
+  tally() # 51 instances where VMS and promp and object and prod are all matching, 9 where they do not
 
 ```
 
